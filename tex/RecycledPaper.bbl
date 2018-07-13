@@ -1,0 +1,66 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Ainley and DeMaster}{Ainley and
+  DeMaster}{1980}]{Ainley:1980}
+Ainley, D.~G. and DeMaster, D.~P. (1980).
+\newblock Survival and mortaility in a population of adelie penguins.
+\newblock {\em Ecology} {\bf 61,} 522--530.
+
+\bibitem[\protect\citeauthoryear{Arnason and Mills}{Arnason and
+  Mills}{1981}]{Arnason:1981}
+Arnason, A. and Mills, K.~H. (1981).
+\newblock Bias and loss of precision due to tag loss in jolly-seber estimates
+  for mark-recapture experiments.
+\newblock {\em Canadian Journal of Fisheries and Aquatic Science} {\bf 38,}
+  1077--1095.
+
+\bibitem[\protect\citeauthoryear{Cowen and Schwarz}{Cowen and
+  Schwarz}{2006}]{Cowen:2006}
+Cowen, L. and Schwarz, C.~J. (2006).
+\newblock The jolly-seber model with tag loss.
+\newblock {\em Biometrics} {\bf 62,} 699--705.
+
+\bibitem[\protect\citeauthoryear{Fogarty, Borden, and Russell}{Fogarty
+  et~al.}{1980}]{Fogarty:1980}
+Fogarty, M.~J., Borden, D. V.~D., and Russell, H.~J. (1980).
+\newblock {Movements of tagged American lobster, $Homarus americanus$, off
+  Rhode Island.}
+\newblock {\em Fishery Bulletin} {\bf 78,} 771--780.
+
+\bibitem[\protect\citeauthoryear{Jolly}{Jolly}{1965}]{Jolly:1965}
+Jolly, G.~M. (1965).
+\newblock Explicit estimates from capture-recapture data with both death and
+  immigration-- stochastic model.
+\newblock {\em Biometrika} {\bf 52,} 225--247.
+
+\bibitem[\protect\citeauthoryear{McMahon, Burton, van~den Hoff, Woods, and
+  Bradshaw}{McMahon et~al.}{2009}]{McMahon:2009}
+McMahon, C.~R., Burton, H., van~den Hoff, J., Woods, R., and Bradshaw, C. J.~A.
+  (2009).
+\newblock Assessing hot-iron and cyro-branding for permanently marking southern
+  elephant seals.
+\newblock {\em Journal of Wildlife Management} {\bf 70,} 1484--1489.
+
+\bibitem[\protect\citeauthoryear{Pollock, Nichols, Brownie, and Hines}{Pollock
+  et~al.}{1990}]{Pollock:1990}
+Pollock, K.~H., Nichols, J.~D., Brownie, C., and Hines, J.~E. (1990).
+\newblock Statistical inference for capture-recapture experiments.
+\newblock {\em Wildlife Monographs} {\bf 107,} 3--97.
+
+\bibitem[\protect\citeauthoryear{{R Core Team}}{{R Core Team}}{2014}]{R}
+{R Core Team} (2014).
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria.
+
+\bibitem[\protect\citeauthoryear{Seber}{Seber}{1965}]{Seber:1965}
+Seber, G. A.~F. (1965).
+\newblock A note on the multiple recapture census.
+\newblock {\em Biometrika} {\bf 52,} 249--259.
+
+\bibitem[\protect\citeauthoryear{Seber and Felton}{Seber and
+  Felton}{1965}]{Seber:1981}
+Seber, G. A.~F. and Felton, R. (1965).
+\newblock Tag loss and the peterson mark-recapture experiment.
+\newblock {\em Biometrika} {\bf 68,} 211--219.
+
+\end{thebibliography}
