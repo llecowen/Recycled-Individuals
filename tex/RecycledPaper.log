@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  10 SEP 2018 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  10 SEP 2018 16:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1086,12 +1086,12 @@ sed on input line 551.
 (pdftex.def)             Requested size: 408.04205pt x 316.19493pt.
  [8]
 [9 <./RecycledPaper_files/figure-latex/Seals_Abundance.png>]
-(./RecycledPaper.bbl)
+(./RecycledPaper.bbl) [10]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 635.
 
-[10]
+
 Underfull \hbox (badness 10000) in paragraph at lines 641--642
 
  []
@@ -1143,13 +1143,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 762.
  ) 
 Here is how much of TeX's memory you used:
- 12903 strings out of 492995
- 186903 string characters out of 6132704
+ 12901 strings out of 492995
+ 186873 string characters out of 6132704
  299926 words of memory out of 5000000
  16078 multiletter control sequences out of 15000+600000
- 84732 words of font info for 140 fonts, out of 8000000 for 9000
+ 84595 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,17n,38p,668b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,17n,38p,637b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/lo
 cal/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/20
 17/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-d
@@ -1169,7 +1169,7 @@ xmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fon
 ts/type1/public/lm/lmri10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
 ublic/lm/lmro10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/l
 msy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on RecycledPaper.pdf (12 pages, 411403 bytes).
+Output written on RecycledPaper.pdf (12 pages, 411993 bytes).
 PDF statistics:
  284 PDF objects out of 1000 (max. 8388607)
  241 compressed objects within 3 object streams
