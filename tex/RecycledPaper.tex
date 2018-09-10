@@ -332,35 +332,10 @@ individuals. We calculated the difference in the two relative biases and
 consider this to be relative bias that was contributed entirely by the
 recycled individuals being tagged as ``new'' individuals.
 
-\subsection{Case Study: Elephant Seals}\label{case-study-elephant-seals}
-
-To validate the simulation framework, we analyzed data from a long-term
-mark-recapture study of elephant seals on Macquarie Island. The data
-used for the case study consists of 7 years between 1993 and 2000.
-Elephant seal pups were marked with two tags in the inter-digital
-webbing of their hind flippers and were given a permanent hot-seal
-branding with a unique identifier on their flank \citep{McMahon:2009}. This
-permanent branding allowed for individual elephant seals to be
-identified even if they lost both tags. Thus, recycled individuals could
-be easily identifiable.
-
-We consider two analyzes of the data:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  We assume that recycled individuals cannot be recognized upon
-  recapture (ignoring branding) and are re-tagged as if they are new
-  individuals. This scenario simulates analysis ignoring the effects of
-  recycled individuals.
-\item
-  Recycled individuals are recognized upon recapture (by branding) and
-  not re-tagged.
-\end{enumerate}
 
 
 
-\section{Results}\label{results}
+\section{Simulation Results}\label{results}
 
 The mean relative bias of the survival estimates were biased for some
 parameter combinations of survival, capture, and tag retention
@@ -512,9 +487,37 @@ for all scenarios are available in the Appendix (Figures A17-A28).
 \subsection{Case Study: Elephant
 Seals}\label{case-study-elephant-seals-1}
 
+
+To validate the simulation framework, we analyzed data from a long-term
+mark-recapture study of elephant seals on Macquarie Island. The data
+used for the case study consists of 7 years between 1993 and 2000.
+Elephant seal pups were marked with two tags in the inter-digital
+webbing of their hind flippers and were given a permanent hot-seal
+branding with a unique identifier on their flank \citep{McMahon:2009}. This
+permanent branding allowed for individual elephant seals to be
+identified even if they lost both tags. Thus, recycled individuals could
+be easily identifiable.
+
+We consider two analyzes of the data:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  We assume that recycled individuals cannot be recognized upon
+  recapture (ignoring branding) and are re-tagged as if they are new
+  individuals. This scenario simulates analysis ignoring the effects of
+  recycled individuals.
+\item
+  Recycled individuals are recognized upon recapture (by branding) and
+  not re-tagged.
+\end{enumerate}
+
+
 For the elephant seals data, there were several differences in parameter
 estimates of the JSTL model when recycled individuals were included
-compared to when recycled individuals were excluded. As expected, the
+compared to when recycled individuals were excluded. For this analysis, we used the same model as the simulation study where capture, survival and tag rentention rates were held constant.  
+
+As expected, the
 super-population size estimate for the analysis which included the
 recycled individuals were 30\% larger than the estimate in the analysis
 which excluded recycled individuals who were recognized upon recapture
@@ -523,10 +526,10 @@ at each time period (Figure 5). The bias in the abundance estimates
 seems to get worse as time goes on, again validating the results of our
 simulation study.
 
-Similar to the simulations, there is not much difference in the
+Similar to the simulations, there was not much difference in the
 estimates of survival and capture probabilities between the analysis
 with and without recycled individuals. For comparison to the previous
-simulations, the authors note that tag retention probability for the
+simulations, we note that tag retention probability for the
 elephant seals was estimated to be 0.8 (high).
 
 \begin{quote}
@@ -537,10 +540,10 @@ elephant seals was estimated to be 0.8 (high).
 \begin{center}
 \begin{tabular}{c c c c c}
 & \multicolumn{2}{l}{With Recycled} & \multicolumn{2}{l}{Without Recycled} \\ \hline
-& Est & SE & Est & SE \\ \hline
+Parameter & Estimate & SE & Estimate & SE \\ \hline
 $\phi$ & 0.759 & 0.00563 & 0.744 & 0.00557\\
 $p$ & 0.682 & 0.00595 & 0.741 & 0.00615 \\
-$N$ & 8985 & & 6949& \\
+$N$ & 8985 & & 6949& \\ \hline
 \end{tabular}
 \end{center}
 
