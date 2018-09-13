@@ -126,14 +126,39 @@ follows:
 
 \subsubsection{Notation}\label{notation}
 
-We use the following notation to describe the statistics or model
-parameters discussed in this study.
+The following is a description of statistics and parameters used in the
+JSTL model where survival, capture, and tag retention probabilities are
+assumed to be constant across time.
 
+\emph{Statistics:}\\
 \[
   \begin{array}{ll}
       k= & \text{number of sample times} \\
+      m= & \text{number of unique tag histories} \\
+      i= & \text{index for a tag history, $i=0,1,2,...,m.$ $i=0$ refers to the tag history of individuals never captured}\\
+      nt_j= & \text{the number of tags on individuals at sample time \textit{j, j=1,2,..,k}.} \\
+      n_j= & \text{total individuals captured at time \textit{j}} \\
       n_{\text{obs}}= & \text{the total number of individuals captured with no tags and treated as new individuals; when no}\\
       & \text{recycling is present, $n_\text{obs}$ is the number of unique individuals observed throughout the study}\\
+      f_i= & \text{the first sample time where the individual with tag history \textit{i} was captured}\\
+      l_i= & \text{the last sample time where the individual with tag history \textit{i} was observed} \\
+      q_{id}= & \text{first sample time where tag $d$ was known missing for the individual with capture history $i$} \\
+      l_{id}= & \text{the last sample time where tag \textit{d} is present on the individual with tag history \textit{i}, } d=1,2 \text{ for a}\\
+      & \text{double-tagging experiment} \\
+      \omega_i*= & \text{capture history vector } \omega_i*=(\omega_{i1}*,\omega_{i2}*,...,\omega_{ik}*), \textit{i=0,1,...,m} \text{, where}\\
+       & \omega_{ij}* = \left\{\begin{array}{ll}
+                        1 & \text{if the individual with tag history \textit{i} captured for the first time at sample time \textit{j}.} \\
+                        1 & \text{if the individual with tag history \textit{i} captured at sample time }f_i<j \text{ with at least }\\
+                        & \text{one tag present.}\\
+                        0 & \text{if the individual with tag history \textit{i} not captured at sample time \textit{j}.} \\
+                      \end{array}\right. \\
+      \omega_i= & \text{tag history vector } \omega_i=(\omega_{i,1,1},\omega_{i,1,2},\omega_{i,2,1,},\omega_{i,2,2},...,\omega_{i,k,1},\omega_{i,k,2}), \textit{i=0,1,...,m}\text{, where} \\ 
+       & \omega_{ijd}* = \left\{\begin{array}{ll}
+                          1 & \text{if the individual with tag history \textit{i} captured and tag \textit{d} was present at sample time \textit{j}.} \\
+                          0 & \text{if the individual with tag history \textit{i} captured and tag \textit{d} was not present at sample time \textit{j}.}\\
+                          0 & \text{if the individual with tag history \textit{i} not captured at sample time \textit{j}.} \\
+                      \end{array}\right. \\
+      n_{\omega_i=} & \text{number of } \omega_i \text{ tag histories} \\
   \end{array}
 \]
 
@@ -194,7 +219,36 @@ parameters discussed in this study.
   \end{array}
 \]
 
-\subsubsection{Complete Likelihood}\label{complete-likelihood}
+\subsubsection{Likelihood and Estimation}\label{likelihood-and-estimation}
+
+The likelihood of the JSTL model can be divided into three parts: the
+probability of observing \(n_{\text{obs}}\), the number of tag
+histories, given the super-population size (\(L_1^A\)), the probability
+of observing recaptures given the number of tag histories (\(L_1^B\)),
+and the probability of observing the number of individuals lost on
+capture (\(L_3\)).
+
+The probability of observing \(n_\text{obs}\) capture histories is given
+by a binomial distribution conditional on the super-population size. \[
+L_1^A=[n_{\text{obs}}|N] \sim \text{Binomial} (N, 1-P_0) \text{, where}
+\] \[
+P_0\text{ is the probability of never being seen, given by } P_0=\sum_{j=0}^{k-1} b_j (1-p) \chi_{(0,j+1,0)}. 
+\]
+
+The probability of observing each unique tag history \(\omega_i\) is
+modeled by a multinomial conditional upon being observed at least once.
+\[
+L_1^B=[n_{\omega_i}|n_{obs}] \sim \text{Multinomial} (n_{obs}, \pi_{\omega_i}) \text{, where} 
+\] \[
+\pi_{\omega_i}= P_{\omega_i}/(1-P_0) \text{ and}
+\] \[
+P(\omega_i)=\psi_{f_i} T_d \left\{ \prod_{j=f_i}^{l_i} p^{w*_{ij}} (1-p)^{(1-w*_{ij})} \right\} \left\{ \phi^{l_i-1-f_i} \right\} \times \prod_{d=1}^{2} \left\{ \left( \lambda^{l_{id}-1-f_i} \right) \left(1- \lambda^{q_{id}-1-l_{id}} \right)^{I(l_{id} \neq l_i)} \right\} \times \chi_{f_i, l_i, nt_{l_i}}
+\]
+
+The third component \(L_3\) models the number of losses on capture as a
+binomial. In this study we assume there is no possibility of loss on
+capture, this third component of the likelihood simplifies to 1. 
+
 
 The complete likelihood for the Jolly-Seber tag loss model assuming no
 possibility of loss of capture and assuming homogeneous survival,
