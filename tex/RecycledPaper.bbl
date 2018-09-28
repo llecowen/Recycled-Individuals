@@ -14,11 +14,31 @@ Arnason, A. and Mills, K.~H. (1981).
 \newblock {\em Canadian Journal of Fisheries and Aquatic Science} {\bf 38,}
   1077--1095.
 
+\bibitem[\protect\citeauthoryear{Bjorndal, Bolten, Lagueux, and
+  Chaves}{Bjorndal et~al.}{1996}]{Bjorndal:1996}
+Bjorndal, K., Bolten, A.~B., Lagueux, C.~J., and Chaves, A. (1996).
+\newblock Probability of tag loss in green turtles nesting at tortuguero, costa
+  rica.
+\newblock {\em Journal of Herpetology} {\bf 30,} 566--571.
+
+\bibitem[\protect\citeauthoryear{Björnsson, Karlsson, Thorsteinsson, and
+  Solmundsson}{Björnsson et~al.}{2011}]{Bjornsson:2011}
+Björnsson, B., Karlsson, H., Thorsteinsson, V., and Solmundsson, J. (2011).
+\newblock Should all fish in mark–recapture experiments be double-tagged?
+  lessons learned from tagging coastal cod (gadus morhua).
+\newblock {\em ICES Journal of Marine Science} {\bf 68,} 603--610.
+
 \bibitem[\protect\citeauthoryear{Cowen and Schwarz}{Cowen and
   Schwarz}{2006}]{Cowen:2006}
 Cowen, L. and Schwarz, C.~J. (2006).
 \newblock The jolly-seber model with tag loss.
 \newblock {\em Biometrics} {\bf 62,} 699--705.
+
+\bibitem[\protect\citeauthoryear{Diefenbach and Alt}{Diefenbach and
+  Alt}{1998}]{Diefenbach:1998}
+Diefenbach, D.~R. and Alt, G.~L. (1998).
+\newblock Modeling and evaluation of ear tag loss in black bears.
+\newblock {\em The Journal of Wildlife Management} {\bf 62,} 1292--1300.
 
 \bibitem[\protect\citeauthoryear{Fogarty, Borden, and Russell}{Fogarty
   et~al.}{1980}]{Fogarty:1980}
@@ -41,6 +61,13 @@ McMahon, C.~R., Burton, H., van~den Hoff, J., Woods, R., and Bradshaw, C. J.~A.
   elephant seals.
 \newblock {\em Journal of Wildlife Management} {\bf 70,} 1484--1489.
 
+\bibitem[\protect\citeauthoryear{Pistorius, Bester, Kirkman, and
+  Boveng}{Pistorius et~al.}{2000}]{Pistorius:2000}
+Pistorius, P.~A., Bester, M.~N., Kirkman, S.~P., and Boveng, P.~L. (2000).
+\newblock Evaluation of age- and sex-dependent rates of tag loss in southern
+  elephant seals.
+\newblock {\em The Journal of Wildlife Management} {\bf 64,} 373--380.
+
 \bibitem[\protect\citeauthoryear{Pollock, Nichols, Brownie, and Hines}{Pollock
   et~al.}{1990}]{Pollock:1990}
 Pollock, K.~H., Nichols, J.~D., Brownie, C., and Hines, J.~E. (1990).
@@ -62,5 +89,11 @@ Seber, G. A.~F. (1965).
 Seber, G. A.~F. and Felton, R. (1965).
 \newblock Tag loss and the peterson mark-recapture experiment.
 \newblock {\em Biometrika} {\bf 68,} 211--219.
+
+\bibitem[\protect\citeauthoryear{Xu, Cowen, and Gardner}{Xu
+  et~al.}{2014}]{Xu:2014}
+Xu, Y., Cowen, L. L.~E., and Gardner, C. (2014).
+\newblock Group heterogeneity in the jolly-seber-tag-loss model.
+\newblock {\em Statistical Methodology} {\bf 17,} 3--16.
 
 \end{thebibliography}

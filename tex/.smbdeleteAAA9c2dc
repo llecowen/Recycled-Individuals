@@ -21,7 +21,7 @@ annote = {Adjusted estimates}
 
 
 @article{Bjorndal:1996,
-author = {Bjorndal, K.A., and Bolten, A. B., and Lagueux, C. J., and Chaves, A.},
+author = {Björndal, K.A., and Bolten, A. B., and Lagueux, C. J., and Chaves, A.},
 title = {Probability of tag loss in green turtles nesting at Tortuguero, Costa Rica.},
 journal = {Journal of Herpetology},
 year = {1996},
@@ -112,23 +112,6 @@ annote = {General N-mixture}
    year = {2009},
    EDITOR={Alspach, B., and Fallat, S.}  
 }
-
-
-@article{Diefenbach:1998,
- ISSN = {0022541X, 19372817},
- URL = {http://www.jstor.org/stable/3801993},
- abstract = {Demographic models that use marked animals to estimate survival rates and population size assume no tag loss occurs, otherwise estimates are biased. Most studies of tag loss have assumed loss of 1 tag was independent of loss of the other, as did a prior study of ear tag loss in Pennsylvania black bears (Ursus americanus). We used permanently marked (tattooed) black bears to model ear tag loss rates so we could identify bears recovered missing both ear tags, and thus test the independence assumption. We found ear tag loss in male bears increased with time between tagging and recovery. Also, for males, the probability of losing a second ear tag was greater if it had already lost an ear tag. For a tagging-recovery interval of 0.5-<1 year, we estimated 3% of males lost both ear tags (95% CI = 2-4%); however, for an interval of 4.5-<5.5 years, we estimated 56% lost both ear tags (95% CI = 42-75%). We selected the same type of model for females, but ear tag loss rates were much lower. We estimated 2% of females lost both ear tags for tagging-recovery intervals of 0.5-<1 year (95% CI = 1-4%), and 5% of females lost both ear tags for intervals of 4-<5 years (95% CI = 1-18%). Comparison of survival estimates with and without a correction for ear tag loss suggests uncorrected annual survival estimates may be biased -6% for males and -1% for females. Black bears are a long-lived species with high loss rates of ear tags for males. Estimates of survival rates or population size that use mark-recapture type models should either incorporate ear tag loss in the model, especially for males, or use data from short time intervals (≤1 yr) to minimize bias from ear tag loss. In addition to ear tagging to identify individuals for mark-recapture studies, we recommend researchers tattoo bears on both inner sides of the upper lip.},
- author = {Duane R. Diefenbach and Gary L. Alt},
- journal = {The Journal of Wildlife Management},
- number = {4},
- pages = {1292--1300},
- publisher = {[Wiley, Wildlife Society]},
- title = {Modeling and Evaluation of Ear Tag Loss in Black Bears},
- volume = {62},
- year = {1998}
-}
-
-
 
 @article{Fogarty:1980,
 author = {Fogarty, M. J., and Borden, D. V. D., and Russell, H. J.},
@@ -508,7 +491,7 @@ annote = {}
    PAGES   = {1449--1455}
 }
 
-@article{Xu:2014,
+@article{Xu: 2014,
 author = {Xu, Y., and Cowen, L. L. E. and Gardner, C.},
 title = {Group heterogeneity in the
 Jolly-Seber-tag-loss model},
