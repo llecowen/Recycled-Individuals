@@ -131,12 +131,12 @@ rates \citep{Pollock:1990}. An important assumption of this model is that
 individuals never lose their tags. However, when this assumption is
 violated, serious bias can occur in the parameter and variance estimates
 \citep{Arnason:1981}. Double-tagging, the placement of two tags on
-an individual, can be used to estimate tag retention rates. Double tagging studies have been used for a wide variety of species (for example cod: \citealt{Bjornsson:2011}, lobsters: \citealt{Xu:2014}:, sea turtles: \citealt{Bjorndal:1996}, elephant seals: \citealt{Pistorius:2000}, black bears: \citealt{Diefenbach:1998})   to investigate tag loss and tag shedding rates.  Often a
+an individual, can be used to estimate tag retention rates. Double tagging studies have been used for a wide variety of species (for example cod: \citealt{Bjornsson:2011}, lobsters: \citealt{Xu:2014}:, sea turtles: \citealt{Bjorndal:1996}, elephant seals: \citealt{Pistorius:2000}, black bears: \citealt{Diefenbach:1998})   to investigate probabilities of tag loss or tag shedding rates.  Often a
 mixture of single- and double-tagged individuals is used for practical
 purposes. \cite{Cowen:2006} incorporated tag-loss by developing
 the Jolly-Seber tag-loss (JSTL) model for experiments where some
 fraction of individuals are double tagged. This model was further
-extended to account for heterogeneity in capture between groups \cite{Xu:2014}. In the simplest form of the JSTL model, it is assumed that
+extended to account for heterogeneity in capture between groups \citep{Xu:2014}. In the simplest form of the JSTL model, it is assumed that
 every individual present in the population at sampling occasion \(k\)
 has capture probability, survival probability and tag retention
 probability that are homogeneous for all individuals in the population
@@ -246,6 +246,8 @@ probability parameters were varied in a \(3^3\) experimental design with
 low (\(0.2\)), medium (\(0.5\)) and high (\(0.9\)) values for each
 parameters. The entry rates were fixed to be $1/k$ at each of the
 sampling times. No individuals were lost on capture.
+
+Tag retention rates were motivated by real world examples.  These rates can vary by species, age of the tag, tag type, tag location, behaviour, and season.  For example, tag retention rates have ranged from 13\% \cite{Fogarty:1980} to 95\% \citep{Gonzalez:2012} in lobsters.  Other studies report tag retention rates of 65\% male elephant seals \citep{Pistorius:2000} and 88\% in Adelie penguins \citep{Ainley:1980}.  Mean retention of visible implant tags has been recorded as 32\% in small rockpool fish \citep{Griffiths:2002}. Turtles in particular experience high tag loss rates.  For example \cite{Bellini:2001} reports the probability of tag loss in hawksbill turtles as 0.57 and    \cite{Bjorndal:1996} observed the probability of tag loss  in green nesting turtles to be as high as 0.38.   Thus, we chose a wide range of tag loss parameter values to try to capture the diversity among published tag loss rates.
 
 \subsubsection{Simulation of Data}\label{simulation-of-data}
 

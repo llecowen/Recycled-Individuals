@@ -3,7 +3,7 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: RecycledPaper.aux
 The style file: biom.bst
 Database file #1: myrefs.bib
-I was expecting a `,' or a `}'---line 448 of file myrefs.bib
+I was expecting a `,' or a `}'---line 481 of file myrefs.bib
  : @article{Schwarz: 
  :                   1996,
 I'm skipping whatever remains of this entry
@@ -69,6 +69,20 @@ Name 1 in "Fogarty, M. J., and Borden, D. V. D., and Russell, H. J." has a comma
 while executing---line 3079 of file biom.bst
 Name 2 in "Fogarty, M. J., and Borden, D. V. D., and Russell, H. J." has a comma at the end for entry Fogarty:1980
 while executing---line 3079 of file biom.bst
+Name 1 in "Gonzalez-Vicente, L., and Diaz, D., and Mallol, S., and Goni, R." has a comma at the end for entry Gonzalez:2012
+while executing---line 3079 of file biom.bst
+Name 1 in "Gonzalez-Vicente, L., and Diaz, D., and Mallol, S., and Goni, R." has a comma at the end for entry Gonzalez:2012
+while executing---line 3079 of file biom.bst
+Name 2 in "Gonzalez-Vicente, L., and Diaz, D., and Mallol, S., and Goni, R." has a comma at the end for entry Gonzalez:2012
+while executing---line 3079 of file biom.bst
+Name 3 in "Gonzalez-Vicente, L., and Diaz, D., and Mallol, S., and Goni, R." has a comma at the end for entry Gonzalez:2012
+while executing---line 3079 of file biom.bst
+Name 1 in "Gonzalez-Vicente, L., and Diaz, D., and Mallol, S., and Goni, R." has a comma at the end for entry Gonzalez:2012
+while executing---line 3079 of file biom.bst
+Name 2 in "Gonzalez-Vicente, L., and Diaz, D., and Mallol, S., and Goni, R." has a comma at the end for entry Gonzalez:2012
+while executing---line 3079 of file biom.bst
+Name 3 in "Gonzalez-Vicente, L., and Diaz, D., and Mallol, S., and Goni, R." has a comma at the end for entry Gonzalez:2012
+while executing---line 3079 of file biom.bst
 Name 1 in "Ainley, D. G., and DeMaster, D. P." has a comma at the end for entry Ainley:1980
 while executing---line 3079 of file biom.bst
 Name 1 in "Ainley, D. G., and DeMaster, D. P." has a comma at the end for entry Ainley:1980
@@ -109,6 +123,12 @@ Name 1 in "Fogarty, M. J., and Borden, D. V. D., and Russell, H. J." has a comma
 while executing---line 3295 of file biom.bst
 Name 2 in "Fogarty, M. J., and Borden, D. V. D., and Russell, H. J." has a comma at the end for entry Fogarty:1980
 while executing---line 3295 of file biom.bst
+Name 1 in "Gonzalez-Vicente, L., and Diaz, D., and Mallol, S., and Goni, R." has a comma at the end for entry Gonzalez:2012
+while executing---line 3295 of file biom.bst
+Name 2 in "Gonzalez-Vicente, L., and Diaz, D., and Mallol, S., and Goni, R." has a comma at the end for entry Gonzalez:2012
+while executing---line 3295 of file biom.bst
+Name 3 in "Gonzalez-Vicente, L., and Diaz, D., and Mallol, S., and Goni, R." has a comma at the end for entry Gonzalez:2012
+while executing---line 3295 of file biom.bst
 Name 1 in "McMahon, C. R., and Burton, H.R., and van den Hoff, J., and Woods, R., and Bradshaw, C. J. A." has a comma at the end for entry McMahon:2009
 while executing---line 3295 of file biom.bst
 Name 2 in "McMahon, C. R., and Burton, H.R., and van den Hoff, J., and Woods, R., and Bradshaw, C. J. A." has a comma at the end for entry McMahon:2009
@@ -127,45 +147,45 @@ Name 1 in "Seber, G. A. F., and Felton, R." has a comma at the end for entry Seb
 while executing---line 3295 of file biom.bst
 Name 1 in "Xu, Y., and Cowen, L. L. E. and Gardner, C." has a comma at the end for entry Xu:2014
 while executing---line 3295 of file biom.bst
-You've used 15 entries,
+You've used 18 entries,
             2146 wiz_defined-function locations,
-            623 strings with 6606 characters,
-and the built_in function-call counts, 6925 in all, are:
-= -- 648
-> -- 374
-< -- 8
-+ -- 124
-- -- 120
-* -- 673
-:= -- 1218
-add.period$ -- 45
-call.type$ -- 15
-change.case$ -- 114
-chr.to.int$ -- 15
-cite$ -- 15
-duplicate$ -- 223
-empty$ -- 427
-format.name$ -- 145
-if$ -- 1296
+            643 strings with 7186 characters,
+and the built_in function-call counts, 8291 in all, are:
+= -- 778
+> -- 448
+< -- 9
++ -- 148
+- -- 144
+* -- 807
+:= -- 1460
+add.period$ -- 54
+call.type$ -- 18
+change.case$ -- 137
+chr.to.int$ -- 18
+cite$ -- 18
+duplicate$ -- 268
+empty$ -- 510
+format.name$ -- 172
+if$ -- 1548
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 14
-newline$ -- 78
-num.names$ -- 60
-pop$ -- 79
+missing$ -- 17
+newline$ -- 93
+num.names$ -- 72
+pop$ -- 95
 preamble$ -- 1
-purify$ -- 115
+purify$ -- 138
 quote$ -- 0
-skip$ -- 148
+skip$ -- 176
 stack$ -- 0
-substring$ -- 510
-swap$ -- 105
+substring$ -- 609
+swap$ -- 126
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 90
+type$ -- 108
 warning$ -- 0
-while$ -- 67
+while$ -- 82
 width$ -- 0
-write$ -- 197
-(There were 61 error messages)
+write$ -- 236
+(There were 71 error messages)
