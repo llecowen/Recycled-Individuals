@@ -3,7 +3,7 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: RecycledPaper.aux
 The style file: biom.bst
 Database file #1: myrefs.bib
-I was expecting a `,' or a `}'---line 481 of file myrefs.bib
+I was expecting a `,' or a `}'---line 525 of file myrefs.bib
  : @article{Schwarz: 
  :                   1996,
 I'm skipping whatever remains of this entry
@@ -107,6 +107,42 @@ Name 3 in "McMahon, C. R., and Burton, H.R., and van den Hoff, J., and Woods, R.
 while executing---line 3079 of file biom.bst
 Name 4 in "McMahon, C. R., and Burton, H.R., and van den Hoff, J., and Woods, R., and Bradshaw, C. J. A." has a comma at the end for entry McMahon:2009
 while executing---line 3079 of file biom.bst
+Name 1 in "Yoshizaki, J., and Brownie, C. and Pollock, K. H. and Link, W. A." has a comma at the end for entry Yoshizaki:2011
+while executing---line 3079 of file biom.bst
+Name 1 in "Yoshizaki, J., and Brownie, C. and Pollock, K. H. and Link, W. A." has a comma at the end for entry Yoshizaki:2011
+while executing---line 3079 of file biom.bst
+Name 1 in "Yoshizaki, J., and Brownie, C. and Pollock, K. H. and Link, W. A." has a comma at the end for entry Yoshizaki:2011
+while executing---line 3079 of file biom.bst
+Name 1 in "Bonner, S. J., and Holmberg, J." has a comma at the end for entry Bonner:2013
+while executing---line 3079 of file biom.bst
+Name 1 in "Bonner, S. J., and Holmberg, J." has a comma at the end for entry Bonner:2013
+while executing---line 3079 of file biom.bst
+Name 1 in "Bonner, S. J., and Holmberg, J." has a comma at the end for entry Bonner:2013
+while executing---line 3079 of file biom.bst
+Name 1 in "McClintock, B. T., and Conn, P. B., and Alonso, R. S., and Crooks, K. R." has a comma at the end for entry McClintock:2013
+while executing---line 3079 of file biom.bst
+Name 1 in "McClintock, B. T., and Conn, P. B., and Alonso, R. S., and Crooks, K. R." has a comma at the end for entry McClintock:2013
+while executing---line 3079 of file biom.bst
+Name 2 in "McClintock, B. T., and Conn, P. B., and Alonso, R. S., and Crooks, K. R." has a comma at the end for entry McClintock:2013
+while executing---line 3079 of file biom.bst
+Name 3 in "McClintock, B. T., and Conn, P. B., and Alonso, R. S., and Crooks, K. R." has a comma at the end for entry McClintock:2013
+while executing---line 3079 of file biom.bst
+Name 1 in "McClintock, B. T., and Conn, P. B., and Alonso, R. S., and Crooks, K. R." has a comma at the end for entry McClintock:2013
+while executing---line 3079 of file biom.bst
+Name 2 in "McClintock, B. T., and Conn, P. B., and Alonso, R. S., and Crooks, K. R." has a comma at the end for entry McClintock:2013
+while executing---line 3079 of file biom.bst
+Name 3 in "McClintock, B. T., and Conn, P. B., and Alonso, R. S., and Crooks, K. R." has a comma at the end for entry McClintock:2013
+while executing---line 3079 of file biom.bst
+Name 1 in "McClintock, B. T., and Bailey, L. L., and Dreher, B. P. and Link, W. A." has a comma at the end for entry Mcclintock:2014
+while executing---line 3079 of file biom.bst
+Name 1 in "McClintock, B. T., and Bailey, L. L., and Dreher, B. P. and Link, W. A." has a comma at the end for entry Mcclintock:2014
+while executing---line 3079 of file biom.bst
+Name 2 in "McClintock, B. T., and Bailey, L. L., and Dreher, B. P. and Link, W. A." has a comma at the end for entry Mcclintock:2014
+while executing---line 3079 of file biom.bst
+Name 1 in "McClintock, B. T., and Bailey, L. L., and Dreher, B. P. and Link, W. A." has a comma at the end for entry Mcclintock:2014
+while executing---line 3079 of file biom.bst
+Name 2 in "McClintock, B. T., and Bailey, L. L., and Dreher, B. P. and Link, W. A." has a comma at the end for entry Mcclintock:2014
+while executing---line 3079 of file biom.bst
 Name 1 in "Ainley, D. G., and DeMaster, D. P." has a comma at the end for entry Ainley:1980
 while executing---line 3295 of file biom.bst
 Name 1 in "Arnason, A.N., and Mills, K. H." has a comma at the end for entry Arnason:1981
@@ -116,6 +152,8 @@ while executing---line 3295 of file biom.bst
 Name 2 in "Bjorndal, K.A., and Bolten, A. B., and Lagueux, C. J., and Chaves, A." has a comma at the end for entry Bjorndal:1996
 while executing---line 3295 of file biom.bst
 Name 3 in "Bjorndal, K.A., and Bolten, A. B., and Lagueux, C. J., and Chaves, A." has a comma at the end for entry Bjorndal:1996
+while executing---line 3295 of file biom.bst
+Name 1 in "Bonner, S. J., and Holmberg, J." has a comma at the end for entry Bonner:2013
 while executing---line 3295 of file biom.bst
 Name 1 in "Cowen, L., and Schwarz, C. J." has a comma at the end for entry Cowen:2006
 while executing---line 3295 of file biom.bst
@@ -128,6 +166,16 @@ while executing---line 3295 of file biom.bst
 Name 2 in "Gonzalez-Vicente, L., and Diaz, D., and Mallol, S., and Goni, R." has a comma at the end for entry Gonzalez:2012
 while executing---line 3295 of file biom.bst
 Name 3 in "Gonzalez-Vicente, L., and Diaz, D., and Mallol, S., and Goni, R." has a comma at the end for entry Gonzalez:2012
+while executing---line 3295 of file biom.bst
+Name 1 in "McClintock, B. T., and Bailey, L. L., and Dreher, B. P. and Link, W. A." has a comma at the end for entry Mcclintock:2014
+while executing---line 3295 of file biom.bst
+Name 2 in "McClintock, B. T., and Bailey, L. L., and Dreher, B. P. and Link, W. A." has a comma at the end for entry Mcclintock:2014
+while executing---line 3295 of file biom.bst
+Name 1 in "McClintock, B. T., and Conn, P. B., and Alonso, R. S., and Crooks, K. R." has a comma at the end for entry McClintock:2013
+while executing---line 3295 of file biom.bst
+Name 2 in "McClintock, B. T., and Conn, P. B., and Alonso, R. S., and Crooks, K. R." has a comma at the end for entry McClintock:2013
+while executing---line 3295 of file biom.bst
+Name 3 in "McClintock, B. T., and Conn, P. B., and Alonso, R. S., and Crooks, K. R." has a comma at the end for entry McClintock:2013
 while executing---line 3295 of file biom.bst
 Name 1 in "McMahon, C. R., and Burton, H.R., and van den Hoff, J., and Woods, R., and Bradshaw, C. J. A." has a comma at the end for entry McMahon:2009
 while executing---line 3295 of file biom.bst
@@ -147,45 +195,47 @@ Name 1 in "Seber, G. A. F., and Felton, R." has a comma at the end for entry Seb
 while executing---line 3295 of file biom.bst
 Name 1 in "Xu, Y., and Cowen, L. L. E. and Gardner, C." has a comma at the end for entry Xu:2014
 while executing---line 3295 of file biom.bst
-You've used 18 entries,
+Name 1 in "Yoshizaki, J., and Brownie, C. and Pollock, K. H. and Link, W. A." has a comma at the end for entry Yoshizaki:2011
+while executing---line 3295 of file biom.bst
+You've used 24 entries,
             2146 wiz_defined-function locations,
-            643 strings with 7186 characters,
-and the built_in function-call counts, 8291 in all, are:
-= -- 778
-> -- 448
-< -- 9
-+ -- 148
-- -- 144
-* -- 807
-:= -- 1460
-add.period$ -- 54
-call.type$ -- 18
-change.case$ -- 137
-chr.to.int$ -- 18
-cite$ -- 18
-duplicate$ -- 268
-empty$ -- 510
-format.name$ -- 172
-if$ -- 1548
+            685 strings with 8390 characters,
+and the built_in function-call counts, 11309 in all, are:
+= -- 1059
+> -- 632
+< -- 11
++ -- 208
+- -- 204
+* -- 1112
+:= -- 1989
+add.period$ -- 72
+call.type$ -- 24
+change.case$ -- 187
+chr.to.int$ -- 24
+cite$ -- 24
+duplicate$ -- 358
+empty$ -- 686
+format.name$ -- 242
+if$ -- 2110
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 17
-newline$ -- 93
-num.names$ -- 72
-pop$ -- 95
+missing$ -- 23
+newline$ -- 123
+num.names$ -- 96
+pop$ -- 131
 preamble$ -- 1
-purify$ -- 138
+purify$ -- 188
 quote$ -- 0
-skip$ -- 176
+skip$ -- 234
 stack$ -- 0
-substring$ -- 609
-swap$ -- 126
+substring$ -- 833
+swap$ -- 168
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
+type$ -- 144
 warning$ -- 0
-while$ -- 82
+while$ -- 111
 width$ -- 0
-write$ -- 236
-(There were 71 error messages)
+write$ -- 314
+(There were 96 error messages)

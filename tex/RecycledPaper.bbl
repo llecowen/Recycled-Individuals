@@ -35,6 +35,12 @@ Björnsson, B., Karlsson, H., Thorsteinsson, V., and Solmundsson, J. (2011).
   lessons learned from tagging coastal cod (gadus morhua).
 \newblock {\em ICES Journal of Marine Science} {\bf 68,} 603--610.
 
+\bibitem[\protect\citeauthoryear{Bonner and Holmberg}{Bonner and
+  Holmberg}{2013}]{Bonner:2013}
+Bonner, S.~J. and Holmberg, J. (2013).
+\newblock {Mark-recapture with multiple, non-invasive marks.}
+\newblock {\em Biometrics} {\bf 69,} 766--775.
+
 \bibitem[\protect\citeauthoryear{Cowen and Schwarz}{Cowen and
   Schwarz}{2006}]{Cowen:2006}
 Cowen, L. and Schwarz, C.~J. (2006).
@@ -73,6 +79,27 @@ Jolly, G.~M. (1965).
   immigration-- stochastic model.
 \newblock {\em Biometrika} {\bf 52,} 225--247.
 
+\bibitem[\protect\citeauthoryear{Link, Yoshizaki, Bailey, and Pollock}{Link
+  et~al.}{2010}]{Link:2010}
+Link, W.~A., Yoshizaki, J., Bailey, L.~L., and Pollock, K.~H. (2010).
+\newblock {Uncovering a latent multinomial: Analysis of mark-recapture data
+  with misidentification.}
+\newblock {\em Biometrics} {\bf 66,} 178--185.
+
+\bibitem[\protect\citeauthoryear{McClintock, Bailey, Dreher, and
+  Link}{McClintock et~al.}{2014}]{Mcclintock:2014}
+McClintock, B.~T., Bailey, L.~L., Dreher, B.~P., and Link, W.~A. (2014).
+\newblock {Probit models for capture-recapture data subject to imperfect
+  detection, individual heterogeneity and misidentification.}
+\newblock {\em The Annals of Applied Statistics} {\bf 8,} 2461--2484.
+
+\bibitem[\protect\citeauthoryear{McClintock, Conn, Alonso, and
+  Crooks}{McClintock et~al.}{2013}]{McClintock:2013}
+McClintock, B.~T., Conn, P.~B., Alonso, R.~S., and Crooks, K.~R. (2013).
+\newblock {Integrated modeling of bilateral photo-identification data in
+  mark-recapture analyses.}
+\newblock {\em Ecology} {\bf 94,} 1464--1471.
+
 \bibitem[\protect\citeauthoryear{McMahon, Burton, van~den Hoff, Woods, and
   Bradshaw}{McMahon et~al.}{2009}]{McMahon:2009}
 McMahon, C.~R., Burton, H., van~den Hoff, J., Woods, R., and Bradshaw, C. J.~A.
@@ -99,6 +126,14 @@ Pollock, K.~H., Nichols, J.~D., Brownie, C., and Hines, J.~E. (1990).
 \newblock {\em R: A Language and Environment for Statistical Computing}.
 \newblock R Foundation for Statistical Computing, Vienna, Austria.
 
+\bibitem[\protect\citeauthoryear{Schwarz and Stobo}{Schwarz and
+  Stobo}{1999}]{Schwarz:1999}
+Schwarz, C.~J. and Stobo, W.~T. (1999).
+\newblock Estimation and effects of tag misread rates in capture-recapture
+  studies.
+\newblock {\em Canadian Journal of Fisheries and Aquatic Sciences} {\bf 56,}
+  551--559.
+
 \bibitem[\protect\citeauthoryear{Seber}{Seber}{1965}]{Seber:1965}
 Seber, G. A.~F. (1965).
 \newblock A note on the multiple recapture census.
@@ -115,5 +150,12 @@ Seber, G. A.~F. and Felton, R. (1965).
 Xu, Y., Cowen, L. L.~E., and Gardner, C. (2014).
 \newblock Group heterogeneity in the jolly-seber-tag-loss model.
 \newblock {\em Statistical Methodology} {\bf 17,} 3--16.
+
+\bibitem[\protect\citeauthoryear{Yoshizaki, Brownie, Pollock, and
+  Link}{Yoshizaki et~al.}{2011}]{Yoshizaki:2011}
+Yoshizaki, J., Brownie, C., Pollock, K.~H., and Link, W.~A. (2011).
+\newblock Modling misidentification errors that result from use of genetic tags
+  in capture-recapture studies.
+\newblock {\em Environmental and Ecological Statistics} {\bf 18,} 27--55.
 
 \end{thebibliography}
