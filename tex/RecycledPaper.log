@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 OCT 2018 14:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 OCT 2018 14:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1086,11 +1086,11 @@ Package rerunfilecheck Info: File `RecycledPaper.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 627.
  ) 
 Here is how much of TeX's memory you used:
- 12950 strings out of 492995
- 187707 string characters out of 6132704
+ 12952 strings out of 492995
+ 187729 string characters out of 6132704
  291897 words of memory out of 5000000
  16108 multiletter control sequences out of 15000+600000
- 76645 words of font info for 142 fonts, out of 8000000 for 9000
+ 76775 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,10n,38p,1111b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
@@ -1112,7 +1112,7 @@ mf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2017/texmf-dist/fo
 nts/type1/public/lm/lmro10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/
 lmsy7.pfb>
-Output written on RecycledPaper.pdf (11 pages, 375761 bytes).
+Output written on RecycledPaper.pdf (11 pages, 374119 bytes).
 PDF statistics:
  318 PDF objects out of 1000 (max. 8388607)
  279 compressed objects within 3 object streams

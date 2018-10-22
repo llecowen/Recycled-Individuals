@@ -199,12 +199,12 @@ Name 1 in "Yoshizaki, J., and Brownie, C. and Pollock, K. H. and Link, W. A." ha
 while executing---line 3295 of file biom.bst
 You've used 24 entries,
             2146 wiz_defined-function locations,
-            685 strings with 8390 characters,
-and the built_in function-call counts, 11309 in all, are:
+            685 strings with 8420 characters,
+and the built_in function-call counts, 11305 in all, are:
 = -- 1059
 > -- 632
 < -- 11
-+ -- 208
++ -- 206
 - -- 204
 * -- 1112
 := -- 1989
@@ -228,7 +228,7 @@ purify$ -- 188
 quote$ -- 0
 skip$ -- 234
 stack$ -- 0
-substring$ -- 833
+substring$ -- 831
 swap$ -- 168
 text.length$ -- 0
 text.prefix$ -- 0
