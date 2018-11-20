@@ -113,7 +113,7 @@ framework using long-term census data of elephant seals where we found populatio
 \end{quote}
 
 \begin{quote}
-\begin{center} \textsc{Key words:} Complete tag loss; Double-tagging; Elephant seal; Jolly-Seber; Mark-recapture;   Recycled individuals. 
+\begin{center} \textsc{Key words:} Capture-mark-recapture; Complete tag loss; Demography; Double-tagging; Elephant seal; Jolly-Seber;   Recycled individuals. 
 \end{center}
 \end{quote}
 
@@ -122,7 +122,7 @@ framework using long-term census data of elephant seals where we found populatio
 Mark-recapture studies utilize statistical techniques to estimate
 population parameters. Over \(k\) sampling
 periods, individuals are captured, tagged with unique tags, released and potentially
-recaptured at later sample times. The Jolly-Seber (JS) model \citep{Jolly:1965, Seber:1965}
+recaptured at subsequent sampling times. The Jolly-Seber (JS) model \citep{Jolly:1965, Seber:1965}
  is used to model open populations since it
 can estimate parameters of interest such as population size and survival
 rates \citep{Pollock:1990}. An important assumption of this model is that 
@@ -138,7 +138,7 @@ extended to account for heterogeneity in capture between groups \citep{Xu:2014}.
 every individual present in the population at sampling occasion \(k\)
 has capture, survival, and tag retention
 probabilities that are homogeneous for all individuals in the population
-across all sampling occasions.
+across all sampling occasions.  However, these assumptions are rarely met and can induce significant bias in the parameter estimates \citep{Schwarz:2012}.
 
 Occasionally in mark-recapture experiments, previously captured
 individuals lose all of their tags (complete tag loss). These
@@ -160,13 +160,13 @@ probabilities are high it is suspected that recycled individuals will
 bias population size estimates upwards. The motivation for this study
 was to investigate the effect of recycled individuals on parameter
 estimates in the JSTL model through a simulation study and determine
-under which conditions researchers need to be concerned.
+under which conditions researchers need to be concerned.  This study is important as the assumption that the effect is negligible has not been fully tested and quantified, and most studies that rely on marking individuals typically experience tag loss. Thus, there is a need to account for recycled individuals given the desire for accurate and robust estimates for management and conservation purposes.
 
 In order to determine whether the simulation framework provided a
 reasonable approximation to the real world, we analyzed the effects of
-recycled individuals in long-term census data of elephant seals. For
+recycled individuals in long-term census data of elephant seals (\textit{Mirounga leonina}). For
 this particular population, seals could be identified even if they lost
-both tags given that they had a permanent brand.
+both tags given that they had a permanent brand \citep{McMahonWhite:2009}.
 
 \section{Methods}\label{methods}
 
@@ -212,8 +212,7 @@ follows:
 
 \subsubsection{Likelihood and
 Estimation}\label{likelihood-and-estimation}
-
-The JSTL model likelihood can be divided into three parts: 1) a model for the observed number of unique tag histories given the superpopulation size ($L_1^A$), 2) a model for the recaptures given the observed number of unique tag histories ($L_1^B$), and 3) a model for the number of individuals lost on capture ($L_3$).  The third component $L_3$, is typically used for harvest or fisheries data when known deaths occur.  In this study and in the elephant seal application, we assume there is no possibility of loss on capture, thus the third component of the likelihood simplifies to 1. The
+The JSTL model is developed under the idea of a superpopulation (the number of individuals that will enter population at some point during the study) \citep{Schwarz:1996} and this allows the likelihood to be formulated into three parts: 1) a model for the observed number of unique tag histories given the superpopulation size ($L_1^A$), 2) a model for the recaptures given the observed number of unique tag histories ($L_1^B$), and 3) a model for the number of individuals lost on capture ($L_3$).  The third component $L_3$, is typically used for harvest or fisheries data when known deaths occur.  In this study and in the elephant seal application, we assume there is no possibility of loss on capture, thus the third component of the likelihood simplifies to 1. The
 full likelihood is given by the product of the components of the
 likelihood (\(L=L_1^A \times L_1^B\)) and can be found in the Online Supplement.
 
@@ -242,7 +241,7 @@ low (\(0.2\)), medium (\(0.5\)) and high (\(0.9\)) values for each
 parameters. The entry rates were fixed to be $1/k$ at each of the
 sampling times. No individuals were lost on capture.
 
-We considered the set of parameter values to be reasonable values that might be encountered in practice and also produce informative capture-recapture scenarios.  Tag retention rates can vary by species, age of the tag, tag type, tag location, behaviour, and season.  For example, tag retention rates have ranged from 13\% \citep{Fogarty:1980} to 95\% \citep{Gonzalez:2012} in lobsters.  Other studies report tag retention rates of 65\% male elephant seals \citep{Pistorius:2000} and 88\% in Adelie penguins \citep{Ainley:1980}.  Mean retention of visible implant tags has been recorded as 32\% in small rockpool fish \citep{Griffiths:2002}. Turtles in particular experience high tag loss rates.  For example \cite{Bellini:2001} reports the probability of tag loss in hawksbill turtles as 0.57 and    \cite{Bjorndal:1996} observed the probability of tag loss  in green nesting turtles to be as high as 0.38.   Thus, we chose a wide range of tag loss parameter values to try to capture the diversity among published tag loss rates.
+We considered the set of parameter values to be reasonable values that might be encountered in practice and also produce informative capture-recapture scenarios.  Tag retention rates can vary by species, age of the tag, tag type, tag location, behaviour, season, and individual quality (size of an animal for example in seals).  For example, tag retention rates have ranged from 13\% \citep{Fogarty:1980} to 95\% \citep{Gonzalez:2012} in lobsters.  Other studies report tag retention rates of 65\% male elephant seals \citep{Pistorius:2000} and 88\% in Adelie penguins \citep{Ainley:1980}.  Mean retention of visible implant tags has been recorded as 32\% in small rockpool fish \citep{Griffiths:2002}. Turtles in particular experience high tag loss rates.  For example \cite{Bellini:2001} reports the probability of tag loss in hawksbill turtles as 0.57 and    \cite{Bjorndal:1996} observed the probability of tag loss  in green nesting turtles to be as high as 0.38.   Thus, we chose a wide range of tag loss parameter values to try to capture the diversity among published tag loss rates.
 
 \subsubsection{Simulation of Data}\label{simulation-of-data}
 
@@ -486,7 +485,7 @@ Seals}\label{case-study-elephant-seals-1}
 To validate the simulation framework, we analyzed data from a long-term mark-recapture study of elephant seals on Macquarie Island. The data
 used for the case study consists of 7 years between 1993 and 2000.
 Elephant seal pups were marked with two tags in the inter-digital
-webbing of their hind flippers and were given a permanent hot-seal
+webbing of their hind flippers and were given a permanent hot-iron
 branding with a unique identifier on their flank \citep{McMahon:2009}. This
 permanent branding allowed for individual elephant seals to be
 identified even if they lost both tags. Thus, recycled individuals could
@@ -601,13 +600,15 @@ the study's tag-retention rates.
 
 Developing a model to incorporate recycled individuals is a similar problem to that of incorporating misidentification of individuals.  \cite{Schwarz:1999} developed a model to deal with tag-misreads in an open population capture-recapture setting.  However most of the misidentification literature focusses on genetic or photographic identification errors.  Here multiple identities can be assigned to the same individual leading to overestimates in population size if misidentification is ignored \citep{Yoshizaki:2011}. This is the same result that we see when recycled individuals are ignored.   \cite{Link:2010} introduced the notion of using a latent multinomial to model the latent capture histories for a closed population model. Others have extended \citeauthor{Link:2010}'s model to deal with multiple non-invasive marks \citep{Bonner:2013, McClintock:2013}, heterogeneity in parameters \citep{Mcclintock:2014} and open populations \citep{Bonner:2013}.  These latent multinomial models could be extended to include misidentification produced by complete tag loss.
 
-Finally, the JSTL model we looked at did not include a component for loss on capture (when for example a fishery harvest occurs).  It would be interesting for future work to include loss on capture to determine if recycled individuals are still problematic under this scenario.
+Finally, the JSTL model we looked at did not include a component for loss on capture (when for example a fishery harvest occurs).  It would be interesting for future work to include loss on capture to determine if recycled individuals are still problematic under this scenario.  There remains a great deal more to study including testing some of the many assumptions that capture-mark-recapture analyses rely on, many of which we know are “violated” in the real world. Increasing computation power and a larger community applying themselves to these problems has the potential to answer and inform researchers and managers in a meaningful way, especially in terms of how we use imperfect observations to estimate vital rates (survival and fecundity). Having more robust estimates of vital rates is especially important if we are to manage efficiently an ever increasing list of endangered species.
+
+
 
 \section{Acknowledgements}\label{acknowledgements}
 Simulation studies and analyses were run on WestGrid/Compute Canada with
 assistance from Dr.~Belaid Moa.
 
-\section{References}\label{references}
+%\section{References}
 %List references here (order alphabetically by first author) For example 
 
 %-- cite: \cite{Cowen:2006}

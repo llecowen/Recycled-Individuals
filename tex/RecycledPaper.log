@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 NOV 2018 15:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 NOV 2018 14:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1026,73 +1026,94 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 123.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 123.
+
+Package natbib Warning: Citation `Schwarz:2012' on page 1 undefined on input li
+ne 141.
+
 [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 190.
 
+Package natbib Warning: Citation `McMahonWhite:2009' on page 2 undefined on inp
+ut line 169.
+
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 190.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [2] [3]
-<RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf, id=151, 469.75
+)
+
+Package natbib Warning: Citation `Schwarz:1996' on page 2 undefined on input li
+ne 215.
+
+[2] [3]
+<RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf, id=152, 469.75
 5pt x 325.215pt>
 File: RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf Graphic fi
 le (type pdf)
 
 <use RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf>
 Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure1_survival_GJST
-L1-1.pdf used on input line 368.
+L1-1.pdf used on input line 367.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
  [4]
 [5 <./RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf>]
-<RecycledPaper_files/figure-latex/Figure2_N-1.pdf, id=170, 469.755pt x 180.675p
+<RecycledPaper_files/figure-latex/Figure2_N-1.pdf, id=171, 469.755pt x 180.675p
 t>
 File: RecycledPaper_files/figure-latex/Figure2_N-1.pdf Graphic file (type pdf)
  <use RecycledPaper_files/figure-latex/Figure2_N-1.pdf>
 Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure2_N-1.pdf used 
-on input line 430.
+on input line 429.
 (pdftex.def)             Requested size: 469.75386pt x 180.67455pt.
 
-<RecycledPaper_files/figure-latex/Figure3_N_k-1.pdf, id=171, 469.755pt x 144.54
+<RecycledPaper_files/figure-latex/Figure3_N_k-1.pdf, id=172, 469.755pt x 144.54
 pt>
 File: RecycledPaper_files/figure-latex/Figure3_N_k-1.pdf Graphic file (type pdf
 )
  <use RecycledPaper_files/figure-latex/Figure3_N_k-1.pdf>
 Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure3_N_k-1.pdf use
-d on input line 437.
+d on input line 436.
 (pdftex.def)             Requested size: 469.75386pt x 144.53963pt.
  [6 <./RecycledPaper_files/figure-latex/Figure2_N-1.pdf> <./RecycledPaper_files
 /figure-latex/Figure3_N_k-1.pdf>]
-<RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf, id=189, 469.755pt x 216.81
+<RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf, id=190, 469.755pt x 216.81
 pt>
 File: RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf Graphic file (type pdf
 )
  <use RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf>
 Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf use
-d on input line 455.
+d on input line 454.
 (pdftex.def)             Requested size: 469.75386pt x 216.80946pt.
- [7 <./RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf>] [8] (./RecycledPape
-r.bbl [9] [10])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 626.
+ [7 <./RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf>] [8] [9] (./Recycled
+Paper.bbl [10])
 
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 627.
 [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 626.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 627.
  (./RecycledPaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 626.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 626.
-Package rerunfilecheck Info: File `RecycledPaper.out' has not changed.
-(rerunfilecheck)             Checksum: C15ABFD83E96731BA48DFCC025A72F06;1758.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 626.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 627.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 627.
+
+
+Package rerunfilecheck Warning: File `RecycledPaper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `RecycledPaper.out':
+(rerunfilecheck)             Before: C15ABFD83E96731BA48DFCC025A72F06;1758
+(rerunfilecheck)             After:  FF9A4ED096225BB2E66D2A421997DD42;1662.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 627.
  ) 
 Here is how much of TeX's memory you used:
- 12950 strings out of 492995
- 187707 string characters out of 6132704
- 291897 words of memory out of 5000000
- 16108 multiletter control sequences out of 15000+600000
- 76692 words of font info for 142 fonts, out of 8000000 for 9000
+ 12953 strings out of 492995
+ 187753 string characters out of 6132704
+ 291863 words of memory out of 5000000
+ 16110 multiletter control sequences out of 15000+600000
+ 76822 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,10n,38p,1111b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,10n,38p,1128b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
 17/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-d
@@ -1112,10 +1133,10 @@ mf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2017/texmf-dist/fo
 nts/type1/public/lm/lmro10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/
 lmsy7.pfb>
-Output written on RecycledPaper.pdf (11 pages, 373730 bytes).
+Output written on RecycledPaper.pdf (11 pages, 375165 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 279 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
  18549 words of extra memory for PDF output out of 20736 (max. 10000000)
 
