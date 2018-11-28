@@ -1,7 +1,10 @@
-\documentclass[]{article}
+\documentclass[12pt]{article}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{natbib} %bibliography package
+
+\usepackage{setspace}
+\doublespacing
 
 
 \usepackage{ifxetex,ifluatex}
@@ -70,18 +73,18 @@ Loss}
   \posttitle{\par}
   
   %Remove Authors for blind submssion
-  \author{Emily Malcolm-White\textsuperscript{1},
-        Laura L.E. Cowen\textsuperscript{2}, 
-        Clive R. McMahon\textsuperscript{3}\\ 
-        \textsuperscript{1} Academic Assistance and Tutoring, University of California Davis, Davis, CA, USA\\ 
-        \textsuperscript{2} Department of Mathematics and Statistics, University of Victoria, Victoria, BC, Canada\\
-        \textsuperscript{3} Sydney Institute for Marine Science, Mosman, NSW, Australia}
+%  \author{Emily Malcolm-White\textsuperscript{1},
+%        Laura L.E. Cowen\textsuperscript{2}, 
+%        Clive R. McMahon\textsuperscript{3}\\ 
+%        \textsuperscript{1} Academic Assistance and Tutoring, University of California Davis, Davis, CA, USA\\ 
+%        \textsuperscript{2} Department of Mathematics and Statistics, University of Victoria, Victoria, BC, Canada\\
+  %      \textsuperscript{3} Sydney Institute for Marine Science, Mosman, NSW, Australia}
 
 
 
 % Uncomment DATE for submssion to remove date
- % \date{}
-  \predate{}\postdate{}
+  \date{}
+%  \predate{}\postdate{}
 
 
 
@@ -109,11 +112,11 @@ Jolly-Seber model with tag loss \citep{Cowen:2006} in double tagging experiments
 rates, high capture rates, and high survival rates, recycled individuals
 can produce overestimates of population size. These results are
 particularly noticeable in longer studies. We validate the simulation
-framework using long-term census data of elephant seals where we found population size estimates to be between 8 and 53\% larger when recycled individuals were ignored. However, including recycled individuals did not affect estimates of capture, survival and tag-retention probabilities.
+framework using long-term census data of elephant seals where we found population size estimates to be between 8 and 53\% larger when recycled individuals were ignored. However, including recycled individuals did not affect estimates of capture, survival, and tag-retention probabilities.
 \end{quote}
 
 \begin{quote}
-\begin{center} \textsc{Key words:} Capture-mark-recapture; Complete tag loss; Demography; Double-tagging; Elephant seal; Jolly-Seber;   Recycled individuals. 
+\begin{center} \textsc{Key words:} Abundance; Capture-mark-recapture; Complete tag loss; Demography; Double-tagging; Elephant seal. 
 \end{center}
 \end{quote}
 
@@ -600,13 +603,13 @@ the study's tag-retention rates.
 
 Developing a model to incorporate recycled individuals is a similar problem to that of incorporating misidentification of individuals.  \cite{Schwarz:1999} developed a model to deal with tag-misreads in an open population capture-recapture setting.  However most of the misidentification literature focusses on genetic or photographic identification errors.  Here multiple identities can be assigned to the same individual leading to overestimates in population size if misidentification is ignored \citep{Yoshizaki:2011}. This is the same result that we see when recycled individuals are ignored.   \cite{Link:2010} introduced the notion of using a latent multinomial to model the latent capture histories for a closed population model. Others have extended \citeauthor{Link:2010}'s model to deal with multiple non-invasive marks \citep{Bonner:2013, McClintock:2013}, heterogeneity in parameters \citep{Mcclintock:2014} and open populations \citep{Bonner:2013}.  These latent multinomial models could be extended to include misidentification produced by complete tag loss.
 
-Finally, the JSTL model we looked at did not include a component for loss on capture (when for example a fishery harvest occurs).  It would be interesting for future work to include loss on capture to determine if recycled individuals are still problematic under this scenario.  There remains a great deal more to study including testing some of the many assumptions that capture-mark-recapture analyses rely on, many of which we know are “violated” in the real world. Increasing computation power and a larger community applying themselves to these problems has the potential to answer and inform researchers and managers in a meaningful way, especially in terms of how we use imperfect observations to estimate vital rates (survival and fecundity). Having more robust estimates of vital rates is especially important if we are to manage efficiently an ever increasing list of endangered species.
+Finally, the JSTL model we looked at did not include a component for loss on capture (when for example a fishery harvest occurs).  It would be interesting for future work to include loss on capture to determine if recycled individuals are still problematic under this scenario.  There remains a great deal more to study including testing some of the many assumptions that capture-mark-recapture analyses rely on, many of which we know are violated in the real world. Increasing computation power and a larger community applying themselves to these problems has the potential to answer and inform researchers and managers in a meaningful way, especially in terms of how we use imperfect observations to estimate vital rates (survival and fecundity). Having more robust estimates of vital rates is especially important if we are to manage efficiently an ever increasing list of endangered species.
 
 
-
-\section{Acknowledgements}\label{acknowledgements}
-Simulation studies and analyses were run on WestGrid/Compute Canada with
-assistance from Dr.~Belaid Moa.
+  %Remove Acknowledgments for blind submssion
+%\section{Acknowledgements}\label{acknowledgements}
+%Simulation studies and analyses were run on WestGrid/Compute Canada with
+%assistance from Dr.~Belaid Moa.
 
 %\section{References}
 %List references here (order alphabetically by first author) For example 

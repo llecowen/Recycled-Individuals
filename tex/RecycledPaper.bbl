@@ -100,6 +100,15 @@ McClintock, B.~T., Conn, P.~B., Alonso, R.~S., and Crooks, K.~R. (2013).
   mark-recapture analyses.}
 \newblock {\em Ecology} {\bf 94,} 1464--1471.
 
+\bibitem[\protect\citeauthoryear{McMahon and White}{McMahon and
+  White}{2009}]{McMahonWhite:2009}
+McMahon, C. and White, G. (2009).
+\newblock Tag loss probabilities are not independent: Assessing and quantifying
+  the assumption of independent tag transition probabilities from direct
+  observations.
+\newblock {\em Journal of Experimental Marine Biology and Ecology} {\bf 372,}
+  36--42.
+
 \bibitem[\protect\citeauthoryear{McMahon, Burton, van~den Hoff, Woods, and
   Bradshaw}{McMahon et~al.}{2009}]{McMahon:2009}
 McMahon, C.~R., Burton, H., van~den Hoff, J., Woods, R., and Bradshaw, C. J.~A.
@@ -126,6 +135,13 @@ Pollock, K.~H., Nichols, J.~D., Brownie, C., and Hines, J.~E. (1990).
 \newblock {\em R: A Language and Environment for Statistical Computing}.
 \newblock R Foundation for Statistical Computing, Vienna, Austria.
 
+\bibitem[\protect\citeauthoryear{Schwarz and Arnason}{Schwarz and
+  Arnason}{1996}]{Schwarz:1996}
+Schwarz, C.~J. and Arnason, A.~N. (1996).
+\newblock A general methodology for the analysis of capture-recapture
+  experiments in open populations.
+\newblock {\em Biometrics} {\bf 52,} 860--873.
+
 \bibitem[\protect\citeauthoryear{Schwarz and Stobo}{Schwarz and
   Stobo}{1999}]{Schwarz:1999}
 Schwarz, C.~J. and Stobo, W.~T. (1999).
@@ -133,6 +149,13 @@ Schwarz, C.~J. and Stobo, W.~T. (1999).
   studies.
 \newblock {\em Canadian Journal of Fisheries and Aquatic Sciences} {\bf 56,}
   551--559.
+
+\bibitem[\protect\citeauthoryear{Schwarz and Costa}{Schwarz and
+  Costa}{2012}]{Schwarz:2012}
+Schwarz, L.K., H. M. M.~C. and Costa, D. (2012).
+\newblock The implications of assuming independent tag loss in southern
+  elephant seals.
+\newblock {\em Ecosphere} {\bf 3,} 81.
 
 \bibitem[\protect\citeauthoryear{Seber}{Seber}{1965}]{Seber:1965}
 Seber, G. A.~F. (1965).

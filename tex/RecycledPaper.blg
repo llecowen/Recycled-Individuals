@@ -1,15 +1,8 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: RecycledPaper.aux
 The style file: biom.bst
 Database file #1: myrefs.bib
-I was expecting a `,' or a `}'---line 525 of file myrefs.bib
- : @article{Schwarz: 
- :                   1996,
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Schwarz:2012"
-Warning--I didn't find a database entry for "McMahonWhite:2009"
-Warning--I didn't find a database entry for "Schwarz:1996"
 Name 1 in "Cowen, L., and Schwarz, C. J." has a comma at the end for entry Cowen:2006
 while executing---line 3079 of file biom.bst
 Name 1 in "Cowen, L., and Schwarz, C. J." has a comma at the end for entry Cowen:2006
@@ -55,6 +48,24 @@ while executing---line 3079 of file biom.bst
 Name 2 in "Bjorndal, K.A., and Bolten, A. B., and Lagueux, C. J., and Chaves, A." has a comma at the end for entry Bjorndal:1996
 while executing---line 3079 of file biom.bst
 Name 3 in "Bjorndal, K.A., and Bolten, A. B., and Lagueux, C. J., and Chaves, A." has a comma at the end for entry Bjorndal:1996
+while executing---line 3079 of file biom.bst
+Too many commas in name 1 of "Schwarz, L.K., Hindell, M.A., McMahon, C.R. and Costa, D.P." for entry Schwarz:2012
+while executing---line 3079 of file biom.bst
+Too many commas in name 1 of "Schwarz, L.K., Hindell, M.A., McMahon, C.R. and Costa, D.P." for entry Schwarz:2012
+while executing---line 3079 of file biom.bst
+Too many commas in name 1 of "Schwarz, L.K., Hindell, M.A., McMahon, C.R. and Costa, D.P." for entry Schwarz:2012
+while executing---line 3079 of file biom.bst
+Too many commas in name 1 of "Schwarz, L.K., Hindell, M.A., McMahon, C.R. and Costa, D.P." for entry Schwarz:2012
+while executing---line 3079 of file biom.bst
+Too many commas in name 1 of "Schwarz, L.K., Hindell, M.A., McMahon, C.R. and Costa, D.P." for entry Schwarz:2012
+while executing---line 3079 of file biom.bst
+Too many commas in name 1 of "Schwarz, L.K., Hindell, M.A., McMahon, C.R. and Costa, D.P." for entry Schwarz:2012
+while executing---line 3079 of file biom.bst
+Too many commas in name 1 of "Schwarz, L.K., Hindell, M.A., McMahon, C.R. and Costa, D.P." for entry Schwarz:2012
+while executing---line 3079 of file biom.bst
+Too many commas in name 1 of "Schwarz, L.K., Hindell, M.A., McMahon, C.R. and Costa, D.P." for entry Schwarz:2012
+while executing---line 3079 of file biom.bst
+Too many commas in name 1 of "Schwarz, L.K., Hindell, M.A., McMahon, C.R. and Costa, D.P." for entry Schwarz:2012
 while executing---line 3079 of file biom.bst
 Name 1 in "Seber, G. A. F., and Felton, R." has a comma at the end for entry Seber:1981
 while executing---line 3079 of file biom.bst
@@ -194,51 +205,57 @@ Name 2 in "Pollock, K. H., and Nichols, J. D., and Brownie, C., and Hines, J. E.
 while executing---line 3295 of file biom.bst
 Name 3 in "Pollock, K. H., and Nichols, J. D., and Brownie, C., and Hines, J. E." has a comma at the end for entry Pollock:1990
 while executing---line 3295 of file biom.bst
+Too many commas in name 1 of "Schwarz, L.K., Hindell, M.A., McMahon, C.R. and Costa, D.P." for entry Schwarz:2012
+while executing---line 3295 of file biom.bst
+Too many commas in name 1 of "Schwarz, L.K., Hindell, M.A., McMahon, C.R. and Costa, D.P." for entry Schwarz:2012
+while executing---line 3295 of file biom.bst
+Too many commas in name 1 of "Schwarz, L.K., Hindell, M.A., McMahon, C.R. and Costa, D.P." for entry Schwarz:2012
+while executing---line 3295 of file biom.bst
 Name 1 in "Seber, G. A. F., and Felton, R." has a comma at the end for entry Seber:1981
 while executing---line 3295 of file biom.bst
 Name 1 in "Xu, Y., and Cowen, L. L. E. and Gardner, C." has a comma at the end for entry Xu:2014
 while executing---line 3295 of file biom.bst
 Name 1 in "Yoshizaki, J., and Brownie, C. and Pollock, K. H. and Link, W. A." has a comma at the end for entry Yoshizaki:2011
 while executing---line 3295 of file biom.bst
-You've used 24 entries,
+You've used 27 entries,
             2146 wiz_defined-function locations,
-            691 strings with 8502 characters,
-and the built_in function-call counts, 11305 in all, are:
-= -- 1059
-> -- 632
-< -- 11
-+ -- 206
-- -- 204
-* -- 1112
-:= -- 1989
-add.period$ -- 72
-call.type$ -- 24
-change.case$ -- 187
-chr.to.int$ -- 24
-cite$ -- 24
-duplicate$ -- 358
-empty$ -- 686
-format.name$ -- 242
-if$ -- 2110
+            704 strings with 9024 characters,
+and the built_in function-call counts, 12568 in all, are:
+= -- 1180
+> -- 692
+< -- 14
++ -- 228
+- -- 222
+* -- 1229
+:= -- 2208
+add.period$ -- 81
+call.type$ -- 27
+change.case$ -- 208
+chr.to.int$ -- 27
+cite$ -- 27
+duplicate$ -- 403
+empty$ -- 766
+format.name$ -- 269
+if$ -- 2349
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 23
-newline$ -- 123
-num.names$ -- 96
-pop$ -- 131
+missing$ -- 26
+newline$ -- 138
+num.names$ -- 108
+pop$ -- 143
 preamble$ -- 1
-purify$ -- 188
+purify$ -- 209
 quote$ -- 0
-skip$ -- 234
+skip$ -- 267
 stack$ -- 0
-substring$ -- 831
-swap$ -- 168
+substring$ -- 917
+swap$ -- 189
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 144
+type$ -- 162
 warning$ -- 0
-while$ -- 111
+while$ -- 124
 width$ -- 0
-write$ -- 314
-(There were 96 error messages)
+write$ -- 353
+(There were 107 error messages)
