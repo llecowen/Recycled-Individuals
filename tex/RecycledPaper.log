@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 MAY 2019 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 MAY 2019 15:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1093,7 +1093,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 634.
 Here is how much of TeX's memory you used:
  12987 strings out of 492995
  188517 string characters out of 6132704
- 290751 words of memory out of 5000000
+ 291751 words of memory out of 5000000
  16146 multiletter control sequences out of 15000+600000
  73981 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1114,10 +1114,10 @@ lic/lm/lmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8
 /local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/
 texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on RecycledPaper.pdf (20 pages, 304179 bytes).
+Output written on RecycledPaper.pdf (20 pages, 304428 bytes).
 PDF statistics:
- 344 PDF objects out of 1000 (max. 8388607)
- 299 compressed objects within 3 object streams
+ 345 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
  64 named destinations out of 1000 (max. 500000)
  16485 words of extra memory for PDF output out of 17280 (max. 10000000)
 
