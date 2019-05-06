@@ -125,7 +125,7 @@ framework using long-term census data of elephant seals where we found populatio
 Mark-recapture studies utilize statistical techniques to estimate
 population parameters. Over \(k\) sampling
 periods, individuals are captured, tagged with unique tags, released and potentially
-recaptured at subsequent sampling times. The Jolly-Seber (JS) model \citep{Jolly:1965, Seber:1965}
+recaptured at subsequent sampling times. The Jolly-Seber model \citep{Jolly:1965, Seber:1965}
  is used to model open populations since it
 can estimate parameters of interest such as population size and survival
 rates \citep{Pollock:1990}. An important assumption of this model is that 
@@ -156,7 +156,7 @@ lost it's last tag between sampling occasions 2 and 3 and then have been
 recaptured at sampling occasion 3 resulting in a new individual with
 capture history \{00 00 11\}. If the rate of tag loss is small, bias in
 the population estimate will also be small for the Peterson estimators
-\citep{Seber:1981}. Typically in the JS and JSTL models, the
+\citep{Seber:1981}. Typically in the Jolly-Seber and JSTL models, the
 effect of recycled individuals is assumed to be negligible. However, in
 situations where tag retention is low and survival and recapture
 probabilities are high it is suspected that recycled individuals will
@@ -524,7 +524,7 @@ Similar to the simulations, there is not much difference in the
 estimates of survival and capture probabilities between the analysis
 with and without recycled individuals. For comparison to the previous
 simulations, we note that tag retention probability for the
-elephant seals was estimated to be $\approx 0.8$ (high).  Standard error estimates are also higher when recycled individuals are included in the analysis. 
+elephant seals was estimated to be $\approx 0.8$ (high).  Standard error estimates are also higher when recycled individuals are included in the analysis. The same pattern is seen in the simulation studies (see Web Appendix A).
 
 \begin{quote}
 \textsc{Table 2}
@@ -564,6 +564,10 @@ recycled individuals is negligible in mark-recapture models. However, we
 show that in general, recycled individuals have little effect on the
 accuracy of the survival, capture, and tag-retention probability
 estimates and that for short-term studies, the effects are reduced.
+
+For longer term studies when survival and capture probabilities are low, the bias in abundance estimates associated with recycled individuals is smaller.  These are characteristics that might be associated with small, endangered, or decreasing populations. 
+
+It is not surprising that survival estimates are not biased upwards when recycled individuals are ignored.  Survival estimates are essentially a relative measure of how many individuals are around now versus the previous time step.  Thus the bias in numerator and denominator essentially cancels out (i.e. $\hat{\phi}_j=\hat{N}_{j}/\hat{N}_{j-1}$).	
 
 Although the case study of elephant seals validated some of the results from
 the simulation study (recycled individuals bias abundance estimates
