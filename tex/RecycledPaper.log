@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  23 MAY 2019 10:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  23 MAY 2019 11:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -839,36 +839,36 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 (./RecycledPaper.aux)
 \openout1 = `RecycledPaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 101.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 100.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 101.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 100.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \microtypecontext on input line 101.
+LaTeX Info: Redefining \microtypecontext on input line 100.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
@@ -918,7 +918,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 101.
+Package hyperref Info: Link coloring OFF on input line 100.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -927,9 +927,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count116
 )
-LaTeX Info: Redefining \ref on input line 101.
-LaTeX Info: Redefining \pageref on input line 101.
-LaTeX Info: Redefining \nameref on input line 101.
+LaTeX Info: Redefining \ref on input line 100.
+LaTeX Info: Redefining \pageref on input line 100.
+LaTeX Info: Redefining \nameref on input line 100.
 
 (./RecycledPaper.out) (./RecycledPaper.out)
 \@outlinefile=\write3
@@ -964,37 +964,37 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 102.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 101.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 102.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 101.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 102
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 101
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 102
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 101
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 102.
+(Font)              <14.4> on input line 101.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 102.
+(Font)              <10> on input line 101.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 102.
-LaTeX Font Info:    Try loading font information for U+msa on input line 102.
+(Font)              <7> on input line 101.
+LaTeX Font Info:    Try loading font information for U+msa on input line 101.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1002,7 +1002,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 102.
+LaTeX Font Info:    Try loading font information for U+msb on input line 101.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1017,16 +1017,16 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 126.
+(Font)              <12> on input line 125.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 126.
+(Font)              <8> on input line 125.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 126.
+(Font)              <6> on input line 125.
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2] [3]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 193.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 192.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1039,7 +1039,7 @@ le (type pdf)
 
 <use RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf>
 Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure1_survival_GJST
-L1-1.pdf used on input line 370.
+L1-1.pdf used on input line 369.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
  [9 <./RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf>] [10]
 <RecycledPaper_files/figure-latex/Figure2_N-1.pdf, id=188, 469.755pt x 180.675p
@@ -1082,11 +1082,11 @@ Package rerunfilecheck Info: File `RecycledPaper.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 634.
  ) 
 Here is how much of TeX's memory you used:
- 12961 strings out of 493014
- 188130 string characters out of 6133351
- 289874 words of memory out of 5000000
+ 12971 strings out of 493014
+ 188242 string characters out of 6133351
+ 288876 words of memory out of 5000000
  16110 multiletter control sequences out of 15000+600000
- 73981 words of font info for 138 fonts, out of 8000000 for 9000
+ 74486 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,9n,38p,1128b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
@@ -1105,7 +1105,7 @@ lic/lm/lmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr8
 /local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2016/
 texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on RecycledPaper.pdf (20 pages, 304427 bytes).
+Output written on RecycledPaper.pdf (20 pages, 303688 bytes).
 PDF statistics:
  345 PDF objects out of 1000 (max. 8388607)
  300 compressed objects within 3 object streams
