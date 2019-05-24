@@ -67,8 +67,7 @@
 }
 
 \setlength{\droptitle}{-2em}
-  \title{The Effect of Recycled Individuals in the Jolly-Seber Model with Tag
-Loss}
+  \title{The effect of recycled individuals in the Jolly-Seber model with tag-loss.}
   \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
   
@@ -106,17 +105,17 @@ Loss}
 \textsc{Summary:} In capture-recapture studies, recycled individuals occur
 when individuals lose all of their tags and are recaptured as though they were new
 individuals. Typically, the effect of these recycled individuals is
-assumed negligible. Through a simulation-based study, we examine the
+assumed negligible. Through a simulation-based study of double tagging experiments, we examined the
 effect of recycled individuals on parameter estimates in the
-Jolly-Seber model with tag loss \citep{Cowen:2006} in double tagging experiments. With low tag-retention
+Jolly-Seber model with tag loss \citep{Cowen:2006}. With low tag-retention
 rates, high capture rates, and high survival rates, recycled individuals
 can produce overestimates of population size. These results are
-particularly noticeable in longer studies. We validate the simulation
+particularly noticeable in longer studies. We validated the simulation
 framework using long-term census data of elephant seals where we found population size estimates to be between 8 and 53\% larger when recycled individuals were ignored. However, including recycled individuals did not affect estimates of capture, survival, and tag-retention probabilities.
 \end{quote}
 
 \begin{quote}
-\begin{center} \textsc{Key words:} Abundance; Capture-mark-recapture; Complete tag loss; Demography; Double-tagging; Elephant seal. 
+\begin{center} \textsc{Key words:} Abundance; Capture-mark-recapture; Complete tag loss;  Demography; Double-tagging; Elephant seal. 
 \end{center}
 \end{quote}
 
@@ -378,20 +377,21 @@ double-tagging probabilities (Table 1).
 
 \begin{quote}
 \textsc{Table 1:}
-\textsl{The mean relative bias of the parameters from the model analyzed with ($R$) and without ($R'$) the recycled individuals for data with high survival probability ($\phi=0.9$), high capture probability ($p=0.9$), and low tag retention ($\Lambda=0.2$)  for different super-populations sizes ($N=1000,100 000$) and different tag retention probabilities ($T_2=0.5,1$) using the JSTL model from a ten-sample-time study. }
+\textsl{The mean relative bias of the parameters from the model analyzed with ($R$) and without ($R'$) the recycled individuals for data with high survival probability ($\phi=0.9$), high capture probability ($p=0.9$), and low tag retention ($\Lambda=0.2$)  for different super-populations sizes ($N=1000,100 000$) and different proportion double tagged ($T_2=0.5,1$) using the JSTL model from a ten-sample-time study. }
 \end{quote}
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{rcccccccc}
+\begin{tabular}{rrrrrrrrr}
   \hline
-  & \multicolumn{8}{l}{Population Size ($N$) and Proportion Double Tagged ($T_2$)} \\
-  \cline{2-9}
-  & \multicolumn{4}{l}{N=1000} & \multicolumn{4}{l}{N=100000} \\
-  \cline {2-9}
- & $T_2=1$ && $T_2=0.5$ && $T_2=1$ && $T_2=0.5$ &  \\ 
-  \cline {2-9}
-  & $R$ & $R'$ & $R$ & $R'$ & $R$ & $R'$ & $R$ & $R'$ \\ 
+%   \multicolumn{9}{l}{Population Size ($N$) and Proportion Double Tagged ($T_2$)} \\
+ 
+  & \multicolumn{4}{c}{N=1000} & \multicolumn{4}{c}{N=100000} \\
+
+ &\multicolumn{2}{c}{$T_2=1$}  &\multicolumn{2}{c}{$T_2=0.5$} &\multicolumn{2}{c}{$T_2=1$} &\multicolumn{2}{c}{$T_2=0.5$}\\ 
+
+%  &\multicolumn{1}{c}{$R$}   &\multicolumn{1}{c}{$R'$}   &\multicolumn{1}{c}{$R$}   &\multicolumn{1}{c}{$R'$}   &\multicolumn{1}{c}{$R$}   &\multicolumn{1}{c}{$R'$}   &\multicolumn{1}{c}{$R$}   &\multicolumn{1}{c}{$R'$}\\ \hline
+&$R$   &$R'$   &$R$   &$R'$   &$R$   &$R'$   &$R$   &$R'$\\ 
   \hline
 $\phi$ & 0.00 & 0.00 & 0.06 & 0.05 & 0.00 & 0.00 & 0.11 & 0.10 \\ 
   p & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
@@ -528,7 +528,7 @@ elephant seals was estimated to be $\approx 0.8$ (high).  Standard error estimat
 
 \begin{quote}
 \textsc{Table 2}
-\textsl{Estimates of survival probability ($\phi$), capture probability ($p$), and super-population size ($N$) for the elephant seal data analyzed with and without the recycled individuals. Standard errors are presented for survival and capture probabilities.}
+\textsl{Estimates of survival probability ($\phi$), capture probability ($p$), tag-retention probability ($\Lambda$), and annual population size ($N_j$) for the elephant seal data analyzed with and without the recycled individuals. Estimated standard errors (SE) are also presented.}
 \end{quote}
 
 \begin{center}
