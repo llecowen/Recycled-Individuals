@@ -122,8 +122,7 @@ framework using long-term census data of elephant seals where we found populatio
 \section{Introduction}\label{introduction}
 
 Mark-recapture studies utilize statistical techniques to estimate
-population parameters. Over \(k\) sampling
-periods, individuals are captured, tagged with unique tags, released and potentially
+population parameters. Over \(k\) sample times, individuals are captured, tagged with unique tags, released and potentially
 recaptured at subsequent sampling times. The Jolly-Seber model \citep{Jolly:1965, Seber:1965}
  is used to model open populations since it
 can estimate parameters of interest such as population size and survival
@@ -137,7 +136,7 @@ purposes. \cite{Cowen:2006} incorporated tag-loss by developing
 the Jolly-Seber tag-loss (JSTL) model for experiments where some
 fraction of individuals are double tagged. This model was further
 extended to account for heterogeneity in capture between groups \citep{Xu:2014}. In the simplest form of the JSTL model, it is assumed that
-every individual present in the population at sampling occasion \(k\)
+every individual present in the population at sample time \(k\)
 has capture, survival, and tag retention
 probabilities that are homogeneous for all individuals in the population
 across all sampling occasions.  However, these assumptions are rarely met and can induce significant bias in the parameter estimates \citep{Schwarz:2012}.
@@ -150,9 +149,9 @@ individuals would be tagged again and treated as ``new'' individuals.
 Individuals who lose both tags and are recaptured and re-tagged are
 known as recycled individuals. For example, an individual with the
 following tag history over three sampling occasions \{11 01 00\} was
-double tagged at time 1, lost a tag between times 1 and 2, and may have
-lost it's last tag between sampling occasions 2 and 3 and then have been
-recaptured at sampling occasion 3 resulting in a new individual with
+double tagged at sample time 1, lost a tag between times 1 and 2, and may have
+lost it's last tag between sample times 2 and 3 and then have been
+recaptured at sample time 3 resulting in a new individual with
 capture history \{00 00 11\}. If the rate of tag loss is small, bias in
 the population estimate will also be small for the Peterson estimators
 \citep{Seber:1981}. Typically in the Jolly-Seber and JSTL models, the
@@ -232,9 +231,9 @@ JSTL model with constant survival, capture, and tag retention
 probabilities for a double-tagging experiment. Super-population sizes of
 1000 and 100 000 were considered in order to determine the effect that
 population size may have on the results. For the super-population size
-of 100 000, experiments with ten sampling occasions were considered. For
+of 100 000, experiments with ten sample times were considered. For
 the super-population size of 1000 we considered experiments with five,
-seven and ten sampling occasions in order to determine if the length of
+seven and ten sample times in order to determine if the length of
 the study has any effect on the results. For each population size, we
 tested different proportions of double-tagged versus single-tagged
 individuals (\(0.5\) and \(1\)). Survival, capture, and tag retention
@@ -263,20 +262,20 @@ algorithm:
   Determine when the individual enters the population utilizing the
   entry probabilities.
 \item
-  For each time period after entry (until death or first capture) 
-  determine if the individual survives to that time period (with
+  For each sample time after entry (until death or first capture) 
+  determine if the individual survives to that sample time (with
   probability \(\phi\)). If they are still alive, determine if they were
   first captured (with probability \(p\)). If they are captured,
   determine whether they are single or double-tagged.
 \item
-  For each time period after first capture (until death, loss of all
+  For each sample time after first capture (until death, loss of all
   tags or the end of the study) determine if the individual survives to
-  that time period (with probability \(\phi\)). Then if they are still
+  that sample time (with probability \(\phi\)). Then if they are still
   alive, determine if they lose any of their tags (with probability
   \(1-\lambda\)). If they still have at least one of their tags,
   determine if they were recaptured (with probability \(p\)). If they
   have lost all of their tags, consider them as a new individual
-  entering the population at this time period.
+  entering the population at this sample time.
 \end{enumerate}
 
 By keeping track of all the recycled individuals, this algorithm 
@@ -458,7 +457,7 @@ A19-A24).
 
 \begin{quote}
 \textsc{Figure 4:}
-\textsl{The difference in mean relative bias of the abundance estimates at each time period ($\hat{N_j}$) between the model analyzed with and without the recycled individuals for data with super-population size N=100 000 with 100\% double-tagging for different tag retention probabilities ($\lambda=0.2,0.5,0.9$), survival probabilities ($\phi=0.2,0.5,0.9$), and different capture probabilities ($p=0.2,0.5,0.9$) using the JSTL model from a ten-sample-time study.  Note that lines are added between the points to emphasize the difference in values; no models were fit to generate these lines.}
+\textsl{The difference in mean relative bias of the abundance estimates at each sample time ($\hat{N_j}$) between the model analyzed with and without the recycled individuals for data with super-population size N=100 000 with 100\% double-tagging for different tag retention probabilities ($\lambda=0.2,0.5,0.9$), survival probabilities ($\phi=0.2,0.5,0.9$), and different capture probabilities ($p=0.2,0.5,0.9$) using the JSTL model from a ten-sample-time study.  Note that lines are added between the points to emphasize the difference in values; no models were fit to generate these lines.}
 \end{quote}
 
 In general, the bias due to recycled individuals in the \(\hat{N}_j\)'s
@@ -516,7 +515,7 @@ As expected, the
 super-population size estimate for the analysis which included the
 recycled individuals ($\hat{N}=8985$) is 30\% larger than the estimate in the analysis
 which excluded recycled individuals ($\hat{N}=6949$) who were recognized upon recapture. This relationship also holds true for the abundance estimates
-at each time period (Table 2). The bias in the abundance estimates increases
+at each sample time (Table 2). The bias in the abundance estimates increases
  as time goes on, again validating the results of our
 simulation study.
 
