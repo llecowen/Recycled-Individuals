@@ -145,7 +145,7 @@ parameters discussed in this study.
       \upsilon= & \text{the probability that an individual captured will be lost on capture}\\
       T_d= & \text{the probability that an individual is marked with $d$ tags. Note that the probability of marking with a }\\
       & \text{single tag is one minus the probability of marking with a double tag: $T_1=1-T_2$}\\
-      \lambda= & \text{the probability that an individual captured will  retain its tag between time periods given that}\\
+      \lambda= & \text{the probability that an individual captured will  retain its tag between sample times  given that}\\
       & \text{it remains alive}\\
       N= & \text{super-population size, the total number of individuals ever present in population and available for}\\
       & \text{capture during the study}\\
@@ -220,7 +220,7 @@ L=\binom{N}{n_\text{obs}} \left\{ \sum_{j=0}^{k-1} b_j(1-p)\chi_{(0,j+1,0)} \rig
 \textsc{Web Figure 1:} Boxplots of survival estimates (\(\hat{\phi}\))
 of 100 simulated datasets analyzed with and without the effect of
 recycled individuals for population size \(1000\) with \(T_2=1\) with 10
-time periods for varying survival (\(\phi=0.2,0.5,0.9\)), capture
+sample times for varying survival (\(\phi=0.2,0.5,0.9\)), capture
 (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(\phi\) used
 to simulate the data for each model.
@@ -229,7 +229,7 @@ to simulate the data for each model.
 Root Mean Squared Error (RMSE) of survival estimates (\(\hat{\phi}\)) of
 100 simulated datasets analyzed without (R') and with (R) the effect of
 recycled individuals with population size \(N=1000\) with \(T_2=1\) with
-10 time periods for varying tag retention (\(\lambda=0.2,0.5,0.9\)),
+10 sample times for varying tag retention (\(\lambda=0.2,0.5,0.9\)),
 varying survival probabilities (\(\phi=0.2,0.5,0.9\)) and varying
 capture probabilities (\(p=0.2,0.5,0.9\)).
 
@@ -283,7 +283,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 \textsc{Web Figure 2:} Boxplots of survival estimates (\(\hat{\phi}\))
 of 100 simulated datasets analyzed with and without the effect of
 recycled individuals for population size \(100000\) with \(T_2=1\) with
-10 time periods for varying survival (\(\phi=0.2,0.5,0.9\)), capture
+10 sample times for varying survival (\(\phi=0.2,0.5,0.9\)), capture
 (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(\phi\) used
 to simulate the data for each model.
@@ -292,7 +292,7 @@ to simulate the data for each model.
 Root Mean Squared Error (RMSE) of survival estimates (\(\hat{\phi}\)) of
 100 simulated datasets analyzed without (R') and with (R) the effect of
 recycled individuals with population size \(N=100000\) with \(T_2=1\)
-with 10 time periods for varying tag retention
+with 10 sample times for varying tag retention
 (\(\lambda=0.2,0.5,0.9\)), varying survival probabilities
 (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
@@ -347,7 +347,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 \textsc{Web Figure 3:} Boxplots of survival estimates (\(\hat{\phi}\))
 of 100 simulated datasets analyzed with and without the effect of
 recycled individuals for population size \(1000\) with \(T_2=0.5\) with
-10 time periods for varying survival (\(\phi=0.2,0.5,0.9\)), capture
+10 sample times for varying survival (\(\phi=0.2,0.5,0.9\)), capture
 (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(\phi\) used
 to simulate the data for each model.
@@ -356,7 +356,7 @@ to simulate the data for each model.
 Root Mean Squared Error (RMSE) of survival estimates (\(\hat{\phi}\)) of
 100 simulated datasets analyzed without (R') and with (R) the effect of
 recycled individuals with population size \(N=1000\) with \(T_2=0.5\)
-with 10 time periods for varying tag retention
+with 10 sample times for varying tag retention
 (\(\lambda=0.2,0.5,0.9\)), varying survival probabilities
 (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
@@ -411,7 +411,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 \textsc{Web Figure 4:} Boxplots of survival estimates (\(\hat{\phi}\))
 of 100 simulated datasets analyzed with and without the effect of
 recycled individuals for population size \(100000\) with \(T_2=0.5\)
-with 10 time periods for varying survival (\(\phi=0.2,0.5,0.9\)),
+with 10 sample times for varying survival (\(\phi=0.2,0.5,0.9\)),
 capture (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(\phi\) used
 to simulate the data for each model.
@@ -420,7 +420,7 @@ to simulate the data for each model.
 Root Mean Squared Error (RMSE) of survival estimates (\(\hat{\phi}\)) of
 100 simulated datasets analyzed without (R') and with (R) the effect of
 recycled individuals with population size \(N=100000\) with \(T_2=0.5\)
-with 10 time periods for varying tag retention
+with 10 sample times for varying tag retention
 (\(\lambda=0.2,0.5,0.9\)), varying survival probabilities
 (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
@@ -475,7 +475,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 \textsc{Web Figure 5:} Boxplots of survival estimates (\(\hat{\phi}\))
 of 100 simulated datasets analyzed with and without the effect of
 recycled individuals for population size \(1000\) with \(T_2=1\) with 5
-time periods for varying survival (\(\phi=0.2,0.5,0.9\)), capture
+sample times for varying survival (\(\phi=0.2,0.5,0.9\)), capture
 (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(\phi\) used
 to simulate the data for each model.
@@ -487,7 +487,7 @@ to simulate the data for each model.
 \textsc{Web Figure 6:} Boxplots of survival estimates (\(\hat{\phi}\))
 of 100 simulated datasets analyzed with and without the effect of
 recycled individuals for population size \(1000\) with \(T_2=1\) with 7
-time periods for varying survival (\(\phi=0.2,0.5,0.9\)), capture
+sample times for varying survival (\(\phi=0.2,0.5,0.9\)), capture
 (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(\phi\) used
 to simulate the data for each model.
@@ -502,8 +502,7 @@ to simulate the data for each model.
 
 \textsc{Web Figure 7:} Boxplots of capture estimates (\(\hat{p}\)) of
 100 simulated datasets analyzed with and without the effect of recycled
-individuals for population size \(1000\) with \(T_2=1\) with 10 time
-periods for varying survival (\(\phi=0.2,0.5,0.9\)), capture
+individuals for population size \(1000\) with \(T_2=1\) with 10 sample times for varying survival (\(\phi=0.2,0.5,0.9\)), capture
 (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(p\) used to
 simulate the data for each model.
@@ -512,7 +511,7 @@ simulate the data for each model.
 Root Mean Squared Error (RMSE) of capture estimates (\(\hat{p}\))of 100
 simulated datasets analyzed without (R') and with (R) the effect of
 recycled individuals with population size \(N=1000\) with \(T_2=1\) with
-10 time periods for varying tag retention (\(\lambda=0.2,0.5,0.9\)),
+10 sample times for varying tag retention (\(\lambda=0.2,0.5,0.9\)),
 varying survival probabilities (\(\phi=0.2,0.5,0.9\)) and varying
 capture probabilities (\(p=0.2,0.5,0.9\)).
 
@@ -565,8 +564,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 
 \textsc{Web Figure 8:} Boxplots of capture estimates (\(\hat{p}\)) of
 100 simulated datasets analyzed with and without the effect of recycled
-individuals for population size \(100000\) with \(T_2=1\) with 10 time
-periods for varying survival (\(\phi=0.2,0.5,0.9\)), capture
+individuals for population size \(100000\) with \(T_2=1\) with 10 sample times for varying survival (\(\phi=0.2,0.5,0.9\)), capture
 (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(p\) used to
 simulate the data for each model.
@@ -575,7 +573,7 @@ simulate the data for each model.
 Root Mean Squared Error (RMSE) of capture estimates (\(\hat{p}\)) of 100
 simulated datasets analyzed without (R') and with (R) the effect of
 recycled individuals with population size \(N=100000\) with \(T_2=1\)
-with 10 time periods for varying tag retention
+with 10 sample times for varying tag retention
 (\(\lambda=0.2,0.5,0.9\)), varying survival probabilities
 (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
@@ -629,8 +627,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 
 \textsc{Web Figure 9:} Boxplots of capture estimates (\(\hat{p}\)) of
 100 simulated datasets analyzed with and without the effect of recycled
-individuals for population size \(1000\) with \(T_2=0.5\) with 10 time
-periods for varying survival (\(\phi=0.2,0.5,0.9\)), capture
+individuals for population size \(1000\) with \(T_2=0.5\) with 10 sample times for varying survival (\(\phi=0.2,0.5,0.9\)), capture
 (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(p\) used to
 simulate the data for each model.
@@ -639,7 +636,7 @@ simulate the data for each model.
 Root Mean Squared Error (RMSE) of capture estimates (\(\hat{p}\)) of 100
 simulated datasets analyzed without (R') and with (R) the effect of
 recycled individuals with population size \(N=1000\) with \(T_2=0.5\)
-with 10 time periods for varying tag retention
+with 10 sample times for varying tag retention
 (\(\lambda=0.2,0.5,0.9\)), varying survival probabilities
 (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
@@ -693,8 +690,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 
 \textsc{Web Figure 10:} Boxplots of capture estimates (\(\hat{p}\)) of
 100 simulated datasets analyzed with and without the effect of recycled
-individuals for population size \(100000\) with \(T_2=0.5\) with 10 time
-periods for varying survival (\(\phi=0.2,0.5,0.9\)), capture
+individuals for population size \(100000\) with \(T_2=0.5\) with 10 sample times for varying survival (\(\phi=0.2,0.5,0.9\)), capture
 (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(p\) used to
 simulate the data for each model.
@@ -703,7 +699,7 @@ simulate the data for each model.
 Root Mean Squared Error (RMSE) of capture estimates (\(\hat{p}\)) of 100
 simulated datasets analyzed without (R') and with (R) the effect of
 recycled individuals with population size \(N=100000\) with \(T_2=0.5\)
-with 10 time periods for varying tag retention
+with 10 sample times for varying tag retention
 (\(\lambda=0.2,0.5,0.9\)), varying survival probabilities
 (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
@@ -757,8 +753,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 
 \textsc{Web Figure 11:} Boxplots of capture estimates (\(\hat{p}\)) of
 100 simulated datasets analyzed with and without the effect of recycled
-individuals for population size \(1000\) with \(T_2=1\) for 5 time
-periods for varying survival (\(\phi=0.2,0.5,0.9\)), capture
+individuals for population size \(1000\) with \(T_2=1\) for 5 sample times for varying survival (\(\phi=0.2,0.5,0.9\)), capture
 (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(p\) used to
 simulate the data for each model.
@@ -769,8 +764,7 @@ simulate the data for each model.
 
 \textsc{Web Figure 12:} Boxplots of capture estimates (\(\hat{p}\)) of
 100 simulated datasets analyzed with and without the effect of recycled
-individuals for population size \(1000\) with \(T_2=1\) for 7 time
-periods for varying survival (\(\phi=0.2,0.5,0.9\)), capture
+individuals for population size \(1000\) with \(T_2=1\) for 7 sample times for varying survival (\(\phi=0.2,0.5,0.9\)), capture
 (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(p\) used to
 simulate the data for each model.
@@ -786,7 +780,7 @@ simulate the data for each model.
 \textsc{Web Figure 13:} Boxplots of tag retention estimates
 (\(\hat{\lambda}\)) of 100 simulated datasets analyzed with and without
 the effect of recycled individuals for population size \(1000\) with
-\(T_2=1\) with 10 time periods for varying survival
+\(T_2=1\) with 10 sample times for varying survival
 (\(\phi=0.2,0.5,0.9\)), capture (\(p=0.2,0.5,0.9\)), and tag retention
 (\(\lambda=0.2,0.5,0.9\)) probabilities. The black line indicates the
 true value of \(\lambda\) used to simulate the data for each model.
@@ -795,7 +789,7 @@ true value of \(\lambda\) used to simulate the data for each model.
 Root Mean Squared Error (RMSE) of tag retention estimates
 (\(\hat{\lambda}\)) of 100 simulated datasets analyzed without (R') and
 with (R) the effect of recycled individuals with population size
-\(N=1000\) with \(T_2=1\) with 10 time periods for varying tag retention
+\(N=1000\) with \(T_2=1\) with 10 sample times for varying tag retention
 (\(\lambda=0.2,0.5,0.9\)), varying survival probabilities
 (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
@@ -850,7 +844,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 \textsc{Web Figure 14:} Boxplots of tag retention estimates
 (\(\hat{\lambda}\)) of 100 simulated datasets analyzed with and without
 the effect of recycled individuals for population size \(100000\) with
-\(T_2=1\) with 10 time periods for varying survival
+\(T_2=1\) with 10 sample times for varying survival
 (\(\phi=0.2,0.5,0.9\)), capture (\(p=0.2,0.5,0.9\)), and tag retention
 (\(\lambda=0.2,0.5,0.9\)) probabilities. The black line indicates the
 true value of \(\lambda\) used to simulate the data for each model.
@@ -859,7 +853,7 @@ true value of \(\lambda\) used to simulate the data for each model.
 Root Mean Squared Error (RMSE) of tag retention estimates
 (\(\hat{\lambda}\)) of 100 simulated datasets analyzed without (R') and
 with (R) the effect of recycled individuals with population size
-\(N=1000\) with \(T_2=1\) with 10 time periods for varying tag retention
+\(N=1000\) with \(T_2=1\) with 10 sample times for varying tag retention
 (\(\lambda=0.2,0.5,0.9\)), varying survival probabilities
 (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
@@ -914,7 +908,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 \textsc{Web Figure 15:} Boxplots of tag retention estimates
 (\(\hat{\lambda}\)) of 100 simulated datasets analyzed with and without
 the effect of recycled individuals for population size \(1000\) with
-\(T_2=0.5\) with 10 time periods for varying survival
+\(T_2=0.5\) with 10 sample times for varying survival
 (\(\phi=0.2,0.5,0.9\)), capture (\(p=0.2,0.5,0.9\)), and tag retention
 (\(\lambda=0.2,0.5,0.9\)) probabilities. The black line indicates the
 true value of \(\lambda\) used to simulate the data for each model.
@@ -923,7 +917,7 @@ true value of \(\lambda\) used to simulate the data for each model.
 Root Mean Squared Error (RMSE) of tag retention estimates
 (\(\hat{\lambda}\)) of 100 simulated datasets analyzed without (R') and
 with (R) the effect of recycled individuals with population size
-\(N=1000\) with \(T_2=0.5\) with 10 time periods for varying tag
+\(N=1000\) with \(T_2=0.5\) with 10 sample times for varying tag
 retention (\(\lambda=0.2,0.5,0.9\)), varying survival probabilities
 (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
@@ -978,7 +972,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 \textsc{Web Figure 16:} Boxplots of tag retention estimates
 (\(\hat{\lambda}\)) of 100 simulated datasets analyzed with and without
 the effect of recycled individuals for population size \(100000\) with
-\(T_2=0.5\) with 10 time periods for varying survival
+\(T_2=0.5\) with 10 sample times for varying survival
 (\(\phi=0.2,0.5,0.9\)), capture (\(p=0.2,0.5,0.9\)), and tag retention
 (\(\lambda=0.2,0.5,0.9\)) probabilities. The black line indicates the
 true value of \(\lambda\) used to simulate the data for each model.
@@ -987,7 +981,7 @@ true value of \(\lambda\) used to simulate the data for each model.
 Root Mean Squared Error (RMSE) of tag retention estimates
 (\(\hat{\lambda}\)) of 100 simulated datasets analyzed without (R') and
 with (R) the effect of recycled individuals with population size
-\(N=100000\) with \(T_2=0.5\) with 10 time periods for varying tag
+\(N=100000\) with \(T_2=0.5\) with 10 sample times for varying tag
 retention (\(\lambda=0.2,0.5,0.9\)), varying survival probabilities
 (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
@@ -1042,7 +1036,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 \textsc{Web Figure 17:} Boxplots of tag retention estimates
 (\(\hat{\lambda}\)) of 100 simulated datasets analyzed with and without
 the effect of recycled individuals for population size \(1000\) with
-\(T_2=1\) for 5 time periods for varying survival
+\(T_2=1\) for 5 sample times for varying survival
 (\(\phi=0.2,0.5,0.9\)), capture (\(p=0.2,0.5,0.9\)), and tag retention
 (\(\lambda=0.2,0.5,0.9\)) probabilities. The black line indicates the
 true value of \(\lambda\) used to simulate the data for each model.
@@ -1054,7 +1048,7 @@ true value of \(\lambda\) used to simulate the data for each model.
 \textsc{Web Figure 18:} Boxplots of tag retention estimates
 (\(\hat{\lambda}\)) of 100 simulated datasets analyzed with and without
 the effect of recycled individuals for population size \(1000\) with
-\(T_2=1\) for 7 time periods for varying survival
+\(T_2=1\) for 7 sample times for varying survival
 (\(\phi=0.2,0.5,0.9\)), capture (\(p=0.2,0.5,0.9\)), and tag retention
 (\(\lambda=0.2,0.5,0.9\)) probabilities. The black line indicates the
 true value of \(\lambda\) used to simulate the data for each model.
@@ -1071,7 +1065,7 @@ Estimates}\label{super-population-size-estimates}
 \textsc{Web Figure 19:} Boxplots of super-population size estimates
 (\(N\)) of 100 simulated datasets analyzed with and without the effect
 of recycled individuals for population size \(1000\) with \(T_2=1\) with
-10 time periods for varying survival (\(\phi=0.2,0.5,0.9\)), capture
+10 sample times for varying survival (\(\phi=0.2,0.5,0.9\)), capture
 (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(N\) used to
 simulate the data for each model.
@@ -1080,7 +1074,7 @@ simulate the data for each model.
 Root Mean Squared Error (RMSE) of super-population size estimates
 (\(N\)) of 100 simulated datasets analyzed without (R') and with (R) the
 effect of recycled individuals with population size \(N=1000\) with
-\(T_2=1\) with 10 time periods for varying tag retention
+\(T_2=1\) with 10 sample times for varying tag retention
 (\(\lambda=0.2,0.5,0.9\)), varying survival probabilities
 (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
@@ -1135,7 +1129,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 \textsc{Web Figure 20:} Boxplots of super-population size estimates
 (\(N\)) of 100 simulated datasets analyzed with and without the effect
 of recycled individuals for population size \(100000\) with \(T_2=1\)
-with 10 time periods for varying survival (\(\phi=0.2,0.5,0.9\)),
+with 10 sample times for varying survival (\(\phi=0.2,0.5,0.9\)),
 capture (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(N\) used to
 simulate the data for each model.
@@ -1144,7 +1138,7 @@ simulate the data for each model.
 Root Mean Squared Error (RMSE) of super-population size estimates
 (\(N\)) of 100 simulated datasets analyzed without (R') and with (R) the
 effect of recycled individuals with population size \(N=100000\) with
-\(T_2=1\) with 10 time periods for varying tag retention
+\(T_2=1\) with 10 sample times for varying tag retention
 (\(\lambda=0.2,0.5,0.9\)), varying survival probabilities
 (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
@@ -1199,7 +1193,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 \textsc{Web Figure 21:} Boxplots of super-population size estimates
 (\(N\)) of 100 simulated datasets analyzed with and without the effect
 of recycled individuals for population size \(1000\) with \(T_2=0.5\)
-with 10 time periods for varying survival (\(\phi=0.2,0.5,0.9\)),
+with 10 sample times for varying survival (\(\phi=0.2,0.5,0.9\)),
 capture (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(N\) used to
 simulate the data for each model.
@@ -1208,7 +1202,7 @@ simulate the data for each model.
 Root Mean Squared Error (RMSE) of super-population size estimates
 (\(N\)) of 100 simulated datasets analyzed without (R') and with (R) the
 effect of recycled individuals with population size \(N=1000\) with
-\(T_2=0.5\) with 10 time periods for varying tag retention
+\(T_2=0.5\) with 10 sample times for varying tag retention
 (\(\lambda=0.2,0.5,0.9\)), varying survival probabilities
 (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
@@ -1263,7 +1257,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 \textsc{Web Figure 22:} Boxplots of super-population size estimates
 (\(N\)) of 100 simulated datasets analyzed with and without the effect
 of recycled individuals for population size \(100000\) with \(T_2=0.5\)
-with 10 time periods for varying survival (\(\phi=0.2,0.5,0.9\)),
+with 10 sample times for varying survival (\(\phi=0.2,0.5,0.9\)),
 capture (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(N\) used to
 simulate the data for each model.
@@ -1272,7 +1266,7 @@ simulate the data for each model.
 Root Mean Squared Error (RMSE) of super-population size estimates
 (\(N\)) of 100 simulated datasets analyzed without (R') and with (R) the
 effect of recycled individuals with population size \(N=100000\) with
-\(T_2=0.5\) with 10 time periods for varying tag retention
+\(T_2=0.5\) with 10 sample times for varying tag retention
 (\(\lambda=0.2,0.5,0.9\)), varying survival probabilities
 (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
@@ -1327,7 +1321,7 @@ $\phi$ & p & $\lambda$ & SE (R') & SE (R) & SD (R') & SD (R) & RMSE (R') & RMSE 
 \textsc{Web Figure 23:} Boxplots of super-population size estimates
 (\(N\)) of 100 simulated datasets analyzed with and without the effect
 of recycled individuals for population size \(1000\) with \(T_2=1\) for
-5 time periods for varying survival (\(\phi=0.2,0.5,0.9\)), capture
+5 sample times for varying survival (\(\phi=0.2,0.5,0.9\)), capture
 (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(N\) used to
 simulate the data for each model.
@@ -1339,7 +1333,7 @@ simulate the data for each model.
 \textsc{Web Figure 24:} Boxplots of super-population size estimates
 (\(N\)) of 100 simulated datasets analyzed with and without the effect
 of recycled individuals for population size \(1000\) with \(T_2=1\) for
-7 time periods for varying survival (\(\phi=0.2,0.5,0.9\)), capture
+7 sample times for varying survival (\(\phi=0.2,0.5,0.9\)), capture
 (\(p=0.2,0.5,0.9\)), and tag retention (\(\lambda=0.2,0.5,0.9\))
 probabilities. The black line indicates the true value of \(N\) used to
 simulate the data for each model.
@@ -1352,8 +1346,7 @@ simulate the data for each model.
 
 \textsc{Web Figure 25:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=10\)) between analysis with and without recycled
-individuals with population size \(N=1000\) with \(T_2=1\) with 10 time
-periods for low tag retention (\(\lambda=0.2\)), varying survival
+individuals with population size \(N=1000\) with \(T_2=1\) with 10 sample times for low tag retention (\(\lambda=0.2\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1362,7 +1355,7 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 \textsc{Web Figure 26:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=10\)) between analysis with and without recycled
 individuals with population size \(N=100000\) with \(T_2=1\) with 10
-time periods for low tag retention (\(\lambda=0.2\)), varying survival
+sample times for low tag retention (\(\lambda=0.2\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1373,7 +1366,7 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 \textsc{Web Figure 27:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=10\)) between analysis with and without recycled
 individuals with population size \(N=1000\) with \(T_2=0.5\) with 10
-time periods for low tag retention (\(\lambda=0.2\)), varying survival
+sample times for low tag retention (\(\lambda=0.2\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1382,7 +1375,7 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 \textsc{Web Figure 28:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=10\)) between analysis with and without recycled
 individuals with population size \(N=100000\) with \(T_2=0.5\) with 10
-time periods for low tag retention (\(\lambda=0.2\)), varying survival
+sample times for low tag retention (\(\lambda=0.2\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1392,8 +1385,7 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 
 \textsc{Web Figure 29:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=5\)) between analysis with and without recycled
-individuals with population size \(N=1000\) with \(T_2=1\) with 5 time
-periods for low tag retention (\(\lambda=0.2\)), varying survival
+individuals with population size \(N=1000\) with \(T_2=1\) with 5 sample times for low tag retention (\(\lambda=0.2\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1401,8 +1393,8 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 
 \textsc{Web Figure 30:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=7\)) between analysis with and without recycled
-individuals with population size \(N=1000\) with \(T_2=1\) with 7 time
-periods for low tag retention (\(\lambda=0.2\)), varying survival
+individuals with population size \(N=1000\) with \(T_2=1\) with 7 sample times
+for low tag retention (\(\lambda=0.2\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1412,8 +1404,8 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 
 \textsc{Web Figure 31:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=10\)) between analysis with and without recycled
-individuals with population size \(N=1000\) with \(T_2=1\) with 10 time
-periods for medium tag retention (\(\lambda=0.5\)), varying survival
+individuals with population size \(N=1000\) with \(T_2=1\) with 10 sample times
+for medium tag retention (\(\lambda=0.5\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1422,7 +1414,7 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 \textsc{Web Figure 32:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=10\)) between analysis with and without recycled
 individuals with population size \(N=100000\) with \(T_2=1\) with 10
-time periods for medium tag retention (\(\lambda=0.5\)), varying
+sample times for medium tag retention (\(\lambda=0.5\)), varying
 survival probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture
 probabilities (\(p=0.2,0.5,0.9\)).
 
@@ -1433,7 +1425,7 @@ probabilities (\(p=0.2,0.5,0.9\)).
 \textsc{Web Figure 33:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=10\)) between analysis with and without recycled
 individuals with population size \(N=1000\) with \(T_2=0.5\) with 10
-time periods for medium tag retention (\(\lambda=0.5\)), varying
+sample times for medium tag retention (\(\lambda=0.5\)), varying
 survival probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture
 probabilities (\(p=0.2,0.5,0.9\)).
 
@@ -1442,7 +1434,7 @@ probabilities (\(p=0.2,0.5,0.9\)).
 \textsc{Web Figure 34:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=10\)) between analysis with and without recycled
 individuals with population size \(N=100000\) with \(T_2=0.5\) with 10
-time periods for medium tag retention (\(\lambda=0.5\)), varying
+sample times for medium tag retention (\(\lambda=0.5\)), varying
 survival probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture
 probabilities (\(p=0.2,0.5,0.9\)).
 
@@ -1452,8 +1444,8 @@ probabilities (\(p=0.2,0.5,0.9\)).
 
 \textsc{Web Figure 35:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=5\)) between analysis with and without recycled
-individuals with population size \(N=1000\) with \(T_2=1\) with 5 time
-periods for medium tag retention (\(\lambda=0.5\)), varying survival
+individuals with population size \(N=1000\) with \(T_2=1\) with 5 sample times
+for medium tag retention (\(\lambda=0.5\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1461,8 +1453,7 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 
 \textsc{Web Figure 36:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=7\)) between analysis with and without recycled
-individuals with population size \(N=1000\) with \(T_2=1\) with 7 time
-periods for medium tag retention (\(\lambda=0.5\)), varying survival
+individuals with population size \(N=1000\) with \(T_2=1\) with 7 sample times for medium tag retention (\(\lambda=0.5\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1472,8 +1463,7 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 
 \textsc{Web Figure 37:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=10\)) between analysis with and without recycled
-individuals with population size \(N=1000\) with \(T_2=1\) with 10 time
-periods for high tag retention (\(\lambda=0.9\)), varying survival
+individuals with population size \(N=1000\) with \(T_2=1\) with 10 sample times for high tag retention (\(\lambda=0.9\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1482,7 +1472,7 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 \textsc{Web Figure 38:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=10\)) between analysis with and without recycled
 individuals with population size \(N=100000\) with \(T_2=1\) with 10
-time periods for high tag retention (\(\lambda=0.9\)), varying survival
+sample times for high tag retention (\(\lambda=0.9\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1493,7 +1483,7 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 \textsc{Web Figure 39:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=10\)) between analysis with and without recycled
 individuals with population size \(N=1000\) with \(T_2=0.5\) with 10
-time periods for high tag retention (\(\lambda=0.9\)), varying survival
+sample times for high tag retention (\(\lambda=0.9\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1502,7 +1492,7 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 \textsc{Web Figure 40:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=10\)) between analysis with and without recycled
 individuals with population size \(N=100000\) with \(T_2=0.5\) with 10
-time periods for high tag retention (\(\lambda=0.9\)), varying survival
+sample times for high tag retention (\(\lambda=0.9\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1512,8 +1502,7 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 
 \textsc{Web Figure 41:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=5\)) between analysis with and without recycled
-individuals with population size \(N=1000\) with \(T_2=1\) with 5 time
-periods for high tag retention (\(\lambda=0.9\)), varying survival
+individuals with population size \(N=1000\) with \(T_2=1\) with 5 sample times for high tag retention (\(\lambda=0.9\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1521,8 +1510,7 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 
 \textsc{Web Figure 42:} Mean abundance estimates (\(N_j\)'s) for each
 sample time (\(k=7\)) between analysis with and without recycled
-individuals with population size \(N=1000\) with \(T_2=1\) with 5 time
-periods for high tag retention (\(\lambda=0.9\)), varying survival
+individuals with population size \(N=1000\) with \(T_2=1\) with 5 sample times for high tag retention (\(\lambda=0.9\)), varying survival
 probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 (\(p=0.2,0.5,0.9\)).
 
@@ -1532,7 +1520,7 @@ probabilities (\(\phi=0.2,0.5,0.9\)) and varying capture probabilities
 
 \textsc{Web Table 17:} Examples of the fraction of recycled individuals
 (number of recycled individuals captured / total number of individuals
-captured) at each sample occasion for a 10 occasion experiment with
+captured) at each sample time for a 10 sample-time experiment with
 super-population size \(N=1000\) with 100\% double-tagging.
 
 \begin{table}[ht]
@@ -1562,7 +1550,7 @@ super-population size \(N=1000\) with 100\% double-tagging.
 
 \textsc{Web Table 18:} Examples of the fraction of recycled individuals
 (number of recycled individuals captured / total number of individuals
-captured) at each sample occasion for a 7 occasion experiment with
+captured) at each sample time for a 7 sample-time experiment with
 super-population size \(N=1000\) with 100\% double-tagging.
 
 \begin{table}[ht]
@@ -1594,7 +1582,7 @@ super-population size \(N=1000\) with 100\% double-tagging.
 
 \textsc{Web Table 19:} Examples of the fraction of recycled individuals
 (number of recycled individuals captured / total number of individuals
-captured) at each sample occasion for a 5 occasion experiment with
+captured) at each sample time for a 5 sample-time experiment with
 super-population size \(N=1000\) with 100\% double-tagging.
 
 \begin{table}[ht]
