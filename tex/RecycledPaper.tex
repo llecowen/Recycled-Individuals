@@ -20,7 +20,7 @@
   \fi
   \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
   \newcommand{\euro}{€}
-\fi
+\fi 
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
@@ -73,11 +73,12 @@
   
   %Remove Authors for blind submssion
 %  \author{Emily Malcolm-White\textsuperscript{1},
-%        Laura L.E. Cowen\textsuperscript{2}, 
-%        Clive R. McMahon\textsuperscript{3}\\ 
+%        Clive R. McMahon\textsuperscript{2}, 
+%        Laura L.E. Cowen\textsuperscript{3}, 
+%        \\ 
 %        \textsuperscript{1} Academic Assistance and Tutoring, University of California Davis, Davis, CA, USA\\ 
-%        \textsuperscript{2} Department of Mathematics and Statistics, University of Victoria, Victoria, BC, Canada\\
-  %      \textsuperscript{3} Sydney Institute for Marine Science, Mosman, NSW, Australia}
+  %      \textsuperscript{2} Sydney Institute for Marine Science, Mosman, NSW, Australia\\
+%        \textsuperscript{3} Department of Mathematics and Statistics, University of Victoria, Victoria, BC, Canada}
 
 
 
@@ -122,8 +123,7 @@ framework using long-term census data of elephant seals where we found populatio
 \section{Introduction}\label{introduction}
 
 Mark-recapture studies utilize statistical techniques to estimate
-population parameters. Over \(k\) sampling
-periods, individuals are captured, tagged with unique tags, released and potentially
+population parameters. Over \(k\) sample times, individuals are captured, tagged with unique tags, released and potentially
 recaptured at subsequent sampling times. The Jolly-Seber model \citep{Jolly:1965, Seber:1965}
  is used to model open populations since it
 can estimate parameters of interest such as population size and survival
@@ -137,7 +137,7 @@ purposes. \cite{Cowen:2006} incorporated tag-loss by developing
 the Jolly-Seber tag-loss (JSTL) model for experiments where some
 fraction of individuals are double tagged. This model was further
 extended to account for heterogeneity in capture between groups \citep{Xu:2014}. In the simplest form of the JSTL model, it is assumed that
-every individual present in the population at sampling occasion \(k\)
+every individual present in the population at sample time \(k\)
 has capture, survival, and tag retention
 probabilities that are homogeneous for all individuals in the population
 across all sampling occasions.  However, these assumptions are rarely met and can induce significant bias in the parameter estimates \citep{Schwarz:2012}.
@@ -150,9 +150,9 @@ individuals would be tagged again and treated as ``new'' individuals.
 Individuals who lose both tags and are recaptured and re-tagged are
 known as recycled individuals. For example, an individual with the
 following tag history over three sampling occasions \{11 01 00\} was
-double tagged at time 1, lost a tag between times 1 and 2, and may have
-lost it's last tag between sampling occasions 2 and 3 and then have been
-recaptured at sampling occasion 3 resulting in a new individual with
+double tagged at sample time 1, lost a tag between times 1 and 2, and may have
+lost it's last tag between sample times 2 and 3 and then have been
+recaptured at sample time 3 resulting in a new individual with
 capture history \{00 00 11\}. If the rate of tag loss is small, bias in
 the population estimate will also be small for the Peterson estimators
 \citep{Seber:1981}. Typically in the Jolly-Seber and JSTL models, the
@@ -227,23 +227,22 @@ Models were implemented using R software \citep{R}, and code can be obtained fro
 To study the effect of recycled individuals on parameter estimates of
 this model, we conducted a simulation study. Data were simulated and
 analyzed using R 3.1.1 \citep{R}. Data sets varied both in super-population size,
-parameter values and percent double tagged. We generated data for the
+parameter values, and percent double tagged. We generated data for the
 JSTL model with constant survival, capture, and tag retention
 probabilities for a double-tagging experiment. Super-population sizes of
-1000 and 100 000 were considered in order to determine the effect that
-population size may have on the results. For the super-population size
-of 100 000, experiments with ten sampling occasions were considered. For
+1000 and 100 000 were considered in order to study the effect of population size. For the super-population size
+of 100 000, experiments with ten sample times were considered. For
 the super-population size of 1000 we considered experiments with five,
-seven and ten sampling occasions in order to determine if the length of
-the study has any effect on the results. For each population size, we
+seven and ten sample times in order to determine the effect of the length of
+the study. For each population size, we
 tested different proportions of double-tagged versus single-tagged
 individuals (\(0.5\) and \(1\)). Survival, capture, and tag retention
 probability parameters were varied in a \(3^3\) experimental design with
-low (\(0.2\)), medium (\(0.5\)) and high (\(0.9\)) values for each
+low (\(0.2\)), medium (\(0.5\)) and high (\(0.9\)) values for all
 parameters. The entry rates were fixed to be $1/k$ at each of the
 sampling times. No individuals were lost on capture.
 
-We considered the set of parameter values to be reasonable values that might be encountered in practice and also produce informative capture-recapture scenarios.  Tag retention rates can vary by species, age of the tag, tag type, tag location, behaviour, season, and individual quality (size of an animal for example in seals).  For example, tag retention rates have ranged from 13\% \citep{Fogarty:1980} to 95\% \citep{Gonzalez:2012} in lobsters.  Other studies report tag retention rates of 65\% male elephant seals \citep{Pistorius:2000} and 88\% in Adelie penguins \citep{Ainley:1980}.  Mean retention of visible implant tags has been recorded as 32\% in small rockpool fish \citep{Griffiths:2002}. Turtles in particular experience high tag loss rates.  For example \cite{Bellini:2001} reports the probability of tag loss in hawksbill turtles as 0.57 and    \cite{Bjorndal:1996} observed the probability of tag loss  in green nesting turtles to be as high as 0.38.   Thus, we chose a wide range of tag loss parameter values to try to capture the diversity among published tag loss rates.
+We considered the set of parameter values to be reasonable values that might be encountered in practice and also produce informative capture-recapture scenarios.  Tag retention rates can vary by species, age of the tag, tag type, tag location, behaviour, season, and individual quality (size of an animal for example in seals).  For example, tag retention rates have ranged from 13\% \citep{Fogarty:1980} to 95\% \citep{Gonzalez:2012} in lobsters.  Other studies report tag retention rates of 65\% in male elephant seals \citep{Pistorius:2000} and 88\% in Adelie penguins \citep{Ainley:1980}.  Mean retention of visible implant tags has been recorded as 32\% in small rockpool fish \citep{Griffiths:2002}. Turtles in particular experience high tag loss rates.  For example \cite{Bellini:2001} reports the probability of tag loss in hawksbill turtles as 0.57 and    \cite{Bjorndal:1996} observed the probability of tag loss  in green nesting turtles to be as high as 0.38.   Thus, we chose a wide range of tag loss parameter values to try to capture the diversity among published tag loss rates.
 
 \subsubsection{Simulation of Data}\label{simulation-of-data}
 
@@ -251,7 +250,7 @@ For all of the parameter combinations of super-population size
 (\(N=1 000, 100 \ 000\)), fraction double-tagged (\(0.5, 1\)), survival
 probability (\(\phi=0.2,0.5,0.9\)), capture probability
 (\(p=0.2,0.5,0.9\)) and tag retention probability
-(\(\Lambda=0.2,0.5,0.9\)), we generated 100 data sets where the
+(\(\lambda=0.2,0.5,0.9\)), we generated 100 data sets where the
 simulated data met all the assumptions of the model.
 
 For each individual, we simulated a capture history using the following
@@ -263,28 +262,28 @@ algorithm:
   Determine when the individual enters the population utilizing the
   entry probabilities.
 \item
-  For each time period after entry (until death or first capture) 
-  determine if the individual survives to that time period (with
-  probability \(\phi\)). If they are still alive, determine if they were
+  For each sample time after entry (until death or first capture) 
+  determine if the individual survives to that sample time (with
+  probability \(\phi\)). If they are still alive, determine if they are
   first captured (with probability \(p\)). If they are captured,
   determine whether they are single or double-tagged.
 \item
-  For each time period after first capture (until death, loss of all
+  For each sample time after first capture (until death, loss of all
   tags or the end of the study) determine if the individual survives to
-  that time period (with probability \(\phi\)). Then if they are still
+  that sample time (with probability \(\phi\)). Then if they are still
   alive, determine if they lose any of their tags (with probability
-  \(1-\Lambda\)). If they still have at least one of their tags,
-  determine if they were recaptured (with probability \(p\)). If they
+  \(1-\lambda\)). If they still have at least one of their tags,
+  determine if they are recaptured (with probability \(p\)). If they
   have lost all of their tags, consider them as a new individual
-  entering the population at this time period.
+  entering the population at this sample time.
 \end{enumerate}
 
 By keeping track of all the recycled individuals, this algorithm 
 provides us with two data sets: one that includes the recycled
-individuals (assumes individuals, who have lost their tags, are tagged
+individuals (assumes individuals, who have complete tag loss, are tagged
 again upon recapture and treated as new individuals) and one that
 doesn't include recycled individuals (assumes that individuals, who
-have lost their tags, can be recognized upon recapture and are not
+have complete tag loss, can be recognized upon recapture and are not
 re-tagged). The JSTL model was fit to the 100 simulated data sets twice
 (once with and once without recycled individuals). We assumed that any
 difference between the two analyses was due entirely to the recycled
@@ -298,30 +297,28 @@ the parameter estimates, the standard deviation of the parameter
 estimates, and root mean squared error (RMSE) of the parameter
 estimates.
 
-Given that the \(\hat{p_i}\)'s are the parameter estimates from each of
-the 100 simulations, we calculated:
+Given that the \(\hat{\theta}_i\)'s are the parameter estimates from each of
+the 100 simulations and $\theta$ the value of the parameter, we calculated:
 
 \begin{itemize}
 \tightlist
 \item
   the mean parameter estimate as
-  \(\hat{p}= \frac{1}{100} \sum_{i=1}^{100} \hat{p_i}\)
+  \(\bar{\hat{\theta}}= \frac{1}{100} \sum_{i=1}^{100} \hat{\theta_i}\)
 \item
   average standard error of the parameter estimate as
-  \(\text{SE}(\hat{p})= \frac{1}{100} \sum_{i=1}^{100} \text{SE}(\hat{p_i})\).
+  \(\text{SE}(\hat{\theta})= \frac{1}{100} \sum_{i=1}^{100} \text{SE}(\hat{\theta_i})\).
 \item
   the standard deviation of the parameter estimates as
-  \(\text{SD}(\hat{p})= \sqrt{\frac{1}{99} \sum_{i=1}^{100} (\hat{p_i}-\hat{p})^2}\).
+  \(\text{SD}(\hat{\theta})= \sqrt{\frac{1}{99} \sum_{i=1}^{100} (\hat{\theta_i}-\bar{\hat{\theta}})^2}\).
 \item
   the RMSE of the parameter estimates as
-  \(\text{RMSE}= \sqrt{\frac{1}{100} \sum_{i=1}^{100} (\hat{p_i}-p)^2} \approx \sqrt{\hat{\text{SD}}^2+\hat{\text{Bias}}^2}\).
+  \(\text{RMSE}= \sqrt{\frac{1}{100} \sum_{i=1}^{100} (\hat{\theta}_i-\bar{\hat{\theta}})^2} \).
 \end{itemize}
 
 We compared the average parameter estimates  to the true parameter
 values using relative bias. We calculated the relative bias of the
-estimators as \(\left(\hat{p}\right) =(\hat{p} -p)/p\), where
-\(\hat{p}\) is the average parameter estimate calculated from the 100
-simulations and \(p\) is the true value of the parameter. We also
+estimators as \((\bar{\hat{\theta}} -\theta)/\theta\). We also
 compared the relative bias from the analysis with the recycled
 individuals to the relative bias from the analysis without the recycled
 individuals. We calculated the difference in the two relative biases and
@@ -342,27 +339,27 @@ sizes and double-tagging rates are provided in the Online Supplement (Figures
 A1-A4). Although there is bias in the survival estimates for several of
 the parameter combinations, the bias is similar between the analysis
 with and the analysis without the recycled individuals included for both
-super-population sizes (\(N=1000\) and \(100 000\)) and for both
+super-population sizes (\(N=1000\) and \(100\ 000\)) and for both
 double-tagging rates (\(T_2=0.5,1\)). In fact, the differences in
 relative bias due to recycled individuals for the parameters \(\phi\),
-\(p\) and \(\Lambda\) is small (\textless{}0.01) for all 108 parameter
+\(p\) and \(\lambda\) is small (\textless{}0.01) for all 108 parameter
 combinations considered. In general, the SE, SD and RMSE of the
-estimates of \(\phi\), \(p\) and \(\Lambda\) are similar for both the
+estimates of \(\phi\), \(p\) and \(\lambda\) are similar for both the
 analysis with and without recycled individuals for the parameter
-combinations considered. It seems that, in general, the treatment of
+combinations considered. It seems that the treatment of
 recycled individuals has little effect, if any, on the accuracy of the
 JSTL estimators for survival, capture, and tag-retention probabilities.
 Box plots of capture and tag retention estimates for all models can also
 be found in the Online Supplement (Figures A5-A12).
 
 Results are similar for both the super-population sizes of 1000 and
-100000 for all parameter combinations of survival, capture, and tag
+100 000 for all parameter combinations of survival, capture, and tag
 retention probabilities. There is slightly more bias due to recycled
 individuals for parameter combinations where the probability of double
 tagging (\(T_2\)) was only 0.5, compared to the parameter combinations
 where all individuals were double tagged. As an example, relative bias of
 the parameters are presented for the parameter combination where
-\(\phi=0.9, p=0.9\) and \(\Lambda=0.2\) for both the analysis with and
+\(\phi=0.9, p=0.9\) and \(\lambda=0.2\) for both the analysis with and
 without recycled individuals for varying population size and
 double-tagging probabilities (Table 1).
 
@@ -370,14 +367,14 @@ double-tagging probabilities (Table 1).
 
 \begin{quote}
 \textsc{Figure 1:}
-\textsl{Survival probability estimates for simulated data with super-population size $N=1000$ with 100\% double-tagging for different tag retention probabilities ($\Lambda=0.2,0.5,0.9$), survival probabilities ($\phi=0.2,0.5,0.9$), and different capture probabilities ($p=0.2,0.5,0.9$) using the JSTL model from a ten-sample-time study. Box plots of the estimates of $\phi$ for the model analyzed with and without the recycled individuals are provided. The black line indicates the true value of $\phi$ used to simulate the data for each model.}
+\textsl{Survival probability estimates for simulated data with super-population size $N=1000$ with 100\% double-tagging for different tag retention probabilities ($\lambda=0.2,0.5,0.9$), survival probabilities ($\phi=0.2,0.5,0.9$), and different capture probabilities ($p=0.2,0.5,0.9$) using the JSTL model from a ten-sample-time study. Box plots of the estimates of $\phi$ for the model analyzed with and without the recycled individuals are provided. The black line indicates the true value of $\phi$ used to simulate the data for each model.}
 \end{quote}
 
 ~ ~
 
 \begin{quote}
 \textsc{Table 1:}
-\textsl{The mean relative bias of the parameters from the model analyzed with ($R$) and without ($R'$) the recycled individuals for data with high survival probability ($\phi=0.9$), high capture probability ($p=0.9$), and low tag retention ($\Lambda=0.2$)  for different super-populations sizes ($N=1000,100 000$) and different proportion double tagged ($T_2=0.5,1$) using the JSTL model from a ten-sample-time study. }
+\textsl{The mean relative bias of the parameters from the model analyzed with ($R$) and without ($R'$) the recycled individuals for data with high survival probability ($\phi=0.9$), high capture probability ($p=0.9$), and low tag retention ($\lambda=0.2$)  for different super-populations sizes ($N=1000,100\ 000$) and different proportion double tagged ($T_2=0.5,1$) using the JSTL model from a ten-sample-time study. }
 \end{quote}
 
 \begin{table}[ht]
@@ -386,7 +383,7 @@ double-tagging probabilities (Table 1).
   \hline
 %   \multicolumn{9}{l}{Population Size ($N$) and Proportion Double Tagged ($T_2$)} \\
  
-  & \multicolumn{4}{c}{N=1000} & \multicolumn{4}{c}{N=100000} \\
+  & \multicolumn{4}{c}{N=1000} & \multicolumn{4}{c}{N=100 000} \\
 
  &\multicolumn{2}{c}{$T_2=1$}  &\multicolumn{2}{c}{$T_2=0.5$} &\multicolumn{2}{c}{$T_2=1$} &\multicolumn{2}{c}{$T_2=0.5$}\\ 
 
@@ -395,7 +392,7 @@ double-tagging probabilities (Table 1).
   \hline
 $\phi$ & 0.00 & 0.00 & 0.06 & 0.05 & 0.00 & 0.00 & 0.11 & 0.10 \\ 
   p & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-  $\Lambda$ & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & -0.09 & -0.08 \\ 
+  $\lambda$ & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & -0.09 & -0.08 \\ 
   N & 1.98 & 0.00 & 2.13 & 0.00 & 1.98 & 0.00 & 2.12 & 0.00 \\ 
    \hline
 \end{tabular}
@@ -412,7 +409,7 @@ individuals, the number of observed individuals, \(n_{\text{obs}}\), is larger t
 without the recycled individuals considered. The relative bias in the
 super-population size (\(\hat{N}\)) due to recycled individuals is 
 highest in the scenario with high survival rates (\(\phi=0.9\)), high
-capture rates (\(p=0.9\)) and low tag retention rates (\(\Lambda=0.2\)),
+capture rates (\(p=0.9\)) and low tag retention rates (\(\lambda=0.2\)),
 as predicted (Figure 2, Table 1). The relative bias is small for all
 scenarios where tag retention was high, but relative bias increases as
 tag retention decreases. The relative bias in \(\hat{N}\) decreases as
@@ -433,14 +430,14 @@ scenarios.
 
 \begin{quote}
 \textsc{Figure 2:}
-\textsl{The difference in mean relative bias of the super-population estimate ($\hat{N}$) between the model analyzed with and without the recycled individuals for data with super-population size $N=100 000$ with 100\% double-tagging for different tag retention probabilities ($\Lambda=0.2,0.5,0.9$), survival probabilities ($\phi=0.2,0.5,0.9$), and capture probabilities ($p=0.2,0.5,0.9$) using the JSTL model from a ten-sample-time study.}
+\textsl{The difference in mean relative bias of the super-population estimate ($\hat{N}$) between the model analyzed with and without the recycled individuals for data with super-population size $N=100\ 000$ with 100\% double-tagging for different tag retention probabilities ($\lambda=0.2,0.5,0.9$), survival probabilities ($\phi=0.2,0.5,0.9$), and capture probabilities ($p=0.2,0.5,0.9$) using the JSTL model from a ten-sample-time study.}
 \end{quote}
 
 \includegraphics{RecycledPaper_files/figure-latex/Figure3_N_k-1.pdf}
 
 \begin{quote}
 \textsc{Figure 3:}
-\textsl{Box plots of the estimates of $N$ for the model analyzed with and without the recycled individuals for data with super-population size $N=1000$ with 100\% double-tagging for different capture probabilities ($p=0.2,0.5,0.9$), and constant survival ($\phi=0.9$) and tag retention ($\Lambda=0.2$) probabilities using the JSTL model from experiments with $k=10, 7,$ and $5$ sample-times. }
+\textsl{Box plots of the estimates of $N$ for the model analyzed with and without the recycled individuals for data with super-population size $N=1000$ with 100\% double-tagging for different capture probabilities ($p=0.2,0.5,0.9$), and constant survival ($\phi=0.9$) and tag retention ($\lambda=0.2$) probabilities using the JSTL model from experiments with $k=10, 7,$ and $5$ sample-times. }
 \end{quote}
 
 There is more bias in \(\hat{N}\) due to recycled individuals in longer
@@ -458,7 +455,7 @@ A19-A24).
 
 \begin{quote}
 \textsc{Figure 4:}
-\textsl{The difference in mean relative bias of the abundance estimates at each time period ($\hat{N_j}$) between the model analyzed with and without the recycled individuals for data with super-population size N=100 000 with 100\% double-tagging for different tag retention probabilities ($\Lambda=0.2,0.5,0.9$), survival probabilities ($\phi=0.2,0.5,0.9$), and different capture probabilities ($p=0.2,0.5,0.9$) using the JSTL model from a ten-sample-time study.  Note that lines are added between the points to emphasize the difference in values; no models were fit to generate these lines.}
+\textsl{The difference in mean relative bias of the abundance estimates at each sample time ($\hat{N_j}$) between the model analyzed with and without the recycled individuals for data with super-population size N=100 000 with 100\% double-tagging for different tag retention probabilities ($\lambda=0.2,0.5,0.9$), survival probabilities ($\phi=0.2,0.5,0.9$), and different capture probabilities ($p=0.2,0.5,0.9$) using the JSTL model from a ten-sample-time study.  Note that lines are added between the points to emphasize the difference in values; no models were fit to generate these lines.}
 \end{quote}
 
 In general, the bias due to recycled individuals in the \(\hat{N}_j\)'s
@@ -473,7 +470,7 @@ iteratively as
 \(\hat{N}_{j+1}=\hat{\phi}(\hat{N_j})+\hat{b_j}(\hat{N})\), any bias in
 the earlier abundance estimates is magnified in the later sampling
 occasions abundance estimates. The scenario with \(\phi=0.5\),
-\(p=0.9\), and \(\Lambda=0.2\) appears to have very high relative bias
+\(p=0.9\), and \(\lambda=0.2\) appears to have very high relative bias
 in the abundance estimates in later sampling occasions (\textgreater{}3
 for \(\hat{N}_{10}\)), which is caused by a combination of more upward
 bias in the survival probability estimates for the analysis with recycled
@@ -486,7 +483,7 @@ Seals}\label{case-study-elephant-seals-1}
 
 
 To validate the simulation framework, we analyzed data from a long-term mark-recapture study of elephant seals on Macquarie Island. The data
-used for the case study consists of 7 years between 1993 and 2000. The data can be obtained from Clive McMahon.
+used for the case study consists of 7 years between 1993 and 2000. The data can be obtained from the second author.
 Elephant seal pups were marked with two tags in the inter-digital
 webbing of their hind flippers and were given a permanent hot-iron
 branding with a unique identifier on their flank \citep{McMahon:2009}. This
@@ -500,7 +497,7 @@ We considered two analyzes of the data:
 \def\labelenumi{\arabic{enumi}.}
 \item
   We assumed that recycled individuals could not be recognized upon
-  recapture (ignoring branding) and were re-tagged as if they are new
+  recapture (ignoring branding) and were re-tagged as if they were new
   individuals. This scenario simulates analysis ignoring the effects of
   recycled individuals.
 \item
@@ -516,19 +513,19 @@ As expected, the
 super-population size estimate for the analysis which included the
 recycled individuals ($\hat{N}=8985$) is 30\% larger than the estimate in the analysis
 which excluded recycled individuals ($\hat{N}=6949$) who were recognized upon recapture. This relationship also holds true for the abundance estimates
-at each time period (Table 2). The bias in the abundance estimates increases
+at each sample time (Table 2). The difference in the abundance estimates increases
  as time goes on, again validating the results of our
 simulation study.
 
 Similar to the simulations, there is not much difference in the
-estimates of survival and capture probabilities between the analysis
+estimates of survival, capture, and tag-retention probabilities between the analysis
 with and without recycled individuals. For comparison to the previous
 simulations, we note that tag retention probability for the
 elephant seals was estimated to be $\approx 0.8$ (high).  Standard error estimates are also higher when recycled individuals are included in the analysis. The same pattern is seen in the simulation studies (see Web Appendix A).
 
 \begin{quote}
 \textsc{Table 2}
-\textsl{Estimates of survival probability ($\phi$), capture probability ($p$), tag-retention probability ($\Lambda$), and annual population size ($N_j$) for the elephant seal data analyzed with and without the recycled individuals. Estimated standard errors (SE) are also presented.}
+\textsl{Estimates of survival probability ($\phi$), capture probability ($p$), tag-retention probability ($\lambda$), and annual population size ($N_j$) for the elephant seal data analyzed with and without the recycled individuals. Estimated standard errors (SE) are also presented.}
 \end{quote}
 
 \begin{center}
@@ -537,7 +534,7 @@ elephant seals was estimated to be $\approx 0.8$ (high).  Standard error estimat
 Parameter & Estimate & SE & Estimate & SE \\ \hline
 $\phi$ & 0.759 & 0.006 & 0.744 & 0.006\\
 $p$ & 0.682 & 0.006 & 0.741 & 0.006 \\
-$\Lambda $ & 0.792 & 0.005 & 0.799 & 0.005\\ \hline
+$\lambda $ & 0.792 & 0.005 & 0.799 & 0.005\\ \hline
 %$N$ & 8985 & & 6949& \\ \hline
 $N_{1994}$ & 1740 & 48 & 1601 & 36 \\
 $N_{1995}$ & 1859 & 41 & 1717 & 40 \\
@@ -567,7 +564,7 @@ estimates and that for short-term studies, the effects are reduced.
 
 For longer term studies when survival and capture probabilities are low, the bias in abundance estimates associated with recycled individuals is smaller.  These are characteristics that might be associated with small, endangered, or decreasing populations. 
 
-It is not surprising that survival estimates are not biased upwards when recycled individuals are ignored.  Survival estimates are essentially a relative measure of how many individuals are around now versus the previous time step.  Thus the bias in numerator and denominator essentially cancels out (i.e. $\hat{\phi}_j=\hat{N}_{j}/\hat{N}_{j-1}$).	
+It is not surprising that survival estimates are not biased upwards when recycled individuals are ignored.  Survival estimates are essentially a relative measure of how many individuals are around now versus the previous time step.  Thus the bias in the numerator and the denominator essentially cancels out (i.e. $\hat{\phi}_j \approx \hat{N}_{j}/\hat{N}_{j-1}$).	
 
 Although the case study of elephant seals validated some of the results from
 the simulation study (recycled individuals bias abundance estimates
@@ -590,7 +587,7 @@ could simulate across more levels to try to get a better sense of the
 relationship between the parameters and the effect of recycled
 individuals. Additionally, future work could examine the effect of
 recycled individuals in situations where survival, capture or
-tag-retention probabilities are thought to be time-varying.
+tag-retention probabilities are thought to be time- or group-varying.
 
 For researchers interested in conducting and analyzing mark-recapture
 studies, unsurprisingly we stress the importance of using tags with high retention
