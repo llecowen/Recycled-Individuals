@@ -1,6 +1,6 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: RecycledPaper_MEE.aux
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: RecycledPaper_EE.aux
 The style file: mee.bst
 Database file #1: myrefs.bib
 I was expecting a `,' or a `}'---line 9 of file myrefs.bib
@@ -224,7 +224,7 @@ Name 1 in "Yoshizaki, J., and Brownie, C. and Pollock, K. H. and Link, W. A." ha
 while executing---line 1465 of file mee.bst
 You've used 27 entries,
             2811 wiz_defined-function locations,
-            802 strings with 10158 characters,
+            802 strings with 10156 characters,
 and the built_in function-call counts, 21965 in all, are:
 = -- 2022
 > -- 646
