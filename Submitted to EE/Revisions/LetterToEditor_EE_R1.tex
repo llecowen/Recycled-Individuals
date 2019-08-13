@@ -48,38 +48,91 @@ I would like to submit revisions to the manuscript previously entitled ``The eff
 \bigskip
 
 \noindent {\bf Associate Editor Comments}
+
 We agree with the Associate Editor's suggestions for title changes and distribution of code and have addressed these comments below.
+
+\bigskip
 
 \noindent {\bf Reviewer 1 Comments}
 \begin{enumerate}
+\item  {\it My one recommendation would be that the authors should add a paragraph to the discussion to discuss when the issue of bias is likely to become problematic;  the example they used was instructive,   but did not give much guidance in terms of when researchers should be using a model to account for recycled individuals}
+
+Emily to do.
+
 \end{enumerate}
 
 \noindent {\bf Reviewer 2 Comments}
 \begin{enumerate}
+\item  {\it My main critique is that the language used to describe the models that recognize previously marked individuals which have lost tags (excluded or without recycled) individuals and models that treat such individuals as new captures (included or with recycled) is inconsistent and that led to confusion at times. I had to re-read statements multiple times to make sure I properly understood what a particular model represented. I recommend the authors pick one pair of terms for these two types of models (for example, included and excluded), explain them clearly, and stick with that terminology throughout the manuscript.}
 \end{enumerate}
+
+Emily to do- will use excluded.
+
+\bigskip
+
+\noindent Major Comments
+\begin{enumerate}
+\item  {\it Under Data Accessibility, it states that this study’s data and scripts will be available on Dryad upon the paper’s acceptance. In the methods (line 107) it states that code can be obtained from the second author. I would encourage the authors to upload their data and R scripts, including the JSTL model to Dryad so that others can build upon their work. Requiring people to request code from an author adds an unnecessary barrier in my opinion.}
+
+This was a leftover statement from our submission to MEE and we clarify as follows:
+
+\item  {\it The terminology for recycled individuals included/excluded and with/without recycled individuals was not always clear and it took me a few readings to get it straight in my head. In part, I think this was because at times the terms were “included/excluded” and other times it was “with/without” recycled individuals. I recommend picking one set of terms to distinguish the two model types and sticking with it.}
+
+\item {\it For example, on lines 220-221 the text states “This bias is corrected in the analysis without the recycled individuals considered.” I did not like this phrasing because that model does “consider” the recycled individuals, it just correctly recognizes that they are not “new” individuals but had previously been marked. I have the same issue on line 353 (“excluding these recycled individuals from the analysis can improve accuracy of the abundance estimates”) because “excluding” makes me think these individuals are just thrown out of the data, rather than properly recognizing they were previously marked.}
+
+\item {\it Later under “Case Study: Elephant Seals” the two models are presented as 1) ignores the effects of recycled individuals and 2) recycled individuals were recognized. I would consider revising the description of 1) because saying that recycled individuals were ignored sounded to me as though they were not double counted. Perhaps explicitly label 1) and 2) with the included/excluded terminology to connect these two scenarios to earlier descriptions.}
+
+\item {\it In the discussion, the authors state (lines 342–345) that future studies could simulate data for more levels of the relevant parameters (survival, capture probability, tag retention) to see how recycled individuals affect parameter estimates. I think the authors chose 3 reasonable values that pretty well cover the range of possible values for these parameters. However there really is not anything stopping the current study from simulating data with different parameter values and putting those results in the appendix. My point is that I would not expect a similar future paper to be published if it just repeated the same analysis but with slightly different values of p, φ, and λ, so if the authors think greater insight could be gained from simulating a greater range of values (or filling in the gaps between 0.2, 0.5, and 0.9), this study might be the place to present that information. }
+
+Laura to do.
+
+\item {\it In the simulated data, some individuals are double-tagged and some have single tags. The status of individuals after their first capture is simulated sequentially to see if an individual 1) survives from time t to t+1, 2) loses any tags and 3) is recaptured if it has at least one tag. Presumably, if an individual is recaptured and has lost one tag, researchers could add a new second tag to replace the lost tag. If the goal of a study was to look at the effects of tag loss, one probably would not re-tag. But if the main goal is to estimate abundance and/or survival, one would likely give that individual another second tag to decrease the chances it is not recognized at time t+2 and later. Indeed, that is what I do in my own work, individuals shed PIT tags but can usually be recognized as recaptures because they are branded and brands last several years. What effect would replacing lost tags (but recognizing it is the same individual, and not treating it as new) have on parameter estimates? I expect it would reduce bias in parameter estimates because an individual would have to shed both tags between captures to be completely unrecognizable as a recapture.}
+
+Emily will look into this to see how difficult.  But this may require a whole new model that the JSTL doesn't deal with.
+
+We would love to discuss this more with the reviewer and encourage him/her to contact us outside of this review process.
+
+\noindent Minor Comments
+ \begin{enumerate}
+\item {\it Line 53 – Change “it’s” to “its”}
+\item {\it Lines 69 – 71 – This sentence might be better in the “Case Study: Elephant Seals” section because it provides details about the study of one population of elephant seals. The previous sentence would be a stronger ending to the introduction.}
+\item {\it Line 107 and Line 110 – R is cited as the software used for analysis twice. I think once is sufficient.}
+\item {\it Line 178 – I think the opening statement of the Simulation Results section (“The relative bias of the survival estimates are biased for some parameter combinations...”) is confusing and needs to be revised to something like “Survival estimates are biased for some parameter combinations...”}
+\item {\it Lines 197 – 200 – This sentence does not contain much information and largely exists to tell readers to look at Table 1. I prefer statements that present a result (i.e., bias was greater for scenario X than scenario Y) and then point the reader to the table. The sentence on lines 221 – 224 is a good example of this style.
+Figure 4 – The legend does not show that the three line types represent different values of λ, the caption just states that three different tag retention probabilities are shown in the figure. Also, the caption for Figure 4 states that three values of φ are shown, but this figure only presents relative bias for two values of φ (0.5 and 0.9).}
+\item {\it Line 284 – Correct “analyzes” to “analyses.”}
+\item {\it Table 2 – I would like to see the estimates of Nsuper for both scenarios included here.
+Lines 345-347 – This is good, I agree that evaluating models with temporal or group-level variation would be an important follow-up study.}
+\item {\it Line 348 – Remove “unsurprisingly”}
+\item {\it Line 351 – The JSTL estimator of population size is only weakly affected by recycled individuals when tag retention rates are high (e.g., Figure 2, upper left panel). Saying that the estimate of population size is not affected feels like an overstatement.}
+\item {\it Line 369 – I recommend revising “the JSTL model we looked at” to “the JSTL model we used” or something similar because this study did more than just look at the model.}
+\item {\it Lines 372 – 374 – I find this statement to be too vague. It would be better to name some of these assumptions that are violated in the real world.}
+\item {\it Lines 374 – 375 – The statement “... has the potential to answer and inform researchers and managers” is missing something. Has the potential to answer what? To answer researchers and managers’ questions?}
+\item {\it Line 378 – I find “manage efficiently an ever increasing list of endangered species” to be awkward. It almost sounds like the goal is to manage the list (i.e., by adding or removing species) rather than to manage populations.}
+\item {\it Line 450 – The author list for the Schwarz et al. (2012) reference appears incomplete. The middle authors are M.A. Hindell and C.R. McMahon.}
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+\bigskip
 
 \noindent {\bf Reviewer 3 Comments}
 \begin{enumerate}
+\item  {\it I’m not sure current format of the abstract is what the journal is expecting. I would rather prefer a detailed abstract not in bullet form. The abstract need to be expanded highlighting main contributions.   I also think that the title need to be rephrased to represent the work better. }
+
+\item {\it It would be better to restructure the order of the paper to provide a better readership. As of now, many details are in web appendix and I find it difficult to follow. For example, complete data likelihood can be brought to the paper where the likelihood development is discussed.}
+
+\item {\it Simulations settings and scenarios need to be discussed in terms of selections of parameter values: For example varying capture and survival probabilities.}
+
+\item {it In table 2, parameter estimates with and without recycled seem to be very close but population estimates show a considerable difference. Is there any reasoning for that?}
+
+\item {\it In JSTL, how would you account for loss?}
 \end{enumerate}
 
-\begin{enumerate}
-\item  {\it Line 53, ``caecilian" should be plural.}
-
-Done.
-
-\item  {\it Line 146: I should have spotted this before - the super population parameter N is no more a modelling concept that any other parameter in the model - there really IS a superpopulation N.  I accept that it might not be of much demographic interest.  I would delete ``a modelling concept".}
-
-Deleted ``a modelling concept".
 
 
-\item  {\it Line 172 - I still don't see why phat = 1 is unreliable.  It is the MLE. Is it less reliable than 0.99?  If you want to bring in a priori wighting of different values of p then you should fit a Bayesian model.  I accept that at the boundary the regularity conditions fail but this doesn't make the estimate any more unreliable than any other value.}
-
-We have changed this sentence to read:
-
-``When the estimation of $p$ was on a boundary, $N_j$ was estimated at infinity ($\hat{p}=0$) or $\sum_i r_{ij}$  ($\hat{p}=1$)."
-
-
-\end{enumerate}
 
 
 \noindent Sincerely,
