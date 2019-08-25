@@ -180,7 +180,7 @@ Individuals who lose both tags and are recaptured and re-tagged are
 known as recycled individuals. For example, an individual with the
 following tag history over three sampling occasions \{11 01 00\} was
 double tagged at sample time 1, lost a tag between times 1 and 2, and may have
-lost it's last tag between sample times 2 and 3 and then have been
+lost its last tag between sample times 2 and 3 and then have been
 recaptured at sample time 3 resulting in a new individual with
 capture history \{00 00 11\}. If the rate of tag loss is small, bias in
 the population estimate will also be small for the Peterson estimators
@@ -195,9 +195,7 @@ under which conditions researchers need to be concerned.  This study is importan
 
 In order to determine whether the simulation framework provided a
 reasonable approximation to the real world, we analyzed the effects of
-recycled individuals in long-term census data of elephant seals (\textit{Mirounga leonina}). For
-this particular population, seals could be identified even if they lost
-both tags given that they had a permanent brand \citep{McMahonWhite:2009}.
+recycled individuals in long-term census data of elephant seals (\textit{Mirounga leonina}). 
 
 \section{Materials and Methods}\label{methods}
 
@@ -249,13 +247,12 @@ likelihood (\(L=L_1^A \times L_1^B\)) and can be found in the Online Supplement.
 
 Maximum likelihood parameter estimates are found using a Newton-Raphson type
 method. Estimated standard errors are computed using the delta theorem.
-Models were implemented using R software \citep{R}, and code can be obtained from the second author.
+Models were implemented using R software \citep{R}.
 
 \subsection{Experimental Design}\label{experimental-design}
 
 To study the effect of recycled individuals on parameter estimates of
-this model, we conducted a simulation study. Data were simulated and
-analyzed using R 3.1.1 \citep{R}. Data sets varied both in super-population size,
+this model, we conducted a simulation study. Data sets varied both in super-population size,
 parameter values, and percent double tagged. We generated data for the
 JSTL model with constant survival, capture, and tag retention
 probabilities for a double-tagging experiment. Super-population sizes of
@@ -359,7 +356,7 @@ recycled individuals being tagged as ``new'' individuals.
 
 \section{Simulation Results}\label{results}
 
-The relative bias of the survival estimates are biased for some
+The survival estimates are biased for some
 parameter combinations of survival, capture, and tag retention
 probabilities. As an example, box plots of survival estimates for data
 with super-population size N=1000 and 100\% double tagging are provided
@@ -367,7 +364,7 @@ with super-population size N=1000 and 100\% double tagging are provided
 sizes and double-tagging rates are provided in the Online Supplement (Figs
 A1-A4). Although there is bias in the survival estimates for several of
 the parameter combinations, the bias is similar between the analysis
-with and the analysis without the recycled individuals included for both
+including and the analysis excluding the recycled individuals for both
 super-population sizes (\(N=1000\) and \(100\ 000\)) and for both
 double-tagging rates (\(T_2=0.5,1\)). In fact, the differences in
 relative bias due to recycled individuals for the parameters \(\phi\),
@@ -381,12 +378,8 @@ JSTL estimators for survival, capture, and tag-retention probabilities.
 Box plots of capture and tag retention estimates for all models can also
 be found in the Online Supplement (Figs A5-A12).
 
-Results are similar for both the super-population sizes of 1000 and
-100 000 for all parameter combinations of survival, capture, and tag
-retention probabilities. There is slightly more bias due to recycled
-individuals for parameter combinations where the probability of double
-tagging (\(T_2\)) was only 0.5, compared to the parameter combinations
-where all individuals were double tagged. As an example, relative bias of
+There is slightly more bias due to recycled individuals for parameter combinations 
+where the probability of double tagging (\(T_2\)) was only 0.5, compared to the parameter combinations where all individuals were double tagged. As an example, relative bias of
 the parameters are presented for the parameter combination where
 \(\phi=0.9, p=0.9\) and \(\lambda=0.2\) for both the analysis with and
 without recycled individuals for varying population size and
