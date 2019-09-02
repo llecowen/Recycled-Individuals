@@ -428,8 +428,7 @@ The estimate of super-population size (\(\hat{N}\)) is computed as
 estimated probability of never being seen. In the scenarios where many
 recycled individuals were recaptured and considered as ``new''
 individuals (included), the number of observed individuals, \(n_{\text{obs}}\), is larger than it should  be and thus,
-\(\hat{N}\) is biased upwards. This bias is corrected in the analysis
-which excludes the recycled individuals. The relative bias in the
+\(\hat{N}\) is biased upwards. By recognizing recycled individuals upon recapture, this bias can be corrected. The relative bias in the
 super-population size (\(\hat{N}\)) due to recycled individuals is 
 highest in the scenario with high survival rates (\(\phi=0.9\)), high
 capture rates (\(p=0.9\)) and low tag retention rates (\(\lambda=0.2\)),
@@ -521,10 +520,9 @@ We considered two analyses of the data:
 \item
   We assumed that recycled individuals could not be recognized upon
   recapture (ignoring branding) and were re-tagged as if they were new
-  individuals. Recycled individuals are incuded. This scenario simulates analysis ignoring the effects of
-  recycled individuals. 
+  individuals.  \textit{ Recycled individuals are included.} This scenario simulates analysis ignoring the effects of recycled individuals. 
 \item
-  Recycled individuals were recognized upon recapture (by branding) and were re-tagged with new tags identical to their lost tags. Thus, recycled individuals are excluded. 
+  Recycled individuals were recognized upon recapture (by branding) and were re-tagged with new tags identical to their lost tags. Thus, \textit{recycled individuals are excluded.} 
 \end{enumerate}
 
 
@@ -617,9 +615,8 @@ studies, we stress the importance of using tags with high retention
 rates, especially in situations where survival and capture rates are
 suspected to be high. As long as tag-retention is high, the JSTL
 estimator of population size is only weakly affected by recycled individuals. In
-situations where it is possible to recognize if an individual has been
-captured previously (by scarring, marking, etc), excluding these
-recycled individuals from the analysis can improve accuracy of the
+situations where it is possible, recognizing if an individual has been
+captured previously (by scarring, marking, etc) can improve accuracy of the
 abundance estimates. Permanent marking should be used where possible. If
 researchers are only interested in the survival rates, they do not need
 to be concerned with the effect of recycled individuals regardless of
