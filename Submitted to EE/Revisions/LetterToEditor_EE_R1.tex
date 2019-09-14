@@ -91,15 +91,20 @@ abundance estimates.''
 
 \item {\it Later under “Case Study: Elephant Seals” the two models are presented as 1) ignores the effects of recycled individuals and 2) recycled individuals were recognized. I would consider revising the description of 1) because saying that recycled individuals were ignored sounded to me as though they were not double counted. Perhaps explicitly label 1) and 2) with the included/excluded terminology to connect these two scenarios to earlier descriptions.}
 
-Those descrptions do contain the words included and excluded. The words are now italized in an attempt to make it more prominent. 
+Those descriptions do contain the words included and excluded. The words are now italicized in an attempt to make it more prominent. 
 
-\item {\it In the discussion, the authors state (lines 342–345) that future studies could simulate data for more levels of the relevant parameters (survival, capture probability, tag retention) to see how recycled individuals affect parameter estimates. I think the authors chose 3 reasonable values that pretty well cover the range of possible values for these parameters. However there really is not anything stopping the current study from simulating data with different parameter values and putting those results in the appendix. My point is that I would not expect a similar future paper to be published if it just repeated the same analysis but with slightly different values of p, φ, and λ, so if the authors think greater insight could be gained from simulating a greater range of values (or filling in the gaps between 0.2, 0.5, and 0.9), this study might be the place to present that information. }
+\item {\it In the discussion, the authors state (lines 342 – 345) that future studies could simulate data for more levels of the relevant parameters (survival, capture probability, tag retention) to see how recycled individuals affect parameter estimates. I think the authors chose 3 reasonable values that pretty well cover the range of possible values for these parameters. However there really is not anything stopping the current study from simulating data with different parameter values and putting those results in the appendix. My point is that I would not expect a similar future paper to be published if it just repeated the same analysis but with slightly different values of p, φ, and λ, so if the authors think greater insight could be gained from simulating a greater range of values (or filling in the gaps between 0.2, 0.5, and 0.9), this study might be the place to present that information. }
 
-Laura to do.
+We agree with this comment that we have covered a reasonable range of parameter values and to go into further parameter values won't likely uncover a different story.  We have reworded lines 342 to 345 to read
+
+``For researchers with a particular population in mind, different levels of survival, capture, or tag retention could be investigated."
 
 \item {\it In the simulated data, some individuals are double-tagged and some have single tags. The status of individuals after their first capture is simulated sequentially to see if an individual 1) survives from time t to t+1, 2) loses any tags and 3) is recaptured if it has at least one tag. Presumably, if an individual is recaptured and has lost one tag, researchers could add a new second tag to replace the lost tag. If the goal of a study was to look at the effects of tag loss, one probably would not re-tag. But if the main goal is to estimate abundance and/or survival, one would likely give that individual another second tag to decrease the chances it is not recognized at time t+2 and later. Indeed, that is what I do in my own work, individuals shed PIT tags but can usually be recognized as recaptures because they are branded and brands last several years. What effect would replacing lost tags (but recognizing it is the same individual, and not treating it as new) have on parameter estimates? I expect it would reduce bias in parameter estimates because an individual would have to shed both tags between captures to be completely unrecognizable as a recapture.}
 
-This may require a whole new model that the JSTL doesn't deal with. We would love to discuss this more with the reviewer and encourage him/her to contact us outside of this review process.
+This is an interesting comment and a solid question for future work in a few directions.  The reviewer is correct that building retagging into the study design would likely reduce bias in the abundance estimates as complete tag loss would be minimized.  However, to quantify this bias (or bias reduction) one would have to develop a model that incorporates retagging. We are not currently aware of a capture-recapture model that does this and certainly, the JSTL model does not currently allow for this.  We suspect that another advantage to doing this is that there would be an increase to the precision in the tag retention parameters under the assumption of equal tag retention for the new tags and the old tags.  If tag loss was modelled to increase over time from tagging, then parameter estimates would likely be less precise. We would love to discuss this more with the reviewer and encourage him/her to contact us outside of this review process to possibly collaborate on the development of a retagging model.
+
+We have incorporated this comment into our discussion between lines 368 and 369
+``Alternatively, researchers could replace lost tags on a recaptured individual thereby minimizing the occurrence of complete tag loss.  Depending on model assumptions, the JSTL model may not be appropriate for a study design involving retagging.  Future work would involve extending the JSTL model to  incorporate re-tagged individuals and assess the performance of recycled individuals within this framework."
 
 \noindent Minor Comments
 \begin{enumerate}
@@ -157,14 +162,20 @@ done.
 \noindent {\bf Reviewer 3 Comments}
 \begin{enumerate}
 \item  {\it I’m not sure current format of the abstract is what the journal is expecting. I would rather prefer a detailed abstract not in bullet form. The abstract need to be expanded highlighting main contributions.   I also think that the title need to be rephrased to represent the work better. }
-The bullet form abstract is leftover from our submission to MEE - we have updated the format. 
+
+The bullet form abstract is leftover from our submission to MEE - we have left the format as is, as suggested by the Associate Editor.
+
+We have rephrased the title including the suggestions of the Associate Editor to ``Complete tag loss in capture-recapture estimates affect abundance estimates: an elephant seal case study."
 
 \item {\it It would be better to restructure the order of the paper to provide a better readership. As of now, many details are in web appendix and I find it difficult to follow. For example, complete data likelihood can be brought to the paper where the likelihood development is discussed.}
 
 \item {\it Simulations settings and scenarios need to be discussed in terms of selections of parameter values: For example varying capture and survival probabilities.}
-We are unsure what is meant by this. 
 
-\item {it In table 2, parameter estimates with and without recycled seem to be very close but population estimates show a considerable difference. Is there any reasoning for that?}
+We are unsure what is meant by this. We discussed the simulation settings in lines 109 to 121.  We discussed the rational for parameter values in lines 122 to 133.  We are not sure what additional information the reviewer is asking for.
+
+\item {\it In table 2, parameter estimates with and without recycled seem to be very close but population estimates show a considerable difference. Is there any reasoning for that?}
+
+This observation is exactly the findings we are presenting in the simulations study and throughout the paper.  We attempted to address this issue in the discussion already (lines 328 to 331) in the context of survival probabilities.
 
 
 \item {\it In JSTL, how would you account for loss?}
