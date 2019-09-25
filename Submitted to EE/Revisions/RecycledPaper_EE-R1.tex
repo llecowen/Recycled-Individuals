@@ -37,7 +37,7 @@
 \usepackage{hyperref}
 \PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
 \hypersetup{unicode=true,
-            pdftitle={The Effect of Recycled Individuals in the Jolly-Seber Model with Tag Loss},
+            pdftitle={Complete tag loss in capture-recapture estimates affect abundance estimates: an elephant seal case study},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
@@ -72,7 +72,7 @@
 }
 
 \setlength{\droptitle}{-2em}
-  \title{The effect of recycled individuals in the Jolly-Seber model with tag loss.}
+  \title{Complete tag loss in capture-recapture estimates affect abundance estimates: an elephant seal case study.}
   \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
   
@@ -124,7 +124,22 @@ $*$Corresponding author: Mathematics and Statistics, University of Victoria,
 
 \begin{quote}
 \textsc{ABSTRACT:} 
-In mark-recapture studies, the Jolly-Seber model assumes that individuals never lose their tags. In practice however, we know that tag loss does occur. Cowen and Schwarz (2006) developed the Jolly-Seber model with tag loss that relaxes this assumption and allows for estimation of tag retention and abundance in double-tagging experiments. Recycled individuals occur when individuals lose all of their tags and are recaptured as "new" individuals. Typically, the effect of these recycled individuals is assumed negligible. With low tag-retention rates, high capture rates, and high survival rates, recycled individuals can produce overestimates of population size. These results are particularly noticeable in longer studies. Through a simulation-based study, we examine the effect of recycled individuals on parameter estimates. We determine under what conditions recycled individuals have the most impact and offer advice for study designs. 
+\begin{enumerate}
+	\item In capture-recapture studies, recycled individuals occur
+when individuals lose all of their tags and are recaptured as though they were new
+individuals. Typically, the effect of these recycled individuals is
+assumed negligible. 
+
+	\item Through a simulation-based study of double tagging experiments, we examined the
+effect of recycled individuals on parameter estimates in the
+Jolly-Seber model with tag loss \citep{Cowen:2006}. We validated the simulation
+framework using long-term census data of elephant seals.
+
+	\item  Including recycled individuals did not affect estimates of capture, survival, and tag-retention probabilities. However, with low tag-retention
+rates, high capture rates, and high survival rates, recycled individuals produced overestimates of population size. For the elephant seal case study, we found population size estimates to be between 8 and 53\% larger when recycled individuals were ignored. 
+
+	\item Ignoring the effects of recycled individuals can cause large biases in population size estimates. These results are particularly noticeable in longer studies.
+	\end{enumerate} 
 \end{quote}
 
 \begin{quote}
@@ -554,25 +569,12 @@ $N$ & 8985 & & 6949 & & \\ \hline
 \end{center}
 
 \section{Discussion}\label{discussion}
-Through both a simulation study and an elephant seal case study, we examined the effect of recycled individuals on parameter estimates from the Jolly-Seber tag loss model.
-In an attempt to emulate the many different real life scenarios
-researchers may face, we simulated over many different values of
-survival probability, capture probability, tag-retention probability, population size, study length, and proportion double tagged. While
-these scenarios do not cover all possible realistic mark-recapture
-experiments, our simulations are sufficient to show that the JSTL
-abundance estimates can be substantially biased by recycled individuals,
-especially when tag-retention is low combined with high survival, high
-capture rates, or both. This effect is especially noticeable in longer
-experiments. These results brings context to the assumption that the effect of
-recycled individuals is negligible in mark-recapture models. However, we
-show that in general, recycled individuals have little effect on the
-accuracy of the survival, capture, and tag-retention probability
+Through both a simulation study and an elephant seal case study, we examined the effect of recycled individuals on parameter estimates from the Jolly-Seber tag loss model. In an attempt to emulate the many different real life scenarios researchers may face, we simulated over many different values of survival probability, capture probability, tag-retention probability, population size, study length, and proportion double tagged. While these scenarios do not cover all possible realistic mark-recapture experiments, our simulations are sufficient to show that the JSTL abundance estimates can be substantially biased by recycled individuals, especially when tag-retention is low combined with high survival, high capture rates, or both. This effect is especially noticeable in longer experiments. These results brings context to the assumption that the effect of recycled individuals is negligible in mark-recapture models. However, we show that in general, recycled individuals have little effect on the accuracy of the survival, capture, and tag-retention probability
 estimates and that for short-term studies, the effects are reduced.
 
 For longer term studies when survival and capture probabilities are low, the bias in abundance estimates associated with recycled individuals is smaller.  These are characteristics that might be associated with small, endangered, or decreasing populations. 
 
 It is not surprising that survival estimates are not biased upwards when recycled individuals are ignored.  Survival estimates are essentially a relative measure of how many individuals are around now versus the previous time step.  Thus the bias in the numerator and the denominator essentially cancels out (i.e. $\hat{\phi}_j \approx \hat{N}_{j}/\hat{N}_{j-1}$).	
-
 Although the case study of elephant seals validated some of the results from
 the simulation study (recycled individuals bias abundance estimates
 upwards), some caution must be taken when comparing simulation studies
@@ -596,22 +598,21 @@ individuals. Additionally, future work could examine the effect of
 recycled individuals in situations where survival, capture or
 tag-retention probabilities are thought to be time- or group-varying.
 
+Developing a model to incorporate recycled individuals is a similar problem to that of incorporating misidentification of individuals.  \cite{Schwarz:1999} developed a model to deal with tag-misreads in an open population capture-recapture setting.  However most of the misidentification literature focusses on genetic or photographic identification errors.  Here multiple identities can be assigned to the same individual leading to overestimates in population size if misidentification is ignored \citep{Yoshizaki:2011}. This is the same result that we see when recycled individuals are ignored.   \cite{Link:2010} introduced the notion of using a latent multinomial to model the latent capture histories for a closed population model. Others have extended \citeauthor{Link:2010}'s model to deal with multiple non-invasive marks \citep{Bonner:2013, McClintock:2013}, heterogeneity in parameters \citep{Mcclintock:2014} and open populations \citep{Bonner:2013}.  These latent multinomial models could be extended to include misidentification produced by complete tag loss.
+
+Finally, the JSTL model we used did not include a component for loss on capture (when for example a fishery harvest occurs).  It would be interesting for future work to include loss on capture to determine if recycled individuals are still problematic under this scenario.  There remains a great deal more to study including testing some of the many assumptions that capture-mark-recapture analyses rely on.  Increasing computation power and a larger community applying themselves to these problems has the potential to inform researchers and managers in a meaningful way, especially in terms of how we use imperfect observations to estimate vital rates (survival and fecundity). Having more robust estimates of vital rates is especially important if we are to effectively manage populations on an ever increasing list of endangered species.
+
 For researchers interested in conducting and analyzing mark-recapture
-studies, we stress the importance of using tags with high retention
+studies to determine abundance estimates, we stress the importance of using tags with high retention
 rates, especially in situations where survival and capture rates are
 suspected to be high. As long as tag-retention is high, the JSTL
-estimator of population size is only weakly affected by recycled individuals. In
+estimator of population size is only weakly affected by recycled individuals. Longer studies should be particularly concerned about recycled individuals biasing abudance estimates.  In
 situations where it is possible, recognizing if an individual has been
 captured previously (by scarring, marking, etc) can improve accuracy of the
 abundance estimates. Permanent marking should be used where possible. If
 researchers are only interested in the survival rates, they do not need
 to be concerned with the effect of recycled individuals regardless of
 the study's tag-retention rates.
-
-Developing a model to incorporate recycled individuals is a similar problem to that of incorporating misidentification of individuals.  \cite{Schwarz:1999} developed a model to deal with tag-misreads in an open population capture-recapture setting.  However most of the misidentification literature focusses on genetic or photographic identification errors.  Here multiple identities can be assigned to the same individual leading to overestimates in population size if misidentification is ignored \citep{Yoshizaki:2011}. This is the same result that we see when recycled individuals are ignored.   \cite{Link:2010} introduced the notion of using a latent multinomial to model the latent capture histories for a closed population model. Others have extended \citeauthor{Link:2010}'s model to deal with multiple non-invasive marks \citep{Bonner:2013, McClintock:2013}, heterogeneity in parameters \citep{Mcclintock:2014} and open populations \citep{Bonner:2013}.  These latent multinomial models could be extended to include misidentification produced by complete tag loss.
-
-Finally, the JSTL model we used did not include a component for loss on capture (when for example a fishery harvest occurs).  It would be interesting for future work to include loss on capture to determine if recycled individuals are still problematic under this scenario.  There remains a great deal more to study including testing some of the many assumptions that capture-mark-recapture analyses rely on.  Increasing computation power and a larger community applying themselves to these problems has the potential to inform researchers and managers in a meaningful way, especially in terms of how we use imperfect observations to estimate vital rates (survival and fecundity). Having more robust estimates of vital rates is especially important if we are to effectively manage populations on an ever increasing list of endangered species.
-
 
   %Remove Acknowledgments for blind submssion
 \section{Acknowledgements}\label{acknowledgements}
