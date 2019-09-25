@@ -63,7 +63,7 @@ Laura Cowen, Emily Malcolm-White and Clive McMahon
 
 \noindent {\bf Associate Editor Comments}
 
-We agree with the Associate Editor's suggestions for title changes and distribution of code. The title has been updated to ``Complete tag loss in capture-recapture estimates affect abundance estimates: an elephant seal case study". We intend to upload our data and R scripts on Dryad. 
+We agree with the Associate Editor's suggestions for title changes and distribution of code. The title has been updated to ``Complete tag loss in capture-recapture studies affect abundance estimates: an elephant seal case study". We intend to upload our data and R scripts on Dryad. 
 
 \bigskip
 
@@ -164,30 +164,39 @@ We have removed this sentence and changed the sentence on line 193 to read: ``Re
 Values of $\phi$ have been updated to only include 0.5 and 0.9. 
 
 \item {\it Line 284 – Correct “analyzes” to “analyses.”} 
+
 done.
 
 \item {\it Table 2 – I would like to see the estimates of Nsuper for both scenarios included here.}
+
 done.
 
 \item {\it Line 348 – Remove “unsurprisingly”} 
+
 done.
 
 \item {\it Line 351 – The JSTL estimator of population size is only weakly affected by recycled individuals when tag retention rates are high (e.g., Figure 2, upper left panel). Saying that the estimate of population size is not affected feels like an overstatement.} 
+
 done.
 
 \item {\it Line 369 – I recommend revising “the JSTL model we looked at” to “the JSTL model we used” or something similar because this study did more than just look at the model.} 
+
 done.
 
 \item {\it Lines 372 – 374 – I find this statement to be too vague. It would be better to name some of these assumptions that are violated in the real world.}
-Updated to ``There remains a great deal more to study including testing some of the many assumptions that capture-mark-recapture analyses rely on. ''.  What examples could we add of where assumptions may be violated in the real world? tag loss independent between tags? sampling occurs instantaneously? survival probabilities are independent of previous capture history? 
+
+Removed this line.
 
 \item {\it Lines 374 – 375 – The statement “... has the potential to answer and inform researchers and managers” is missing something. Has the potential to answer what? To answer researchers and managers’ questions?}
+
 removed ``answer and''. It now reads ``has the potential to inform researchers and managers in a meaningful way''
 
 \item {\it Line 378 – I find “manage efficiently an ever increasing list of endangered species” to be awkward. It almost sounds like the goal is to manage the list (i.e., by adding or removing species) rather than to manage populations.}
+
 updated to ``Having more robust estimates of vital rates is especially important if we are to effectively manage populations on an ever increasing list of endangered species.''
 
 \item {\it Line 450 – The author list for the Schwarz et al. (2012) reference appears incomplete. The middle authors are M.A. Hindell and C.R. McMahon.}
+
 done.
 \end{enumerate}
 
@@ -199,14 +208,15 @@ done.
 
 \noindent {\bf Reviewer 3 Comments}
 \begin{enumerate}
-\item  {\it I’m not sure current format of the abstract is what the journal is expecting. I would rather prefer a detailed abstract not in bullet form. The abstract need to be expanded highlighting main contributions.   I also think that the title need to be rephrased to represent the work better. }
+\item  {\it I'm not sure current format of the abstract is what the journal is expecting. I would rather prefer a detailed abstract not in bullet form. The abstract need to be expanded highlighting main contributions.   I also think that the title need to be rephrased to represent the work better. }
 
 The bullet form abstract is leftover from our submission to MEE - we have left the format as is, as suggested by the Associate Editor.
 
-We have rephrased the title including the suggestions of the Associate Editor to ``Complete tag loss in capture-recapture estimates affect abundance estimates: an elephant seal case study."
+We have rephrased the title including the suggestions of the Associate Editor to ``Complete tag loss in capture-recapture studies affect abundance estimates: an elephant seal case study."
 
 \item {\it It would be better to restructure the order of the paper to provide a better readership. As of now, many details are in web appendix and I find it difficult to follow. For example, complete data likelihood can be brought to the paper where the likelihood development is discussed.}
 
+\textbf{TODO}- read through for flow
 
 \item {\it Simulations settings and scenarios need to be discussed in terms of selections of parameter values: For example varying capture and survival probabilities.}
 
@@ -218,6 +228,7 @@ This observation is exactly the findings we are presenting in the simulations st
 
 
 \item {\it In JSTL, how would you account for loss?}
+
 Is the reviewer referring to loss on capture? If so, it is possible to include a component for loss on capture in the JSTL model. However, for this analysis it was not included. This is addressed by the first sentence in the last paragraph ``Finally, the JSTL model we used did not include a component for loss on capture (when for example a fishery harvest occurs).  It would be interesting for future work to include loss on capture to determine if recycled individuals are still problematic under this scenario.''
 \end{enumerate}
 
