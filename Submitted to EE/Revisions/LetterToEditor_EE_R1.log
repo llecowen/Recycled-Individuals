@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 SEP 2019 12:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 SEP 2019 14:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -165,18 +165,12 @@ Missing character: There is no “ in font cmti12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no “ in font cmti12!
-Missing character: There is no Î in font cmti12!
-Missing character: There is no » in font cmti12!
-Missing character: There is no Ï in font cmti12!
-Missing character: There is no † in font cmti12!
-Missing character: There is no Ï in font cmti12!
-Missing character: There is no † in font cmti12!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 148.
+(Font)              <12> on input line 150.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 148.
+(Font)              <8> on input line 150.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 148.
+(Font)              <6> on input line 150.
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no “ in font cmti12!
@@ -267,14 +261,14 @@ Here is how much of TeX's memory you used:
  3854 multiletter control sequences out of 15000+600000
  7030 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 22i,5n,19p,1227b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 22i,5n,19p,1227b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/font
 s/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmti12.pfb>
-Output written on LetterToEditor_EE_R1.pdf (7 pages, 88421 bytes).
+Output written on LetterToEditor_EE_R1.pdf (7 pages, 88893 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
