@@ -2,7 +2,7 @@
 title: "Web-based Supplementary Materials for The Effect of Recycled Individuals in the Jolly-Seber Tag Loss Model"
 output:
   pdf_document:
-    keep_tex: true
+    keep_tex: true #generates .tex file
     fig_height: 3.5
 ---
 
