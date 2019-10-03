@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 SEP 2019 10:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 OCT 2019 12:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -251,7 +251,13 @@ Missing character: There is no ù in font cmti12!
 Missing character: There is no ‚ in font cmti12!
 Missing character: There is no Ä in font cmti12!
 Missing character: There is no ì in font cmti12!
- [7] [8] (./LetterToEditor_EE_R1.aux) ) 
+
+Overfull \hbox (12.73143pt too wide) in paragraph at lines 219--220
+[]\OT1/cmr/m/n/12 We have in-creased the dis-cus-sion of the com-plete data lik
+e-li-hood within the manuscript. 
+ []
+
+[7] [8] (./LetterToEditor_EE_R1.aux) ) 
 Here is how much of TeX's memory you used:
  225 strings out of 492995
  2535 string characters out of 6132704
@@ -260,13 +266,13 @@ Here is how much of TeX's memory you used:
  7030 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  22i,5n,19p,1227b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/font
-s/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti12.pfb>
-Output written on LetterToEditor_EE_R1.pdf (8 pages, 90792 bytes).
+</usr/local/texlive/2017/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti12.pfb>
+Output written on LetterToEditor_EE_R1.pdf (8 pages, 90017 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
