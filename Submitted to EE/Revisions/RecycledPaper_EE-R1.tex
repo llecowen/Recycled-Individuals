@@ -201,7 +201,7 @@ recycled individuals in long-term census data of elephant seals (\textit{Miroung
 
 \begin{quote}
 \textsc{Figure 1:}
-\textsl{Photograph of elephant seal (\textit{Mirounga leonina}) at Macquarie Island}
+\textsl{Photograph of elephant seal (\textit{Mirounga leonina}) at Macquarie Island.}
 \end{quote}
 
 \section{Materials and Methods}\label{methods}
@@ -209,52 +209,33 @@ recycled individuals in long-term census data of elephant seals (\textit{Miroung
 \subsection{The Jolly-Seber Model with Tag Loss
 (JSTL)}\label{the-jolly-seber-model-with-tag-loss-jstl}
 
-Full development of the JSTL model is given by \citep{Cowen:2006} and summarized in the Online Supplement including a table of notation.  
+Full development of the JSTL model is given by \citep{Cowen:2006}.  Data are typically in the form of tag histories for each individual in the study.  Let $\omega_{ijd}$ denote the entries of the tag history for individual $i$ at time $j$, tag $d$; $i=1, \cdots, n_{obs}$, $j=1, \cdots, k$, $d=1,2$; with $\omega_{ijd}$ equally 1 or 0 if the individual was seen with tag $d$ or not.  Capture histories $\omega^*$ used in most capture-recapture studies can be easily obtained from the tag histories $\omega$ and are a series of 1s and 0s depicting whether or not an individual was captured at each sample time. We focus on the case with constant parameters as used in our simulation study.  Let $\phi$ denote the survival probability, $p$ the capture probability, $\lambda$ the tag retention probability, and $b_t$ the entry probability for time $t$.  $\Psi$ and $\chi$ are recursive functions of parameters that deal with an individual's history up to the first time see ($f_i$) and after the last time seen ($l_i$) with $n_t$ tags respectively.
 
-Many different models can be specified for the JSTL model where
-parameters are homogeneous or heterogeneous with respect to time or
-group. We consider the case of the JSTL model where capture, survival,
-and tag retention probabilities are constant over time \citep{Cowen:2006}. 
+The JSTL model is developed under the idea of a superpopulation (the number of individuals that will enter population at some point during the study) \citep{Schwarz:1996} and this allows the likelihood to be formulated into two parts: 1) a model for the observed number of unique tag histories ($n_{obs}$) given the superpopulation size ($N$) and  2) a model for the recaptures (in the form of capture history frequencies $n_{\omega_i}$) given the observed number of unique tag histories ($n_{obs}$).  The full likelihood is given by the product of these components as follows:
 
-Assumptions of the JSTL model with constant survival, capture, and tag
-retention probabilities and time-varying entry probabilities are as
-follows:
+\[
+L=\binom{N}{n_\text{obs}} \left\{ \sum_{j=0}^{k-1} b_j(1-p)\chi_{(0,j+1,0)} \right\} ^{(N-n_\text{obs})} \left\{ 1- \sum_{j=0}^{k-1} b_j(1-p)\chi_{(0,j+1,0)} \right\} ^{n_\text{obs}} \times
+\] \[
+\binom{n_\text{obs}}{n_{\omega_1},n_{\omega_2},...,n_{\omega_m}} \prod_{i=1}^{m} \Bigg[ \psi_{f_i} T_d \left\{ \prod_{j=f_i}^{l_i} p^{w*_{ij}} (1-p)^{(1-w*_{ij})} \right\} \left\{ \prod_{j=f_i}^{l_i-1} \phi \right\} \times 
+\] \[
+\prod_{d=1}^{2} \left\{ \left( \prod_{j=f_i}^{l_{id}-1} \lambda \right) \left(1-\prod_{j=l_{id}}^{q_{id}-1} \lambda \right)^{I(l_{id} \neq l_i)} \right\} \times \chi_{f_i, l_i, nt_{l_i}} \Bigg]^{n_{\omega_i}} \times 
+\] \[
+\left\{ 1- \sum_{j=0}^{k-1} b_j(1-p)\chi_{(0,j+1,0)} \right\} ^{-n_\text{obs}}
+\] 
 
-\begin{itemize}
-\tightlist
-\item
-  The effect of recycled individuals is negligible
-\item
-  All individuals (marked and unmarked) are equally catchable, and that
-  capture probabilities for all individuals are the same for all
-  individuals at all sample times
-\item
-  All individuals (marked and unmarked) have equal survival
-  probabilities between all sample times
-\item
-  All individuals have equal entry (birth or immigration) probabilities,
-  but entry probabilities can vary between sample times
-\item
-  All marked individuals have equal tag retention probabilities between
-  all sample times
-\item
-  For double-tagged individuals, tag loss is independent between tags
-\item
-  There is independence across all individuals
-\item
-  The sampling period is relatively short compared to the interval
-  between sampling times
-\end{itemize}
+\noindent where $T_d$ is the probability of being double tagged, $l_{id}$ is the last sample time where tag $d$ was present, and $nt_{j}$ is the number of tags on individual $i$ at time $j$.  A table of notation is provided in the supplementary material with further details on the $\Psi$ and $\chi$ functions.
+
+Assumptions of the JSTL model (under constant $\phi$, $p$, and $\lambda$ parameters) are similar to the Jolly-Seber model \citep{Schwarz:1996} including all individuals have equal entry (birth or immigration) probabilities,
+  but entry probabilities can vary between sample times;  capture probabilities are the same for all individuals at all sample times,  all individuals (marked and unmarked) have equal survival
+  probabilities between all sample times, the sampling period is relatively short compared to the interval between sampling times, and there is independence across all individuals.  The incorporation of tag loss into the model comes with the additional assumption that all marked individuals have equal tag retention probabilities between all sample times and for double-tagged individuals, tag loss is independent between tags.  Finally, the JSTL model assumes that the effect of recycled individuals is negligible and it is this assumption that we explore. 
+
+Many different models can be specified for the JSTL model where parameters are homogeneous or heterogeneous with respect to time \citep{Cowen:2006} or group  \citep{Xu:2014}. 
+
 
 \subsubsection{Likelihood and
 Estimation}\label{likelihood-and-estimation}
-The JSTL model is developed under the idea of a superpopulation (the number of individuals that will enter population at some point during the study) \citep{Schwarz:1996} and this allows the likelihood to be formulated into three parts: 1) a model for the observed number of unique tag histories given the superpopulation size ($L_1^A$), 2) a model for the recaptures given the observed number of unique tag histories ($L_1^B$), and 3) a model for the number of individuals lost on capture ($L_3$).  The third component $L_3$, is typically used for harvest or fisheries data when known deaths occur.  In this study and in the elephant seal application, we assume there is no possibility of loss on capture, thus the third component of the likelihood simplifies to 1. The
-full likelihood is given by the product of the components of the
-likelihood (\(L=L_1^A \times L_1^B\)) and can be found in the Online Supplement.
 
-Maximum likelihood parameter estimates are found using a Newton-Raphson type
-method. Estimated standard errors are computed using the delta theorem.
-Models were implemented using R software \citep{R}. Code from this study are included in this published article (and its supplementary information files).
+Maximum likelihood parameter estimates are found using a Newton-Raphson type method. Estimated standard errors are computed using the delta theorem. Models were implemented using R software \citep{R}. Code from this study are included in this published article (and its supplementary information files).
 
 
 \subsection{Experimental Design}\label{experimental-design}
