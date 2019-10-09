@@ -89,6 +89,8 @@ in the Jolly-Seber Tag Loss Model}
 \section{Web Appendix A: The Jolly-Seber Tag Loss
 Model}\label{web-appendix-a-the-jolly-seber-tag-loss-model}
 
+We provide the assumptions and and detailed notation for the Jolly-Seber tag loss (JSTL) model under constant survival, capture, and tag retention probabilities, and time-varying entry probabilities.  Although Cowen and Schwarz (2006) provide for loss on capture in the original JSTL model (due to a fishery or harvest for example), we have removed this component from the likelihood and it is not discussed in this development.
+
 \subsubsection{Assumptions}\label{assumptions}
 
 Assumptions of the JSTL model with constant survival, capture, and tag
@@ -98,27 +100,29 @@ follows:
 \begin{itemize}
 \tightlist
 \item
-  The effect of recycled individuals is negligible
+  The effect of recycled individuals is negligible.
 \item
-  All individuals (marked and unmarked) are equally catchable, and that
+  All individuals (marked and unmarked) are equally catchable and 
   capture probabilities for all individuals are the same for all
-  individuals at all sample time
+  individuals at all sample time.
 \item
   All individuals (marked and unmarked) have equal survival
-  probabilities between all sample times
+  probabilities between all sample times.
 \item
   All individuals have equal entry (birth or immigration) probabilities,
-  but entry probabilities can vary between sample times
+  but entry probabilities can vary between sample times.
 \item
   All marked individuals have equal tag retention probabilities between
-  all sample times
+  all sample times.
 \item
-  For double-tagged individuals, tag loss is independent between tags
+  For double-tagged individuals, tag loss is independent between tags.
 \item
-  There is independence across all individuals
+  There is independence across all individuals.
 \item
   The sampling period is relatively short compared to the interval
-  between sampling times
+  between sampling times.
+\item
+Recycled individuals are negligible.  
 \end{itemize}
 
 \subsubsection{Notation}\label{notation}
@@ -126,47 +130,59 @@ follows:
 We use the following notation to describe the statistics or model
 parameters discussed in this study.
 
+\emph{Statistics:}\\
 \[
   \begin{array}{ll}
       k= & \text{number of sample times} \\
-      n_{\text{obs}}= & \text{the total number of individuals captured with no tags and treated as new individuals; when no}\\
-      & \text{recycling is present, $n_\text{obs}$ is the number of unique individuals observed throughout the study}\\
+      m= & \text{number of unique tag histories} \\
+      n_{\text{obs}}= & \text{the total number of unique individuals observed throughout the study}\\
+      nt_j= & \text{number of tags on the individuals at sample time $j$, $j=1,2, \cdots, k$}\\
+      f_i= & \text{first sample time individual $i$ was captured}\\
+      l_{id}= &\text{last sample time individual $i$ was captured with tag $d$ present, $d=1,2$}\\\
+      l_i-&\text{last sample time where individual $i$ was captured}\\
+      \omega_{ij}^*= &\text{component of the capture history vector $i=1,2, \cdots, m$}\\
+      & \omega_{ij}^* = \left\{\begin{array}{ll}
+                          1 & \text{if individual $i$ was captured for the first time at sample time $f_i$} \\
+                          1 & \text{if individual $i$ was captured at sample time $f_i<j$ with at least one tag present}\\
+                          
+                          0 & \text{if individual $i$ was not captured at sample time $j$}\\
+                      \end{array}\right. \\
+     q_{id}= &\text{first sample time where tag $d$ was known to be missing for individual $i$}\\
   \end{array}
 \]
-
+\newpage
+\emph{Parameters:}\\
 \[
   \begin{array}{ll}
-      p= & \text{the probability that an individual is recaptured at a sample time given that the individual was alive}\\
+      p= & \text{the probability that an individual is recaptured given that the individual was alive}\\
       & \text{at the previous sample time} \\
-      \phi=  & \text{the probability that an individual survives and remain in the population between a sample time}\\
-      & \text{and the next sample time }\\
+      \phi=  & \text{the probability that an individual survives and remains in the population between a sample times }\\
+      & \text{and the next sample time, given it was alive and in the population at the previous sample time }\\
       b_j= & \text{the probability that an individual enters the system between sample times $j$ and $j+1$. $j=0,1,...,k-1$.}\\
-       & \text{$b_0$ is the expected fraction of individuals alive just prior to the first sample time.}\\
-      \upsilon= & \text{the probability that an individual captured will be lost on capture}\\
+       & \text{$b_0$ is the expected fraction of individuals alive just prior to the first sample time, with $\sum_{j=0}^{k-1} b_j=1$}\\
+      
       T_d= & \text{the probability that an individual is marked with $d$ tags. Note that the probability of marking with a }\\
       & \text{single tag is one minus the probability of marking with a double tag: $T_1=1-T_2$}\\
       \lambda= & \text{the probability that an individual captured will  retain its tag between sample times  given that}\\
       & \text{it remains alive}\\
-      N= & \text{super-population size, the total number of individuals ever present in population and available for}\\
+      N= & \text{super-population size, which is the total number of individuals ever present in population and available for}\\
       & \text{capture during the study}\\
   \end{array}
 \]
 
-\clearpage
+
 
 \emph{Functions of Parameters:}\\
 \[
   \begin{array}{ll}
-    b_j*= & \text{the expected fraction of the population remaining to enter the population that enters between}\\
-    & \text{sample times $j$ and $j+1$, $j=0,1,...,k-1$.}\\
-       & b_{j}* = \left\{\begin{array}{ll}
-                          b_0 & \text{if $j=0$} \\
-                          b_j / \sum_{u=j}^{k-1} b_u & \text{if $j=1,...,k-1$}\\
-                          1 & \text{if $j=k-1$} \\
-                      \end{array}\right. \\
-    B_j= & \text{net births; the number of individuals who enter the population after sample time $j$ and survive}\\
-    & \text{to sample time $j+1$; $j=0,1,...,k-1$. $B_0$ is the number of indiividuals alive just before the}\\
-    & \text{first sample time. Note that $E(B_j|N)=Nb_j$. }\\
+ %   b_j*= & \text{the expected fraction of the population remaining to enter the population that enters between}\\
+  %  & \text{sample times $j$ and $j+1$, $j=0,1,...,k-1$.}\\
+     %  & b_{j}* = \left\{\begin{array}{ll}
+        %                  b_0 & \text{if $j=0$} \\
+           %               b_j / \sum_{u=j}^{k-1} b_u & \text{if $j=1,...,k-1$}\\
+              %            1 & \text{if $j=k-1$} \\
+                 %     \end{array}\right. \\
+
     \chi_{(f_i,l_i,nt)}= & \text{the probability that the individual with capture history $i$ is first seen at $f_i$ and not seen after}\\
     & \text{sample time $l_i$, with $nt$ tags. This is a recursive function of $\phi$, $p$, and $\lambda$. If $f_i=0$, this}\\
     & \text{indicates individuals not yet captured but alive at time $l_i$.}\\
@@ -185,27 +201,31 @@ parameters discussed in this study.
                           1-\phi+\phi(1-p)\lambda^2 \chi_{(f_i,j+1,2)}+\phi(1-\lambda)^2+2\phi(1-p)\lambda(1-\lambda)\chi_{(f_i,j+1,1)} & \text{if $j<k$} \\
                           1 & \text{if $j=k$}\\
                       \end{array}\right. \\
-    \psi_j= & \text{probability that an individual enters the population, is still alive and is not seen before time $j$; }\\
-    &j=1,2,...,k\\ 
-    N_j= & \text{population size at time $j$. E$(N_1|N)=B_0$, E$(N_{j+1}|N)=(N_j-N_j p \upsilon)\phi +B_j$, which is the }\\
-    & \text{number of individuals that survive from time $j$ minus the number lost on capture plus the }\\
-    & \text{number of births.}\\
+    \psi_j= & \text{probability that an individual enters the population, is still alive, and is not seen before time $j$; }\\
+    & \psi_{j} = \left\{\begin{array}{ll}
+                          b_0 & \text{if $j=1$} \\
+                          \psi_j(1-p_j)\phi_j+b_j & \text{if $j=2,...,k$}\\
+                      \end{array}\right. \\
+     B_j= & \text{net births; the number of individuals who enter the population after sample time $j$ and survive}\\
+    & \text{to sample time $j+1$; $j=0,1,...,k-1$. $B_0$ is the number of individuals alive just before the}\\
+    & \text{first sample time. Note that $E(B_j|N)=Nb_j$. }\\                   
+    N_j= & \text{population size at time $j$. E$(N_1|N)=B_0$, E$(N_{j+1}|N)=N_j\phi +B_j$, which is the }\\
+    & \text{number of individuals that survive from time $j$ plus the number of births.}\\
   \end{array}
 \]
 
-\subsubsection{Complete Likelihood}\label{complete-likelihood}
+\subsubsection{Likelihood}\label{complete-likelihood}
 
-The complete likelihood for the Jolly-Seber tag loss model assuming no
-possibility of loss of capture and assuming homogeneous survival,
-capture, and tag retention probabilities is given below.
+The full likelihood can be written as:
 
 \[
 L=\binom{N}{n_\text{obs}} \left\{ \sum_{j=0}^{k-1} b_j(1-p)\chi_{(0,j+1,0)} \right\} ^{(N-n_\text{obs})} \times \left\{ 1- \sum_{j=0}^{k-1} b_j(1-p)\chi_{(0,j+1,0)} \right\} ^{n_\text{obs}} \times
 \] \[
 \binom{n_\text{obs}}{n_{\omega_1},n_{\omega_2},...,n_{\omega_m}} \prod_{i=1}^{m} \Bigg[ \psi_{f_i} T_d \left\{ \prod_{j=f_i}^{l_i} p^{w*_{ij}} (1-p)^{(1-w*_{ij})} \right\} \left\{ \prod_{j=f_i}^{l_i-1} \phi \right\} \times 
 \] \[
-\prod_{d=1}^{2} \left\{ \left( \prod_{j=f_i}^{l_{id}-1} \lambda \right) \left(1-\prod_{j=l_{id}}^{q_{id}-1} \lambda \right)^{I(l_{id} \neq l_i)} \right\} \times \chi_{f_i, l_i, nt_{l_i}} \Bigg]^{n_{\omega_i}} \times 
-\] \[
+\prod_{d=1}^{2} \left\{ \left( \prod_{j=f_i}^{l_{id}-1} \lambda \right) \left(1-\prod_{j=l_{id}}^{q_{id}-1} \lambda \right)^{I(l_{id} \neq l_i)} \right\} \times \chi_{f_i, l_i, nt_{l_i}} \Bigg]^{n_{\omega_i}} 
+%\times 
+%\] \[
 \left\{ 1- \sum_{j=0}^{k-1} b_j(1-p)\chi_{(0,j+1,0)} \right\} ^{-n_\text{obs}}
 \]
 
