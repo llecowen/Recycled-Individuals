@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  10 OCT 2019 11:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  10 OCT 2019 11:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -842,16 +842,12 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 632.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 632.
 Package rerunfilecheck Info: File `RecycledPaper_EE-R1.out' has not changed.
 (rerunfilecheck)             Checksum: 4B7019D269910857FDB310741A416AAE;2036.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 632.
  ) 
 Here is how much of TeX's memory you used:
  13260 strings out of 492616
  194340 string characters out of 6129482
- 303490 words of memory out of 5000000
+ 303496 words of memory out of 5000000
  16753 multiletter control sequences out of 15000+600000
  80789 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -875,7 +871,7 @@ f-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2019/texmf-dist/fon
 ts/type1/public/lm/lmro12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/p
 ublic/lm/lmss8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lm
 sy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on RecycledPaper_EE-R1.pdf (23 pages, 5164091 bytes).
+Output written on RecycledPaper_EE-R1.pdf (23 pages, 5164094 bytes).
 PDF statistics:
  376 PDF objects out of 1000 (max. 8388607)
  326 compressed objects within 4 object streams

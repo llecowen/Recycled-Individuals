@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 OCT 2019 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  10 OCT 2019 11:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -826,66 +826,225 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-[2] [3]
-<Figure1.jpg, id=129, 5211.47pt x 3473.97874pt>
-File: Figure1.jpg Graphic file (type jpg)
-<use Figure1.jpg>
-Package pdftex.def Info: Figure1.jpg  used on input line 290.
+
+Package natbib Warning: Citation `Cowen:2006' on page 2 undefined on input line
+ 224.
+
+
+Package natbib Warning: Citation `Jolly:1965' on page 2 undefined on input line
+ 245.
+
+
+Package natbib Warning: Citation `Seber:1965' on page 2 undefined on input line
+ 245.
+
+
+Package natbib Warning: Citation `Pollock:1990' on page 2 undefined on input li
+ne 248.
+
+
+Package natbib Warning: Citation `Arnason:1981' on page 2 undefined on input li
+ne 251.
+
+
+Package natbib Warning: Citation `Bjornsson:2011' on page 2 undefined on input 
+line 252.
+
+
+Package natbib Warning: Citation `Xu:2014' on page 2 undefined on input line 25
+2.
+
+
+Package natbib Warning: Citation `Bjorndal:1996' on page 2 undefined on input l
+ine 252.
+
+
+Package natbib Warning: Citation `Pistorius:2000' on page 2 undefined on input 
+line 252.
+
+
+Package natbib Warning: Citation `Diefenbach:1998' on page 2 undefined on input
+ line 252.
+
+
+Package natbib Warning: Citation `Cowen:2006' on page 2 undefined on input line
+ 254.
+
+
+Package natbib Warning: Citation `Xu:2014' on page 2 undefined on input line 25
+7.
+
+
+Package natbib Warning: Citation `Schwarz:2012' on page 2 undefined on input li
+ne 261.
+
+[2]
+
+Package natbib Warning: Citation `Seber:1981' on page 3 undefined on input line
+ 276.
+
+[3]
+<RecycledPaper_files/figure-latex/Figure1.jpg, id=31, 5211.47pt x 3473.97874pt>
+
+File: RecycledPaper_files/figure-latex/Figure1.jpg Graphic file (type jpg)
+<use RecycledPaper_files/figure-latex/Figure1.jpg>
+Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure1.jpg  used on 
+input line 290.
 (pdftex.def)             Requested size: 469.72775pt x 313.12167pt.
- [4 <./Figure1.jpg>] [5] [6] [7] [8]
+ [4 <./RecycledPaper_files/figure-latex/Figure1.jpg>]
+
+Package natbib Warning: Citation `Cowen:2006' on page 5 undefined on input line
+ 302.
+
+
+Package natbib Warning: Citation `Schwarz:1996' on page 5 undefined on input li
+ne 304.
+
+[5]
+
+Package natbib Warning: Citation `Schwarz:1996' on page 6 undefined on input li
+ne 318.
+
+
+Package natbib Warning: Citation `Cowen:2006' on page 6 undefined on input line
+ 322.
+
+
+Package natbib Warning: Citation `Xu:2014' on page 6 undefined on input line 32
+2.
+
+
+Package natbib Warning: Citation `R' on page 6 undefined on input line 328.
+
+[6]
+
+Package natbib Warning: Citation `Fogarty:1980' on page 7 undefined on input li
+ne 352.
+
+
+Package natbib Warning: Citation `Gonzalez:2012' on page 7 undefined on input l
+ine 352.
+
+
+Package natbib Warning: Citation `Pistorius:2000' on page 7 undefined on input 
+line 352.
+
+
+Package natbib Warning: Citation `Ainley:1980' on page 7 undefined on input lin
+e 352.
+
+
+Package natbib Warning: Citation `Griffiths:2002' on page 7 undefined on input 
+line 352.
+
+
+Package natbib Warning: Citation `Bellini:2001' on page 7 undefined on input li
+ne 352.
+
+
+Package natbib Warning: Citation `Bjorndal:1996' on page 7 undefined on input l
+ine 352.
+
+[7] [8]
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 413.
 
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ts1lmr.fd
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [9]
-<RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf, id=205, 441.65
-pt x 313.17pt>
-File: RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf Graphic fi
-le (type pdf)
-<use RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf>
-Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure1_survival_GJST
-L1-1.pdf  used on input line 470.
-(pdftex.def)             Requested size: 441.66238pt x 313.17877pt.
- [10] [11 <./RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf>]
-<RecycledPaper_files/figure-latex/Figure2_N-1.pdf, id=222, 449.68pt x 143.53625
-pt>
-File: RecycledPaper_files/figure-latex/Figure2_N-1.pdf Graphic file (type pdf)
-<use RecycledPaper_files/figure-latex/Figure2_N-1.pdf>
-Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure2_N-1.pdf  used
+<RecycledPaper_files/figure-latex/Figure2_survival_GJSTL1-1.jpg, id=78, 441.931
+05pt x 313.29045pt>
+File: RecycledPaper_files/figure-latex/Figure2_survival_GJSTL1-1.jpg Graphic fi
+le (type jpg)
+<use RecycledPaper_files/figure-latex/Figure2_survival_GJSTL1-1.jpg>
+Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure2_survival_GJST
+L1-1.jpg  used on input line 470.
+(pdftex.def)             Requested size: 441.93668pt x 313.29445pt.
+
+[10] [11 <./RecycledPaper_files/figure-latex/Figure2_survival_GJSTL1-1.jpg>]
+<RecycledPaper_files/figure-latex/Figure3_N-1.jpg, id=88, 449.88075pt x 143.817
+3pt>
+File: RecycledPaper_files/figure-latex/Figure3_N-1.jpg Graphic file (type jpg)
+<use RecycledPaper_files/figure-latex/Figure3_N-1.jpg>
+Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure3_N-1.jpg  used
  on input line 532.
-(pdftex.def)             Requested size: 449.69261pt x 143.54027pt.
- [12]
-<RecycledPaper_files/figure-latex/Figure3_N_k-1.pdf, id=227, 444.66125pt x 132.
-495pt>
-File: RecycledPaper_files/figure-latex/Figure3_N_k-1.pdf Graphic file (type pdf
+(pdftex.def)             Requested size: 449.87965pt x 143.81694pt.
+
+[12]
+<RecycledPaper_files/figure-latex/Figure4_N_k-1.jpg, id=93, 444.82185pt x 132.6
+1545pt>
+File: RecycledPaper_files/figure-latex/Figure4_N_k-1.jpg Graphic file (type jpg
 )
-<use RecycledPaper_files/figure-latex/Figure3_N_k-1.pdf>
-Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure3_N_k-1.pdf  us
+<use RecycledPaper_files/figure-latex/Figure4_N_k-1.jpg>
+Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure4_N_k-1.jpg  us
 ed on input line 539.
-(pdftex.def)             Requested size: 444.66016pt x 132.49466pt.
- [13 <./RecycledPaper_files/figure-latex/Figure2_N-1.pdf> <./RecycledPaper_file
-s/figure-latex/Figure3_N_k-1.pdf>]
-<RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf, id=249, 450.68375pt x 205.
-76875pt>
-File: RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf Graphic file (type pdf
+(pdftex.def)             Requested size: 444.82753pt x 132.61713pt.
+ [13 <./RecycledPaper_files/figure-latex/Figure3_N-1.jpg> <./RecycledPaper_file
+s/figure-latex/Figure4_N_k-1.jpg>]
+<RecycledPaper_files/figure-latex/Figure5_N_j-1.jpg, id=99, 450.9648pt x 205.96
+95pt>
+File: RecycledPaper_files/figure-latex/Figure5_N_j-1.jpg Graphic file (type jpg
 )
-<use RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf>
-Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf  us
+<use RecycledPaper_files/figure-latex/Figure5_N_j-1.jpg>
+Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure5_N_j-1.jpg  us
 ed on input line 557.
-(pdftex.def)             Requested size: 450.68263pt x 205.76823pt.
- [14 <./RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf>] [15] [16] [17] [18
-] [19] [20] (./diff.bbl [21]
+(pdftex.def)             Requested size: 450.96368pt x 205.96898pt.
+ [14 <./RecycledPaper_files/figure-latex/Figure5_N_j-1.jpg>]
+
+Package natbib Warning: Citation `McMahon:2009' on page 15 undefined on input l
+ine 592.
+
+[15] [16] [17]
+
+Package natbib Warning: Citation `Schwarz:1999' on page 18 undefined on input l
+ine 681.
+
+
+Package natbib Warning: Citation `Yoshizaki:2011' on page 18 undefined on input
+ line 681.
+
+
+Package natbib Warning: Citation `Link:2010' on page 18 undefined on input line
+ 681.
+
+
+Package natbib Warning: Citation `Link:2010' on page 18 undefined on input line
+ 681.
+
+
+Package natbib Warning: Citation `Bonner:2013' on page 18 undefined on input li
+ne 681.
+
+
+Package natbib Warning: Citation `McClintock:2013' on page 18 undefined on inpu
+t line 681.
+
+
+Package natbib Warning: Citation `Mcclintock:2014' on page 18 undefined on inpu
+t line 681.
+
+
+Package natbib Warning: Citation `Bonner:2013' on page 18 undefined on input li
+ne 681.
+
+[18] [19] (./diff.bbl [20] [21]
 Underfull \hbox (badness 1137) in paragraph at lines 105--110
 []\T1/lmr/m/n/12 (+20) McMahon, C.R., Bur-ton, H., van den Hoff, J., Woods, R. 
 & Brad-shaw, C.J.A.
  []
 
-[22] [23])
+[22])
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 733.
- [24]
+[23]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 733.
- (./diff.aux)
+ (./diff.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 733.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 733.
 
@@ -895,7 +1054,7 @@ Package rerunfilecheck Warning: File `diff.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `diff.out':
-(rerunfilecheck)             Before: F31FA5DB664FBC6D038A03F63D9696BB;2084
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
 (rerunfilecheck)             After:  4B7019D269910857FDB310741A416AAE;2036.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -903,13 +1062,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 733.
  ) 
 Here is how much of TeX's memory you used:
- 14723 strings out of 492616
- 214665 string characters out of 6129482
- 328428 words of memory out of 5000000
- 18210 multiletter control sequences out of 15000+600000
- 80069 words of font info for 140 fonts, out of 8000000 for 9000
+ 14696 strings out of 492616
+ 214399 string characters out of 6129482
+ 326474 words of memory out of 5000000
+ 18194 multiletter control sequences out of 15000+600000
+ 79500 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,12n,43p,1226b,508s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,12n,43p,1233b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
 /texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/
 texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fon
@@ -931,10 +1090,10 @@ texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2019/texmf-dist
 e1/public/lm/lmss8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/l
 m/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pf
 b>
-Output written on diff.pdf (24 pages, 4973245 bytes).
+Output written on diff.pdf (23 pages, 5170531 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
- 362 compressed objects within 4 object streams
- 75 named destinations out of 1000 (max. 500000)
- 18570 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 18458 words of extra memory for PDF output out of 20736 (max. 10000000)
 
