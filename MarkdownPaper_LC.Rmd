@@ -10,7 +10,7 @@ output:
 
 ```{r setwd, echo=FALSE}
 #Set Working Directory to Laura & Emily's Joint Dropbox Folder
-setwd("~/Dropbox/Recycled Paper")
+setwd("~/Documents/GitHub/Recycled-Individuals")
 ```
 
 
@@ -407,8 +407,8 @@ Results were similar for both the super-population sizes of 1000 and 100000 for 
 ```{r Figure1_survival_GJSTL1, echo=FALSE, warning=FALSE}
 m=1
 repeat{
-assign(paste("tableESTS.",m,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations1000/",m,".ests.txt",sep=""), sep=" "))
-assign(paste("tableESTSrecycled.",m,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations1000/",m,".estsRECYCLED.txt",sep=""), sep=" "))
+assign(paste("tableESTS.",m,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations1000/",m,".ests.txt",sep=""), sep=" "))
+assign(paste("tableESTSrecycled.",m,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations1000/",m,".estsRECYCLED.txt",sep=""), sep=" "))
 m=m+1
 if(m>27){break}
 }
@@ -545,8 +545,8 @@ parameters2=c(0.9,0.9,0.2,1000,100,190,271,343.9,409.51,468.559,521.7031,569.532
 table<-matrix(0, nrow=15, ncol=12)
 
 #GJSTL N=1000 frac=1
-assign(paste("tableESTSrecycled.GJSTL1.",3,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations1000/",3,".estsRECYCLED.txt",sep=""), sep=" "))
-assign(paste("tableESTS.GJSTL1.",3,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations1000/",3,".ests.txt",sep=""), sep=" "))
+assign(paste("tableESTSrecycled.GJSTL1.",3,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations1000/",3,".estsRECYCLED.txt",sep=""), sep=" "))
+assign(paste("tableESTS.GJSTL1.",3,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations1000/",3,".ests.txt",sep=""), sep=" "))
 #table[1,1]=nrow(tableESTSrecycled.GJSTL1.3)
 #table[1,2]=nrow(tableESTS.GJSTL1.3)
 tableESTSrecycled.GJSTL1.3=colMeans(tableESTSrecycled.GJSTL1.3)
@@ -557,8 +557,8 @@ table[2:15,2]=(tableESTS.GJSTL1.3[c(1:3,24,14:23)]-parameters2)/parameters2
 table[2:15,3]=table[2:15,1]-table[2:15,2]
 
 #GJSTL4 N=1000 frac=0.5
-assign(paste("tableESTSrecycled.GJSTL4.",3,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations1000HALF/",3,".estsRECYCLED.txt",sep=""), sep=" "))
-assign(paste("tableESTS.GJSTL4.",3,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations1000HALF/",3,".ests.txt",sep=""), sep=" "))
+assign(paste("tableESTSrecycled.GJSTL4.",3,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations1000HALF/",3,".estsRECYCLED.txt",sep=""), sep=" "))
+assign(paste("tableESTS.GJSTL4.",3,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations1000HALF/",3,".ests.txt",sep=""), sep=" "))
 tableESTSrecycled.GJSTL4.3=colMeans(tableESTSrecycled.GJSTL4.3)
 tableESTS.GJSTL4.3=colMeans(tableESTS.GJSTL4.3)
 
@@ -568,8 +568,8 @@ table[2:15,6]=table[2:15,1]-table[2:15,2]
 
 
 #GJSTL2 N=100000 frac=1
-assign(paste("tableESTSrecycled.GJSTL2.",3,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations100000/",3,".estsRECYCLED.txt",sep=""), sep=" "))
-assign(paste("tableESTS.GJSTL2.",3,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations100000/",3,".ests.txt",sep=""), sep=" "))
+assign(paste("tableESTSrecycled.GJSTL2.",3,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations100000/",3,".estsRECYCLED.txt",sep=""), sep=" "))
+assign(paste("tableESTS.GJSTL2.",3,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations100000/",3,".ests.txt",sep=""), sep=" "))
 #table[1,7]=nrow(tableESTSrecycled.GJSTL2.3)
 #table[1,8]=nrow(tableESTS.GJSTL2.3)
 tableESTSrecycled.GJSTL2.3=colMeans(tableESTSrecycled.GJSTL2.3)
@@ -580,8 +580,8 @@ table[2:15,8]=(tableESTS.GJSTL2.3[c(1:3,24,14:23)]-parameters1)/parameters1
 table[2:15,9]=table[2:15,7]-table[2:15,8]
 
 #GJSTL3 N=100000 frac=0.5
-assign(paste("tableESTSrecycled.GJSTL3.",3,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations100000HALF/",3,".estsRECYCLED.txt",sep=""), sep=" "))
-assign(paste("tableESTS.GJSTL3.",3,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations100000HALF/",3,".ests.txt",sep=""), sep=" "))
+assign(paste("tableESTSrecycled.GJSTL3.",3,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations100000HALF/",3,".estsRECYCLED.txt",sep=""), sep=" "))
+assign(paste("tableESTS.GJSTL3.",3,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations100000HALF/",3,".ests.txt",sep=""), sep=" "))
 #table[1,10]=nrow(tableESTSrecycled.GJSTL3.3)
 #table[1,11]=nrow(tableESTS.GJSTL3.3)
 tableESTSrecycled.GJSTL3.3=colMeans(tableESTSrecycled.GJSTL3.3)
@@ -646,8 +646,8 @@ The estimate of super-population size ($\hat{N}$) was computed as $\hat{N}=n_{\t
 ```{r Figure2_N, fig.height=2.5, echo=FALSE, warning=FALSE}
 m=1
 repeat{
-assign(paste("tableESTS.",m,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations100000/",m,".ests.txt",sep=""), sep=" "))
-assign(paste("tableESTSrecycled.",m,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations100000/",m,".estsRECYCLED.txt",sep=""), sep=" "))
+assign(paste("tableESTS.",m,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations100000/",m,".ests.txt",sep=""), sep=" "))
+assign(paste("tableESTSrecycled.",m,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations100000/",m,".estsRECYCLED.txt",sep=""), sep=" "))
 m=m+1
 if(m>27){break}
 }
@@ -789,12 +789,12 @@ mtext(side = 2, outer=TRUE, "Estimates Due to Recycled Individuals", line = 2, c
 
 m=3
 repeat{
-assign(paste("tableESTS10.",m,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations1000/",m,".ests.txt",sep=""), sep=" "))
-assign(paste("tableESTS10recycled.",m,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations1000/",m,".estsRECYCLED.txt",sep=""), sep=" "))
-assign(paste("tableESTS7.",m,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations1000time7/",m,".ests.txt",sep=""), sep=" "))
-assign(paste("tableESTS7recycled.",m,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations1000time7/",m,".estsRECYCLED.txt",sep=""), sep=" "))
-assign(paste("tableESTS5.",m,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations1000time5/",m,".ests.txt",sep=""), sep=" "))
-assign(paste("tableESTS5recycled.",m,sep=""),read.table(paste("~/Dropbox/Recycled Paper/Simulations1000time5/",m,".estsRECYCLED.txt",sep=""), sep=" "))
+assign(paste("tableESTS10.",m,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations1000/",m,".ests.txt",sep=""), sep=" "))
+assign(paste("tableESTS10recycled.",m,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations1000/",m,".estsRECYCLED.txt",sep=""), sep=" "))
+assign(paste("tableESTS7.",m,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations1000time7/",m,".ests.txt",sep=""), sep=" "))
+assign(paste("tableESTS7recycled.",m,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations1000time7/",m,".estsRECYCLED.txt",sep=""), sep=" "))
+assign(paste("tableESTS5.",m,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations1000time5/",m,".ests.txt",sep=""), sep=" "))
+assign(paste("tableESTS5recycled.",m,sep=""),read.table(paste("~/Documents/GitHub/Recycled-Individuals/Simulations1000time5/",m,".estsRECYCLED.txt",sep=""), sep=" "))
 m=m+3
 if(m>10){break}
 }
