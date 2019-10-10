@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  9 OCT 2019 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  10 OCT 2019 11:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -774,55 +774,60 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 [2] [3]
-<Figure1.jpg, id=124, 5211.47pt x 3473.97874pt>
-File: Figure1.jpg Graphic file (type jpg)
-<use Figure1.jpg>
-Package pdftex.def Info: Figure1.jpg  used on input line 200.
+<RecycledPaper_files/figure-latex/Figure1.jpg, id=124, 5211.47pt x 3473.97874pt
+>
+File: RecycledPaper_files/figure-latex/Figure1.jpg Graphic file (type jpg)
+<use RecycledPaper_files/figure-latex/Figure1.jpg>
+Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure1.jpg  used on 
+input line 200.
 (pdftex.def)             Requested size: 469.72775pt x 313.12167pt.
- [4 <./Figure1.jpg>] [5] [6] [7] [8]
+ [4 <./RecycledPaper_files/figure-latex/Figure1.jpg>] [5] [6] [7]
+[8]
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 319.
 
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ts1lmr.fd
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [9]
-<RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf, id=198, 441.65
-pt x 313.17pt>
-File: RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf Graphic fi
-le (type pdf)
-<use RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf>
-Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure1_survival_GJST
-L1-1.pdf  used on input line 375.
-(pdftex.def)             Requested size: 441.66238pt x 313.17877pt.
- [10] [11 <./RecycledPaper_files/figure-latex/Figure1_survival_GJSTL1-1.pdf>]
-<RecycledPaper_files/figure-latex/Figure2_N-1.pdf, id=215, 449.68pt x 143.53625
-pt>
-File: RecycledPaper_files/figure-latex/Figure2_N-1.pdf Graphic file (type pdf)
-<use RecycledPaper_files/figure-latex/Figure2_N-1.pdf>
-Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure2_N-1.pdf  used
+<RecycledPaper_files/figure-latex/Figure2_survival_GJSTL1-1.jpg, id=198, 441.93
+105pt x 313.29045pt>
+File: RecycledPaper_files/figure-latex/Figure2_survival_GJSTL1-1.jpg Graphic fi
+le (type jpg)
+<use RecycledPaper_files/figure-latex/Figure2_survival_GJSTL1-1.jpg>
+Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure2_survival_GJST
+L1-1.jpg  used on input line 375.
+(pdftex.def)             Requested size: 441.93668pt x 313.29445pt.
+ [10]
+[11 <./RecycledPaper_files/figure-latex/Figure2_survival_GJSTL1-1.jpg>]
+<RecycledPaper_files/figure-latex/Figure3_N-1.jpg, id=207, 449.88075pt x 143.81
+73pt>
+File: RecycledPaper_files/figure-latex/Figure3_N-1.jpg Graphic file (type jpg)
+<use RecycledPaper_files/figure-latex/Figure3_N-1.jpg>
+Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure3_N-1.jpg  used
  on input line 437.
-(pdftex.def)             Requested size: 449.69261pt x 143.54027pt.
- [12]
-<RecycledPaper_files/figure-latex/Figure3_N_k-1.pdf, id=220, 444.66125pt x 132.
-495pt>
-File: RecycledPaper_files/figure-latex/Figure3_N_k-1.pdf Graphic file (type pdf
+(pdftex.def)             Requested size: 449.87965pt x 143.81694pt.
+
+[12]
+<RecycledPaper_files/figure-latex/Figure4_N_k-1.jpg, id=212, 444.82185pt x 132.
+61545pt>
+File: RecycledPaper_files/figure-latex/Figure4_N_k-1.jpg Graphic file (type jpg
 )
-<use RecycledPaper_files/figure-latex/Figure3_N_k-1.pdf>
-Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure3_N_k-1.pdf  us
+<use RecycledPaper_files/figure-latex/Figure4_N_k-1.jpg>
+Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure4_N_k-1.jpg  us
 ed on input line 444.
-(pdftex.def)             Requested size: 444.66016pt x 132.49466pt.
- [13 <./RecycledPaper_files/figure-latex/Figure2_N-1.pdf> <./RecycledPaper_file
-s/figure-latex/Figure3_N_k-1.pdf>]
-<RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf, id=242, 450.68375pt x 205.
-76875pt>
-File: RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf Graphic file (type pdf
+(pdftex.def)             Requested size: 444.82753pt x 132.61713pt.
+ [13 <./RecycledPaper_files/figure-latex/Figure3_N-1.jpg> <./RecycledPaper_file
+s/figure-latex/Figure4_N_k-1.jpg>]
+<RecycledPaper_files/figure-latex/Figure5_N_j-1.jpg, id=218, 450.9648pt x 205.9
+695pt>
+File: RecycledPaper_files/figure-latex/Figure5_N_j-1.jpg Graphic file (type jpg
 )
-<use RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf>
-Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf  us
+<use RecycledPaper_files/figure-latex/Figure5_N_j-1.jpg>
+Package pdftex.def Info: RecycledPaper_files/figure-latex/Figure5_N_j-1.jpg  us
 ed on input line 462.
-(pdftex.def)             Requested size: 450.68263pt x 205.76823pt.
- [14 <./RecycledPaper_files/figure-latex/Figure4_N_j-1.pdf>] [15] [16] [17] [18
-] [19] (./RecycledPaper_EE-R1.bbl [20] [21]
+(pdftex.def)             Requested size: 450.96368pt x 205.96898pt.
+ [14 <./RecycledPaper_files/figure-latex/Figure5_N_j-1.jpg>] [15] [16] [17] [18
+] [19] (./RecycledPaper_EE-R1.bbl
+[20] [21]
 Underfull \hbox (badness 1137) in paragraph at lines 105--110
 []\T1/lmr/m/n/12 (+20) McMahon, C.R., Bur-ton, H., van den Hoff, J., Woods, R. 
 & Brad-shaw, C.J.A.
@@ -837,12 +842,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 632.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 632.
 Package rerunfilecheck Info: File `RecycledPaper_EE-R1.out' has not changed.
 (rerunfilecheck)             Checksum: 4B7019D269910857FDB310741A416AAE;2036.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 632.
  ) 
 Here is how much of TeX's memory you used:
  13260 strings out of 492616
- 194304 string characters out of 6129482
- 303491 words of memory out of 5000000
+ 194340 string characters out of 6129482
+ 303490 words of memory out of 5000000
  16753 multiletter control sequences out of 15000+600000
  80789 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -866,10 +875,10 @@ f-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2019/texmf-dist/fon
 ts/type1/public/lm/lmro12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/p
 ublic/lm/lmss8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lm
 sy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on RecycledPaper_EE-R1.pdf (23 pages, 4962180 bytes).
+Output written on RecycledPaper_EE-R1.pdf (23 pages, 5164091 bytes).
 PDF statistics:
- 408 PDF objects out of 1000 (max. 8388607)
- 350 compressed objects within 4 object streams
+ 376 PDF objects out of 1000 (max. 8388607)
+ 326 compressed objects within 4 object streams
  73 named destinations out of 1000 (max. 500000)
  18562 words of extra memory for PDF output out of 20736 (max. 10000000)
 
