@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  9 OCT 2019 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 NOV 2019 14:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1494,14 +1494,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 1633.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1633.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1633.
 
-Package rerunfilecheck Info: File `Appendix_BW.out' has not changed.
-(rerunfilecheck)             Checksum: 73A836EF24010DC31112490787FAC4CD;1596.
+
+
+Package rerunfilecheck Warning: File `Appendix_BW.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Appendix_BW.out':
+(rerunfilecheck)             Before: 73A836EF24010DC31112490787FAC4CD;1596
+(rerunfilecheck)             After:  40CD453C06DE37835B9B5755645FBEAB;1573.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1633.
  ) 
 Here is how much of TeX's memory you used:
  12638 strings out of 492995
  191566 string characters out of 6132704
- 298563 words of memory out of 5000000
+ 298513 words of memory out of 5000000
  15858 multiletter control sequences out of 15000+600000
  55499 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1524,7 +1534,7 @@ ive/2017/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2017/texmf-dist/fo
 nts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/lm/lmsy7.pfb>
-Output written on Appendix_BW.pdf (33 pages, 947619 bytes).
+Output written on Appendix_BW.pdf (33 pages, 947125 bytes).
 PDF statistics:
  678 PDF objects out of 1000 (max. 8388607)
  498 compressed objects within 5 object streams

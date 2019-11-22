@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 NOV 2019 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 NOV 2019 15:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1167,18 +1167,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 632.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 632.
 Package rerunfilecheck Info: File `RecycledPaper_EE-R2.out' has not changed.
 (rerunfilecheck)             Checksum: 4B7019D269910857FDB310741A416AAE;2036.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 632.
  ) 
 Here is how much of TeX's memory you used:
- 13591 strings out of 492995
- 197183 string characters out of 6132704
- 304193 words of memory out of 5000000
+ 13593 strings out of 492995
+ 197205 string characters out of 6132704
+ 304194 words of memory out of 5000000
  16705 multiletter control sequences out of 15000+600000
- 80437 words of font info for 144 fonts, out of 8000000 for 9000
+ 80559 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,12n,43p,1144b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
@@ -1200,7 +1196,7 @@ f-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fon
 ts/type1/public/lm/lmro12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
 ublic/lm/lmss8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lm
 sy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on RecycledPaper_EE-R2.pdf (23 pages, 5163877 bytes).
+Output written on RecycledPaper_EE-R2.pdf (23 pages, 5163883 bytes).
 PDF statistics:
  376 PDF objects out of 1000 (max. 8388607)
  326 compressed objects within 4 object streams

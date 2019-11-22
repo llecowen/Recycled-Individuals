@@ -195,7 +195,7 @@ under which conditions researchers need to be concerned.  This study is importan
 
 In order to determine whether the simulation framework provided a
 reasonable approximation to the real world, we analyzed the effects of
-recycled individuals in long-term census data of souther elephant seals, similarly in Figure 1. 
+recycled individuals in long-term census data of southern elephant seals (Figure 1). 
 
 \includegraphics{RecycledPaper_files/figure-latex/Figure1.jpg}
 
@@ -209,7 +209,7 @@ recycled individuals in long-term census data of souther elephant seals, similar
 \subsection{The Jolly-Seber Model with Tag Loss
 (JSTL)}\label{the-jolly-seber-model-with-tag-loss-jstl}
 
-Full development of the JSTL model is given by \citep{Cowen:2006}.  Data are typically in the form of tag histories for each individual in the study.  Let $\omega_{ijd}$ denote the entries of the tag history for individual $i$ at time $j$, tag $d$; $i=1, \cdots, n_{obs}$, $j=1, \cdots, k$, $d=1,2$; with $\omega_{ijd}$ equaling 1 or 0 if the individual was seen with tag $d$ or not.  Capture histories $\omega^*$ used in most capture-recapture studies can be easily obtained from the tag histories $\omega$ and are a series of 1's and 0's depicting whether or not an individual was captured at each sample time. We focus on the case with constant parameters as used in our simulation study.  Let $\phi$ denote the survival probability, $p$ the capture probability, $\lambda$ the tag retention probability, and $b_t$ the entry probability for time $t$.  $\Psi$ and $\chi$ are recursive functions of parameters that deal with an individual's history up to the first time see ($f_i$) and after the last time seen ($l_i$) with $n_t$ tags respectively.
+Full development of the JSTL model is given by \citep{Cowen:2006}.  Data are typically in the form of tag histories for each individual in the study.  Let $\omega_{ijd}$ denote the entries of the tag history for individual $i$ at time $j$, tag $d$; $i=1, \cdots, n_{obs}$, $j=1, \cdots, k$, $d=1,2$; with $\omega_{ijd}$ equaling 1 or 0 if the individual was seen with tag $d$ or not.  Capture histories $\omega^*$ used in most capture-recapture studies can be easily obtained from the tag histories $\omega$ and are a series of 1's and 0's depicting whether or not an individual was captured at each sample time. We focus on the case with constant parameters as used in our simulation study.  Let $\phi$ denote the survival probability, $p$ the capture probability, $\lambda$ the tag retention probability, and $b_t$ the entry probability for time $t$.  $\Psi$ and $\chi$ are recursive functions of parameters that deal with an individual's history up to the first time seen ($f_i$) and after the last time seen ($l_i$) with $n_t$ tags respectively.
 
 The JSTL model is developed under the idea of a super-population (the number of individuals that will enter the population at some point during the study) \citep{Schwarz:1996} and this allows the likelihood to be formulated into two parts: 1) a model for the observed number of unique tag histories ($n_{obs}$) given the super-population size ($N$) and  2) a model for the recaptures (in the form of capture history frequencies $n_{\omega_i}$) given the observed number of unique tag histories ($n_{obs}$).  The full likelihood is given by the product of these components as follows:
 
@@ -223,7 +223,7 @@ L=\binom{N}{n_\text{obs}} \left\{ \sum_{j=0}^{k-1} b_j(1-p)\chi_{(0,j+1,0)} \rig
 \left\{ 1- \sum_{j=0}^{k-1} b_j(1-p)\chi_{(0,j+1,0)} \right\} ^{-n_\text{obs}}
 \] 
 
-\noindent where $T_d$ is the probability of being double tagged, $l_{id}$ is the last sample time where tag $d$ was present, and $nt_{j}$ is the number of tags on individual $i$ at time $j$.  A table of notation is provided in the supplementary material with further details on the $\Psi$ and $\chi$ functions.
+\noindent where $T_d$ is the probability of being double tagged, $l_{id}$ is the last sample time where tag $d$ was present, and $nt_{j}$ is the number of tags on individual $i$ at time $j$.  A table of notation is provided in Appendix A with further details on the $\Psi$ and $\chi$ functions.
 
 Assumptions of the JSTL model (under constant $\phi$, $p$, and $\lambda$ parameters) are similar to the Jolly-Seber model \citep{Schwarz:1996} including all individuals have equal entry (birth or immigration) probabilities but entry probabilities can vary between sample times, capture probabilities are the same for all individuals at all sample times,  all individuals (marked and unmarked) have equal survival
   probabilities between all sample times, the sampling period is relatively short compared to the interval between sampling times, and there is independence across all individuals.  The incorporation of tag loss into the model comes with the additional assumption that all marked individuals have equal tag retention probabilities between all sample times and for double-tagged individuals, tag loss is independent between tags.  Finally, the JSTL model assumes that the effect of recycled individuals is negligible and it is this assumption that we explore. 
@@ -240,7 +240,7 @@ Maximum likelihood parameter estimates are found using a Newton-Raphson type met
 \subsection{Experimental Design}\label{experimental-design}
 
 To study the effect of recycled individuals on parameter estimates of
-this model, we conducted a simulation study. Data sets varied both in super-population size,
+this model, we conducted a simulation study. Data sets varied in super-population size,
 parameter values, and percent double tagged. We generated data for the
 JSTL model with constant survival, capture, and tag retention
 probabilities for a double-tagging experiment. Super-population sizes of
@@ -348,7 +348,7 @@ parameter combinations of survival, capture, and tag retention
 probabilities. As an example, box plots of survival estimates for data
 with super-population size N=1000 and 100\% double tagging are provided
 (Fig. 2). Box plots of survival estimates for other super-population
-sizes and double-tagging rates are provided in the Online Supplement (Figs
+sizes and double-tagging rates are provided in the Appendix (Figs
 A1-A6). Although there is bias in the survival estimates for several of
 the parameter combinations, the bias is similar between the analysis
 including and excluding the recycled individuals for both
@@ -363,7 +363,7 @@ combinations considered. It seems that the treatment of
 recycled individuals has little effect, if any, on the accuracy of the
 JSTL estimators for survival, capture, and tag-retention probabilities.
 Box plots of capture and tag retention estimates for all models can also
-be found in the Online Supplement (Figs A7-A17).
+be found in the Appendix (Figs A7-A17).
 
 There is slightly more bias due to recycled individuals for parameter combinations 
 where the probability of double tagging (\(T_2\)) was only 0.5, compared to the parameter combinations where all individuals were double tagged. As an example, relative bias of
@@ -438,7 +438,7 @@ scenarios.
 
 \begin{quote}
 \textsc{Figure 3:}
-\textsl{The difference in mean relative bias of the super-population estimate ($\hat{N}$) between the model analyzed including and excluding the recycled individuals for data with super-population size $N=100\ 000$ with 100\% double-tagging for different tag retention probabilities ($\lambda=0.2,0.5,0.9$), survival probabilities ($\phi=0.2,0.5,0.9$), and capture probabilities ($p=0.2,0.5,0.9$) using the JSTL model from a ten-sample-time study.}
+\textsl{The difference in mean relative bias of the super-population estimate ($\hat{N}$) between the model analyzed including and excluding the recycled individuals for data with super-population size $N=100\ 000$ with 100\% double-tagging for different tag retention probabilities ($\lambda=0.2,0.5,0.9$), survival probabilities ($\phi=0.5,0.9$), and capture probabilities ($p=0.2,0.5,0.9$) using the JSTL model from a ten-sample-time study.}
 \end{quote}
 
 \includegraphics{RecycledPaper_files/figure-latex/Figure4_N_k-1.jpg}
@@ -456,7 +456,7 @@ there are fewer numbers of recycled individuals and thus the bias in
 \(\hat{N}\) due to recycled individuals is lower although not
 unnoticeable in the worst case scenarios (low tag retention, high
 survival and high capture probabilities). Box plots of super-population
-size (\(N\)) for all scenarios are available in the Online Supplement (Figs
+size (\(N\)) for all scenarios are available in the Appendix (Figs
 A19-A24).
 
 \includegraphics{RecycledPaper_files/figure-latex/Figure5_N_j-1.jpg}
@@ -483,7 +483,7 @@ for \(\hat{N}_{10}\)), which is caused by a combination of more upward
 bias in the survival probability estimates for the analysis including recycled
 individuals  (Fig. A1-A6) as well as upward bias in the
 super-population size estimates. Plots of the mean abundance estimates
-for all scenarios are available in the Online Supplement (Figs A25-A42).
+for all scenarios are available in the Appendix (Figs A25-A42).
 
 \subsection{Case Study: Elephant
 Seals}\label{case-study-elephant-seals-1}
@@ -520,13 +520,13 @@ recycled individuals ($\hat{N}=8985$) is 30\% larger than the estimate in the an
 which excluded recycled individuals ($\hat{N}=6949$) who were recognized upon recapture. This relationship also holds true for the abundance estimates
 at each sample time (Table 2). The difference in the abundance estimates increases
  as time goes on, again validating the results of our
-simulation study.
+simulation study. Standard error estimates for $\hat{N}_t$ are also higher when recycled individuals are included in the analysis. The same pattern is seen in the simulation studies (see  Appendix).
 
 Similar to the simulations, there is not much difference in the
 estimates of survival, capture, and tag-retention probabilities between the analysis
 including and excluding recycled individuals. For comparison to the previous
 simulations, the tag retention probability for the
-elephant seals is estimated to be $\approx 0.8$ (high).  Standard error estimates are also higher when recycled individuals are included in the analysis. The same pattern is seen in the simulation studies (see Web Appendix A).
+elephant seals is estimated to be $\approx 0.8$ (high).  
 
 \begin{quote}
 \textsc{Table 2}
